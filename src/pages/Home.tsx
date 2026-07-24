@@ -184,8 +184,13 @@ export default function Home() {
       </section>
 
       {/* Firm History */}
-      <section className="bg-gradient-to-b from-white to-platinum/30 py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-white to-platinum/30 py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-end justify-left pointer-events-none">
+          <span className="font-heading text-[7rem] md:text-[20rem] font-bold tracking-[0.25em] text-steel/5 select-none">
+            HISTORY
+          </span>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -199,10 +204,10 @@ export default function Home() {
                 <span className="text-pumpkin"> Distinction</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Founded in 1999 by Dr. Marcus Shawbell, ShawbellConsulting has grown from a boutique legal practice into a premier integrated advisory firm. Our journey has been defined by a relentless commitment to excellence, a deep understanding of our clients' industries, and the unique ability to deliver both legal precision and strategic business insight.
+                ShawbellConsulting was established in Ghana in 2002 as a hybrid firm combining legal and management consultancy services. It was founded by Phyllis Maria Christian, who — after 13 years at Price Waterhouse Associates and its successor firm Ernst & Young in Ghana — set out to build a firm delivering superior professional standards locally. In 2009, the firm established the Ghana Institute of Consulting (GIC) to support capacity building and business performance nationally.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Over 25 years, we have advised leading corporations, navigated complex regulatory landscapes, and guided transformative business decisions—always with the integrated perspective that sets us apart.
+                Over more than two decades, the firm has built deep experience across government, multinationals, development partners, and the local private sector — including a 10-year run as Local Manager for Amazon.com in Ghana (2002–2012) and representation of global players like Transocean and a consortium of five global petroleum corporations. Today the firm comprises three entities: The Law Practice, The Consultancy Practice, and the GIC, staffed by permanent professionals across law, finance, economics, IT, and social development.
               </p>
               <Link
                 to="/about"
@@ -223,11 +228,11 @@ export default function Home() {
               <div className="bg-white rounded-2xl border border-platinum p-8 shadow-lg">
                 <div className="space-y-6">
                   {[
-                    { year: '1999', event: 'Firm established in London by Dr. Marcus Shawbell' },
-                    { year: '2005', event: 'Expanded into Business Advisory Services' },
-                    { year: '2012', event: 'Opened international offices in Dubai & Singapore' },
-                    { year: '2018', event: 'Recognized as Top 50 Global Consulting Firm' },
-                    { year: '2024', event: 'Serving clients across 30+ jurisdictions' },
+                    { year: '2002', event: 'Founded by Phyllis Maria Christian in Ghana as a hybrid legal and management consultancy.' },
+                    { year: '2002', event: 'Selected as the Local Manager for Amazon.com in Ghana.' },
+                    { year: '2009', event: 'Established the Ghana Institute of Consulting to support national capacity building.' },
+                    { year: '2012', event: 'Concluded its 10-year run managing operations for Amazon.com in Ghana.' },
+                    { year: 'Present', event: 'Operates via The Law Practice, The Consultancy Practice, and the GIC.' },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4">
                       <div className="w-16 text-right">
