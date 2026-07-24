@@ -1,12 +1,94 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, Mail } from 'lucide-react';
-import ServiceCard from '../components/ServiceCard';
-import { legalServices, advisoryServices, briefs, people, partners, accolades } from '../lib/data';
+import { briefs, people, partners, accolades } from '../lib/data';
 
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
   const latestArticle = briefs[0];
+
+  const serviceGroups = [
+    {
+      title: 'Legal Advisory (Private Sector)',
+      icon: Scale,
+      items: [
+        'Pre-establishment/start-up advisory',
+        'Business registration',
+        'Compliance and due diligence',
+        'Licensing/permits',
+        'Statutory services (Nominee Director, Company Secretarial, Registered Office)',
+        'Notarizations',
+        'Corporate liquidations',
+        'Shareholder structuring',
+        'Tax compliance support',
+        'Immigration support',
+        'Employment/labour advisory',
+        'Litigation advisory',
+        'SEC advisory',
+        'Cross-cultural services',
+      ],
+    },
+    {
+      title: 'Legal & Policy Advisory (Government/Public Sector)',
+      icon: BookOpen,
+      items: [
+        'Drafting policy and legislation',
+        'Justice/human rights and public-sector reform',
+        'Legal research and opinions',
+        'Standard operating procedures',
+        'Contract drafting/review',
+        'Agreement negotiation',
+      ],
+    },
+    {
+      title: 'Institutional Reform',
+      icon: Target,
+      items: [
+        'Governance evaluations',
+        'Institutional and legal reviews',
+        'Capacity building',
+        'Sector mandate reviews and restructuring',
+      ],
+    },
+    {
+      title: 'Corporate Governance Systems',
+      icon: Award,
+      items: [
+        'Governance frameworks',
+        'Board peer-evaluation tools',
+        'Compensation structures',
+        'Oversight/monitoring systems',
+      ],
+    },
+    {
+      title: 'Public Financial Management',
+      icon: BookOpen,
+      items: [
+        'PFM legislation development',
+        'Implementation support',
+        'Budget accountability tooling',
+      ],
+    },
+    {
+      title: 'Transaction Advisory',
+      icon: Target,
+      items: [
+        'Value-for-money reviews',
+        'Due diligence on major infrastructure/PPP projects',
+        'Accra redevelopment and water supply reforms',
+        'Venture Capital Trust Fund reform',
+      ],
+    },
+    {
+      title: 'Investor & Intermediary Services',
+      icon: Users,
+      items: [
+        'Linking foreign investors to local partners',
+        'Liaison with regulators',
+        'Sector guides for new investors',
+      ],
+    },
+  ];
 
   return (
     <div className="page-enter">
@@ -155,33 +237,41 @@ export default function Home() {
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-4">
               Integrated Legal & Advisory Services
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              From corporate law and litigation to strategic business advisory and digital transformation, we provide comprehensive counsel.
+            <p className="text-gray-500 max-w-3xl mx-auto">
+              Our work spans private-sector legal counsel, government and public-sector reform, institutional strengthening, public financial management, transaction support, and investor intermediary services.
             </p>
           </div>
 
-          {/* Legal Services */}
-          <div className="mb-10">
-            <h3 className="font-heading font-semibold text-xl text-steel mb-6 flex items-center gap-2">
-              <Scale className="w-5 h-5 text-ocean" /> Legal Services
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {legalServices.map((s, i) => (
-                <ServiceCard key={s.id} {...s} href={`/legal-services/${s.id}`} index={i} />
-              ))}
-            </div>
-          </div>
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+            {serviceGroups.map((group, i) => {
+              const Icon = group.icon;
 
-          {/* Business Advisory */}
-          <div className="mb-12">
-            <h3 className="font-heading font-semibold text-xl text-steel mb-6 flex items-center gap-2">
-              <Target className="w-5 h-5 text-pumpkin" /> Business Advisory Services
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {advisoryServices.map((s, i) => (
-                <ServiceCard key={s.id} {...s} href={`/business-advisory/${s.id}`} index={i} />
-              ))}
-            </div>
+              return (
+                <motion.div
+                  key={group.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: i * 0.06 }}
+                  className="bg-platinum/40 rounded-2xl border border-platinum p-6 h-full"
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-steel to-ocean rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="font-heading font-bold text-lg text-steel">{group.title}</h3>
+                  </div>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    {group.items.map(item => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-1.5 w-2 h-2 bg-pumpkin rounded-full shrink-0"></span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              );
+            })}
           </div>
 
           <div className="text-center">
