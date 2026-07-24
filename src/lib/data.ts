@@ -326,8 +326,6 @@ export const partners = [
 ];
 
 export const accolades = [
-  { title: 'Top 50 Consulting Firms', org: 'Global Advisory Review', year: '2024' },
-  { title: 'Best Legal Advisory Practice', org: 'International Law Awards', year: '2023' },
-  { title: 'Excellence in M&A Counsel', org: 'Corporate Strategy Institute', year: '2023' },
-  { title: 'Innovation in Compliance', org: 'Regulatory Excellence Forum', year: '2022' },
+  { title: 'Best in Law Consulting Firm', org: 'Oil and Gas Ghana Industry (OGGA) Awards', year: '2014–2016' },
+  { title: 'Consultancy Company of the Year', org: 'Ghana Oil and Gas Awards (GOGA)', year: '2016' },
 ];

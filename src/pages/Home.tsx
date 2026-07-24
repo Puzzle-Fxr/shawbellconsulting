@@ -144,8 +144,8 @@ export default function Home() {
       </section>
 
       {/* Partners Strip */}
-      <section className="bg-gradient-to-b from-white to-platinum/40 border-b border-platinum py-14 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-white to-platinum/40 border-b border-platinum py-14 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
               <p className="font-heading font-medium text-xs uppercase tracking-[0.28em] text-ocean mb-3">Trusted Partners</p>
@@ -254,8 +254,13 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-white py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-end justify-left pointer-events-none">
+          <span className="font-heading text-[6rem] md:text-[20rem] font-bold tracking-[0.24em] text-steel/5 select-none">
+            SERVICES
+          </span>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">What We Do</p>
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-4">
@@ -310,13 +315,18 @@ export default function Home() {
       </section>
 
       {/* Accolades */}
-      <section className="bg-gradient-to-r from-steel to-steel-dark py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-steel to-steel-dark py-16 lg:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <span className="font-heading text-[6rem] md:text-[12rem] font-bold tracking-[0.24em] text-white/5 select-none">
+            RECOGNITION
+          </span>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean-light mb-4">Recognition</p>
             <h2 className="font-heading font-bold text-3xl text-white">Industry Accolades</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {accolades.map((a, i) => (
               <motion.div
                 key={i}
@@ -337,8 +347,13 @@ export default function Home() {
       </section>
 
       {/* Founder Spotlight */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-white py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-end justify-left pointer-events-none">
+          <span className="font-heading text-[6rem] md:text-[20rem] font-bold tracking-[0.24em] text-steel/5 select-none">
+            LEADERSHIP
+          </span>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -396,8 +411,13 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-gradient-to-b from-platinum/30 to-white py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-platinum/30 to-white py-20 lg:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-end justify-left pointer-events-none">
+          <span className="font-heading text-[6rem] md:text-[20rem] font-bold tracking-[0.24em] text-steel/5 select-none">
+            CONTACT
+          </span>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
