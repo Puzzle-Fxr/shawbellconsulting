@@ -8,6 +8,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [legalDropdown, setLegalDropdown] = useState(false);
   const [advisoryDropdown, setAdvisoryDropdown] = useState(false);
+  const [mobileLegalDropdown, setMobileLegalDropdown] = useState(false);
+  const [mobileAdvisoryDropdown, setMobileAdvisoryDropdown] = useState(false);
   const legalRef = useRef<HTMLDivElement>(null);
   const advisoryRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
@@ -16,6 +18,8 @@ export default function Navbar() {
     setMobileOpen(false);
     setLegalDropdown(false);
     setAdvisoryDropdown(false);
+    setMobileLegalDropdown(false);
+    setMobileAdvisoryDropdown(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -67,21 +71,30 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-platinum py-3 z-50"
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[42rem] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-[0_22px_60px_rgba(15,23,42,0.16)] border border-platinum py-4 z-50"
                   >
-                    <Link to="/legal-services" className="block px-5 py-2.5 text-sm font-medium text-steel hover:bg-platinum/50 transition-colors rounded-lg mx-1">
-                      Overview
-                    </Link>
-                    <div className="h-px bg-platinum mx-3 my-1"></div>
-                    {legalServices.map(s => (
-                      <Link
-                        key={s.id}
-                        to={`/legal-services/${s.id}`}
-                        className="block px-5 py-2 text-sm text-gray-600 hover:text-ocean hover:bg-platinum/50 transition-colors rounded-lg mx-1"
-                      >
-                        {s.title}
-                      </Link>
-                    ))}
+                    <div className="px-4 pb-3 border-b border-platinum/70">
+                      <div className="flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-ocean">Practice Areas</p>
+                          <h3 className="font-heading font-bold text-lg text-steel">Legal Services</h3>
+                        </div>
+                        <Link to="/legal-services" className="text-sm font-semibold text-ocean hover:text-steel transition-colors">
+                          View overview
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-3">
+                      {legalServices.map(s => (
+                        <Link
+                          key={s.id}
+                          to={`/legal-services/${s.id}`}
+                          className="block rounded-xl px-4 py-3 text-sm text-gray-700 hover:text-ocean hover:bg-platinum/60 transition-colors"
+                        >
+                          <span className="font-semibold text-steel">{s.title}</span>
+                        </Link>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -104,21 +117,30 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-platinum py-3 z-50"
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[42rem] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-[0_22px_60px_rgba(15,23,42,0.16)] border border-platinum py-4 z-50"
                   >
-                    <Link to="/business-advisory" className="block px-5 py-2.5 text-sm font-medium text-steel hover:bg-platinum/50 transition-colors rounded-lg mx-1">
-                      Overview
-                    </Link>
-                    <div className="h-px bg-platinum mx-3 my-1"></div>
-                    {advisoryServices.map(s => (
-                      <Link
-                        key={s.id}
-                        to={`/business-advisory/${s.id}`}
-                        className="block px-5 py-2 text-sm text-gray-600 hover:text-ocean hover:bg-platinum/50 transition-colors rounded-lg mx-1"
-                      >
-                        {s.title}
-                      </Link>
-                    ))}
+                    <div className="px-4 pb-3 border-b border-platinum/70">
+                      <div className="flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-ocean">Practice Areas</p>
+                          <h3 className="font-heading font-bold text-lg text-steel">Business Advisory</h3>
+                        </div>
+                        <Link to="/business-advisory" className="text-sm font-semibold text-ocean hover:text-steel transition-colors">
+                          View overview
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-3">
+                      {advisoryServices.map(s => (
+                        <Link
+                          key={s.id}
+                          to={`/business-advisory/${s.id}`}
+                          className="block rounded-xl px-4 py-3 text-sm text-gray-700 hover:text-ocean hover:bg-platinum/60 transition-colors"
+                        >
+                          <span className="font-semibold text-steel">{s.title}</span>
+                        </Link>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -155,15 +177,60 @@ export default function Navbar() {
             className="lg:hidden bg-white border-t border-platinum overflow-hidden"
           >
             <div className="px-6 py-4 space-y-1">
-              <Link to="/legal-services" className="block py-2.5 font-medium text-steel">Legal Services Overview</Link>
-              {legalServices.map(s => (
-                <Link key={s.id} to={`/legal-services/${s.id}`} className="block py-2 text-gray-600 pl-4">— {s.title}</Link>
-              ))}
+              <button
+                type="button"
+                onClick={() => setMobileLegalDropdown(!mobileLegalDropdown)}
+                className="flex w-full items-center justify-between py-2.5 text-left"
+              >
+                <span className="font-medium text-steel">Legal Services</span>
+                <ChevronDown className={`w-4 h-4 text-steel transition-transform ${mobileLegalDropdown ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {mobileLegalDropdown && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="overflow-hidden"
+                  >
+                    <Link to="/legal-services" className="block py-2 text-gray-700 font-medium pl-4">Overview</Link>
+                    {legalServices.map(s => (
+                      <Link key={s.id} to={`/legal-services/${s.id}`} className="block py-2 text-gray-600 pl-6">— {s.title}</Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               <div className="h-px bg-platinum my-2"></div>
-              <Link to="/business-advisory" className="block py-2.5 font-medium text-steel">Business Advisory Overview</Link>
-              {advisoryServices.map(s => (
-                <Link key={s.id} to={`/business-advisory/${s.id}`} className="block py-2 text-gray-600 pl-4">— {s.title}</Link>
-              ))}
+
+              <button
+                type="button"
+                onClick={() => setMobileAdvisoryDropdown(!mobileAdvisoryDropdown)}
+                className="flex w-full items-center justify-between py-2.5 text-left"
+              >
+                <span className="font-medium text-steel">Business Advisory</span>
+                <ChevronDown className={`w-4 h-4 text-steel transition-transform ${mobileAdvisoryDropdown ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {mobileAdvisoryDropdown && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="overflow-hidden"
+                  >
+                    <Link to="/business-advisory" className="block py-2 text-gray-700 font-medium pl-4">Overview</Link>
+                    {advisoryServices.map(s => (
+                      <Link key={s.id} to={`/business-advisory/${s.id}`} className="block py-2 text-gray-600 pl-6">— {s.title}</Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               <div className="h-px bg-platinum my-2"></div>
               <Link to="/people" className="block py-2.5 font-medium text-gray-700">People</Link>
               <Link to="/briefs" className="block py-2.5 font-medium text-gray-700">Briefs</Link>

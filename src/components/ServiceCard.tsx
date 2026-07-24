@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Building2, Scale, ShieldCheck, ArrowRightLeft, Target, TrendingUp, Shield, Cpu } from 'lucide-react';
+import { ArrowRight, Building2, Scale, ShieldCheck, ArrowRightLeft, Target, TrendingUp, Shield, Cpu, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const iconMap: Record<string, React.ElementType> = {
-  Building2, Scale, ShieldCheck, ArrowRightLeft, Target, TrendingUp, Shield, Cpu,
+  Building2, Scale, ShieldCheck, ArrowRightLeft, Target, TrendingUp, Shield, Cpu, BookOpen,
 };
 
 interface ServiceCardProps {

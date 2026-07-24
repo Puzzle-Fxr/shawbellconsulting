@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
-import { briefs } from '../lib/data';
+import { briefs, legalServices, advisoryServices } from '../lib/data';
 
 export function LatestArticleCTA() {
   const latest = briefs[0];
@@ -53,10 +53,15 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-white mb-4">Legal Services</h4>
               <div className="space-y-2">
                 <Link to="/legal-services" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Overview</Link>
-                <Link to="/legal-services/corporate-law" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Corporate Law</Link>
-                <Link to="/legal-services/commercial-litigation" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Commercial Litigation</Link>
-                <Link to="/legal-services/regulatory-compliance" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Regulatory Compliance</Link>
-                <Link to="/legal-services/mergers-acquisitions" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Mergers & Acquisitions</Link>
+                {legalServices.map(service => (
+                  <Link
+                    key={service.id}
+                    to={`/legal-services/${service.id}`}
+                    className="block text-sm text-gray-400 hover:text-ocean transition-colors"
+                  >
+                    {service.title}
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -65,10 +70,15 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-white mb-4">Business Advisory</h4>
               <div className="space-y-2">
                 <Link to="/business-advisory" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Overview</Link>
-                <Link to="/business-advisory/strategy-consulting" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Strategy Consulting</Link>
-                <Link to="/business-advisory/financial-advisory" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Financial Advisory</Link>
-                <Link to="/business-advisory/risk-management" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Risk Management</Link>
-                <Link to="/business-advisory/digital-transformation" className="block text-sm text-gray-400 hover:text-ocean transition-colors">Digital Transformation</Link>
+                {advisoryServices.map(service => (
+                  <Link
+                    key={service.id}
+                    to={`/business-advisory/${service.id}`}
+                    className="block text-sm text-gray-400 hover:text-ocean transition-colors"
+                  >
+                    {service.title}
+                  </Link>
+                ))}
               </div>
             </div>
 

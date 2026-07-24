@@ -1,10 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, ArrowRightLeft, Building2, Scale, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ArrowRightLeft, Building2, Scale, ShieldCheck, BookOpen } from 'lucide-react';
 import { legalServices } from '../lib/data';
 import PageHero from '../components/PageHero';
 
-const iconMap: Record<string, React.ElementType> = { Building2, Scale, ShieldCheck, ArrowRightLeft };
+const iconMap: Record<string, React.ElementType> = { Building2, Scale, ShieldCheck, ArrowRightLeft, BookOpen };
 
 export default function LegalServiceDetail() {
   const { id } = useParams();
