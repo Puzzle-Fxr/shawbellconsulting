@@ -78,6 +78,20 @@ p {
   to { opacity: 0; transform: translateY(-8px); }
 }
 
+/* Partners marquee */
+.partner-marquee {
+  animation: partner-marquee 28s linear infinite;
+}
+
+.partner-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes partner-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.5rem)); }
+}
+
 /* Page transition */
 .page-enter {
   animation: pageIn 0.4s ease-out forwards;

@@ -6,6 +6,7 @@ import { briefs, people, partners, accolades } from '../lib/data';
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
   const latestArticle = briefs[0];
+  const marqueePartners = [...partners, ...partners];
 
   const serviceGroups = [
     {
@@ -143,25 +144,41 @@ export default function Home() {
       </section>
 
       {/* Partners Strip */}
-      <section className="bg-white border-b border-platinum py-10">
+      <section className="bg-gradient-to-b from-white to-platinum/40 border-b border-platinum py-14 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
-              <p className="font-heading font-medium text-xs uppercase tracking-wider text-gray-400 mb-3">Trusted Partners</p>
-              <div className="flex flex-wrap items-center gap-6">
-                {partners.map((p, i) => (
-                  <div key={i} className="bg-platinum/50 rounded-lg px-4 py-2 text-sm font-heading font-medium text-gray-500">
-                    {p}
-                  </div>
-                ))}
-              </div>
+              <p className="font-heading font-medium text-xs uppercase tracking-[0.28em] text-ocean mb-3">Trusted Partners</p>
+              <h2 className="font-heading font-bold text-2xl md:text-3xl text-steel leading-tight">
+                Strategic collaborations that move business forward
+              </h2>
             </div>
             <Link
               to="/contact"
-              className="flex items-center gap-2 text-steel font-heading font-semibold text-sm hover:text-ocean transition-colors"
+              className="inline-flex items-center gap-2 text-steel font-heading font-semibold text-sm hover:text-ocean transition-colors"
             >
               View All Partners <ChevronRight className="w-4 h-4" />
             </Link>
+          </div>
+
+          <div className="relative overflow-hidden rounded-2xl border border-platinum bg-white/80 py-3">
+            <div className="partner-marquee flex w-max items-center gap-6">
+              {marqueePartners.map((p, i) => (
+                <div
+                  key={`${p}-${i}`}
+                  className="shrink-0 w-[220px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
+                >
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3">
+                    <span className="text-xs font-heading font-bold uppercase tracking-[0.24em] text-gray-400">
+                      Logo
+                    </span>
+                  </div>
+                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
+                    {p}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
