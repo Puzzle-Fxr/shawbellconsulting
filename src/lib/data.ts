@@ -291,6 +291,13 @@ export const people = [
     role: 'Managing Consultant & Founder',
     bio: 'Listed as a leading legal practitioner in the International Who\'s Who of Corporate and Energy Lawyers. Services have been delivered to clients ranked on the Fortune 500 and Forbes Global 2000, plus the World\'s Largest Retailer (Amazon.com), and the firm is a member of the Business Council for Africa.',
     specialties: ['Corporate Law', 'M&A Strategy', 'Regulatory Compliance', 'Board Advisory'],
+    focusAreas: ['Corporate governance', 'Strategic transactions', 'Private-sector advisory'],
+    experience: '25+ years guiding multinational and regional clients across legal, regulatory, and business strategy matters.',
+    details: [
+      'Leads strategic advisory across legal, governance, and enterprise risk priorities.',
+      'Known for translating complex regulatory realities into practical client outcomes.',
+      'Serves as a trusted advisor to organizations operating in highly regulated sectors.',
+    ],
     isFounder: true,
   },
   {
@@ -299,6 +306,13 @@ export const people = [
     role: 'Senior Legal Consultant',
     bio: 'Elena Vasquez specializes in commercial litigation and regulatory compliance, with a distinguished career representing major corporations in complex disputes. Her strategic approach to litigation consistently delivers favorable outcomes while minimizing business disruption.',
     specialties: ['Commercial Litigation', 'Regulatory Compliance', 'Arbitration'],
+    focusAreas: ['Dispute resolution', 'Regulatory risk', 'Cross-border compliance'],
+    experience: '15+ years in complex commercial disputes, regulatory investigation support, and sensitive negotiations.',
+    details: [
+      'Advises clients on high-stakes dispute prevention and enforcement strategy.',
+      'Brings a calm, risk-aware approach to regulatory and commercial conflict management.',
+      'Supports clients through litigation preparedness, negotiation, and resolution planning.',
+    ],
   },
   {
     id: 'james-okonkwo',
@@ -306,6 +320,13 @@ export const people = [
     role: 'Senior Business Advisor',
     bio: 'James Okonkwo brings extensive experience in financial advisory and risk management, having guided organizations through complex restructuring, capital optimization, and enterprise risk implementations across multiple industries.',
     specialties: ['Financial Advisory', 'Risk Management', 'Corporate Restructuring'],
+    focusAreas: ['Restructuring', 'Enterprise risk', 'Performance improvement'],
+    experience: '18+ years helping organizations stabilize operations, optimize capital, and navigate transformation initiatives.',
+    details: [
+      'Leads strategic reviews that align financial restructuring with long-term business resilience.',
+      'Works closely with leadership teams on operational continuity and risk mitigation.',
+      'Supports performance-focused initiatives across regulated and growth-oriented sectors.',
+    ],
   },
   {
     id: 'sarah-chen',
@@ -313,16 +334,37 @@ export const people = [
     role: 'Digital Strategy Lead',
     bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      'Connects digital innovation with business process redesign and leadership alignment.',
+      'Guides organizations through practical transformation roadmaps and change adoption.',
+      'Helps teams move from technology ambition to sustainable delivery and results.',
+    ],
   },
 ];
 
 export const partners = [
-  'Meridian Capital Group',
-  'Atlas Regulatory Associates',
-  'Pinnacle Strategic Partners',
-  'Vanguard Compliance Solutions',
-  'Summit Financial Advisory',
-  'Horizon Legal Network',
+  'SIC Financial Services Limited',
+  'Bui Power Authority ',
+  'Cocoa Marketing Company',
+  'Ghana Cocoa Board (Cocobod)',
+  'Ghana Export Promotion Authority',
+  'Ghana Revenue Authority',
+  'Ghana Tourism Development Company Ltd',
+  'Komfo- Anokye Teaching Hospital',
+  'National Pensions Regulatory Authority',
+  'Youth Employment Agency',
+  'Ghana Airports Company Limited',
+  'Ghana Highway Authority',
+  'Ghana Meteorological Agency',
+  'New Times Corporation',
+  'Data Protection Commission',
+  'State Housing Company',
+  'Graphic Communications Group',
+  'Middle Belt Development Authority',
+  'National Sports Authority',
+  'Postal And Courier Services Regulatory Commission',
 ];
 
 export const accolades = [

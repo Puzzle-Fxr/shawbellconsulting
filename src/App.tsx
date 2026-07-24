@@ -11,6 +11,7 @@ import Briefs from './pages/Briefs';
 import ArticleDetail from './pages/ArticleDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Partners from './pages/Partners';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/briefs" element={<Briefs />} />
             <Route path="/briefs/:id" element={<ArticleDetail />} />
             <Route path="/about" element={<About />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

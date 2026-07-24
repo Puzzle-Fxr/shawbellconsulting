@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import { people } from '../lib/data';
 
 export default function People() {
+  const [selectedPerson, setSelectedPerson] = useState<(typeof people)[number] | null>(null);
+
   return (
     <div className="page-enter">
       <PageHero
@@ -43,7 +46,7 @@ export default function People() {
                     Founder & Managing Consultant
                   </div>
                   <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel mb-6">{founder.name}</h2>
-                  <p className="text-gray-600 leading-relaxed mb-6">{founder.bio}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6">{founder.bio}<br />{founder.details}</p>
                   <div className="flex flex-wrap gap-2 mb-8">
                     {founder.specialties.map(s => (
                       <span key={s} className="bg-steel/10 text-steel font-heading font-medium text-xs px-3 py-1.5 rounded-full">
@@ -66,13 +69,15 @@ export default function People() {
           <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {people.filter(p => !p.isFounder).map((person, i) => (
-              <motion.div
+              <motion.button
                 key={person.id}
+                type="button"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30"
+                onClick={() => setSelectedPerson(person)}
+                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="font-heading font-bold text-xl text-steel">
@@ -89,11 +94,94 @@ export default function People() {
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </motion.button>
             ))}
           </div>
         </div>
       </section>
+
+      <AnimatePresence>
+        {selectedPerson && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-slate-950/55 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedPerson(null)}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+              className="w-full max-w-2xl rounded-3xl bg-white border border-platinum shadow-2xl overflow-hidden"
+              onClick={e => e.stopPropagation()}
+            >
+              <div className="flex items-start justify-between gap-4 p-6 border-b border-platinum">
+                <div>
+                  <p className="font-heading font-medium text-xs uppercase tracking-[0.28em] text-ocean mb-2">Team Profile</p>
+                  <h3 className="font-heading font-bold text-2xl text-steel">{selectedPerson.name}</h3>
+                  <p className="text-ocean font-heading font-medium text-sm mt-1">{selectedPerson.role}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setSelectedPerson(null)}
+                  className="w-10 h-10 rounded-full bg-platinum hover:bg-ocean/20 text-steel flex items-center justify-center"
+                  aria-label="Close profile details"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              <div className="p-6 space-y-6">
+                <div className="grid md:grid-cols-[140px_1fr] gap-4 items-start">
+                  <div className="w-24 h-24 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
+                    <span className="font-heading font-bold text-2xl text-steel">
+                      {selectedPerson.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-gray-600 leading-relaxed mb-4">{selectedPerson.bio}</p>
+                    <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
+                      <div className="bg-platinum/50 rounded-xl p-3">
+                        <p className="font-heading font-semibold text-steel mb-1">Experience</p>
+                        <p>{selectedPerson.experience}</p>
+                      </div>
+                      <div className="bg-platinum/50 rounded-xl p-3">
+                        <p className="font-heading font-semibold text-steel mb-1">Focus Areas</p>
+                        <p>{selectedPerson.focusAreas.join(', ')}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Specialties</p>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedPerson.specialties.map(s => (
+                      <span key={s} className="bg-steel/10 text-steel font-heading font-medium text-xs px-3 py-1.5 rounded-full">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Highlights</p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    {selectedPerson.details.map(detail => (
+                      <li key={detail} className="flex items-start gap-2">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-pumpkin shrink-0"></span>
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Join CTA */}
       <section className="bg-gradient-to-r from-steel to-steel-dark py-16">

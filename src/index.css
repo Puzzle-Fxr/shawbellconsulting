@@ -80,7 +80,7 @@ p {
 
 /* Partners marquee */
 .partner-marquee {
-  animation: partner-marquee 28s linear infinite;
+  animation: partner-marquee 40s linear infinite;
 }
 
 .partner-marquee:hover {

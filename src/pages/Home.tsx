@@ -154,7 +154,7 @@ export default function Home() {
               </h2>
             </div>
             <Link
-              to="/contact"
+              to="/partners"
               className="inline-flex items-center gap-2 text-steel font-heading font-semibold text-sm hover:text-ocean transition-colors"
             >
               View All Partners <ChevronRight className="w-4 h-4" />
