@@ -369,9 +369,9 @@ export default function Home() {
                 </div>
                 <div className="text-center z-10">
                   <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
-                    <span className="font-heading font-bold text-3xl text-white">MS</span>
+                    <span className="font-heading font-bold text-3xl text-white">PC</span>
                   </div>
-                  <p className="font-heading font-semibold text-white text-lg">Dr. Marcus Shawbell</p>
+                  <p className="font-heading font-semibold text-white text-lg">Phyllis M. Christian</p>
                   <p className="text-ocean-light text-sm">Managing Consultant</p>
                 </div>
               </div>
