@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, Mail } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
-import { legalServices, advisoryServices, articles, people, partners, accolades } from '../lib/data';
+import { legalServices, advisoryServices, briefs, people, partners, accolades } from '../lib/data';
 
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
-  const latestArticle = articles[0];
+  const latestArticle = briefs[0];
 
   return (
     <div className="page-enter">

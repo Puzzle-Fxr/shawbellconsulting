@@ -125,7 +125,7 @@ export default function Navbar() {
             </div>
 
             <Link to="/people" className={navLinkClass('/people')}>People</Link>
-            <Link to="/articles" className={navLinkClass('/articles')}>Articles</Link>
+            <Link to="/briefs" className={navLinkClass('/briefs')}>Briefs</Link>
             <Link to="/about" className={navLinkClass('/about')}>About Us</Link>
 
             {/* Get in Touch */}
@@ -166,7 +166,7 @@ export default function Navbar() {
               ))}
               <div className="h-px bg-platinum my-2"></div>
               <Link to="/people" className="block py-2.5 font-medium text-gray-700">People</Link>
-              <Link to="/articles" className="block py-2.5 font-medium text-gray-700">Articles</Link>
+              <Link to="/briefs" className="block py-2.5 font-medium text-gray-700">Briefs</Link>
               <Link to="/about" className="block py-2.5 font-medium text-gray-700">About Us</Link>
               <Link to="/contact" className="block py-2.5 font-semibold text-pumpkin">Get in Touch</Link>
             </div>
