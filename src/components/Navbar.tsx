@@ -174,7 +174,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-platinum overflow-hidden"
+            className="lg:hidden bg-white border-t border-platinum max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain"
           >
             <div className="px-6 py-4 space-y-1">
               <button
