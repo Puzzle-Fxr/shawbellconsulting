@@ -49,11 +49,11 @@ export default function About() {
               <h3 className="font-heading font-bold text-xl text-steel mb-6">Key Milestones</h3>
               <div className="space-y-6">
                 {[
-                  { year: '1999', event: 'Firm established in London' },
-                  { year: '2005', event: 'Business Advisory practice launched' },
-                  { year: '2012', event: 'International offices in Dubai & Singapore' },
-                  { year: '2018', event: 'Top 50 Global Consulting Firm recognition' },
-                  { year: '2024', event: '30+ jurisdictions, integrated advisory leader' },
+                  { year: '2002', event: 'Founded by Phyllis Maria Christian in Ghana as a hybrid legal and management consultancy.' },
+                    { year: '2002', event: 'Selected as the Local Manager for Amazon.com in Ghana.' },
+                    { year: '2009', event: 'Established the Ghana Institute of Consulting to support national capacity building.' },
+                    { year: '2012', event: 'Concluded its 10-year run managing operations for Amazon.com in Ghana.' },
+                    { year: 'Present', event: 'Operates via The Law Practice, The Consultancy Practice, and the GIC.' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <span className="font-heading font-bold text-ocean w-12 text-right">{item.year}</span>
