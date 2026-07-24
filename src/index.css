@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-steel: #064789;
+  --color-ocean: #6699cc;
+  --color-silver: #363635;
+  --color-platinum: #f2f2f2;
+  --color-pumpkin: #ffa21f;
+  --color-steel-dark: #042f57;
+  --color-steel-light: #3a77b0;
+  --color-ocean-light: #8eb2d8;
+  --color-pumpkin-dark: #cc7d15;
+  --color-pumpkin-light: #ffb457;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #363635;
+  background: #f2f2f2;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+p {
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: #6699cc;
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #6699cc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #064789;
+}
+
+/* Dropdown animation */
+.dropdown-enter {
+  animation: dropdownIn 0.2s ease-out forwards;
+}
+.dropdown-exit {
+  animation: dropdownOut 0.15s ease-in forwards;
+}
+
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes dropdownOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+
+/* Page transition */
+.page-enter {
+  animation: pageIn 0.4s ease-out forwards;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Book watermark motif */
+.book-watermark {
+  position: relative;
+}
+.book-watermark::after {
+  content: '⚖';
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  font-size: 120px;
+  opacity: 0.04;
+  color: #064789;
+  pointer-events: none;
+}
+
+/* Link underline animation */
+.link-hover {
+  position: relative;
+  display: inline-block;
+}
+.link-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #6699cc;
+  transition: width 0.3s ease;
+}
+.link-hover:hover::after {
+  width: 100%;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(6, 71, 137, 0.12);
+}

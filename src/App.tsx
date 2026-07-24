@@ -1,0 +1,38 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import LegalServices from './pages/LegalServices';
+import LegalServiceDetail from './pages/LegalServiceDetail';
+import BusinessAdvisory from './pages/BusinessAdvisory';
+import BusinessAdvisoryDetail from './pages/BusinessAdvisoryDetail';
+import People from './pages/People';
+import Articles from './pages/Articles';
+import ArticleDetail from './pages/ArticleDetail';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/legal-services" element={<LegalServices />} />
+            <Route path="/legal-services/:id" element={<LegalServiceDetail />} />
+            <Route path="/business-advisory" element={<BusinessAdvisory />} />
+            <Route path="/business-advisory/:id" element={<BusinessAdvisoryDetail />} />
+            <Route path="/people" element={<People />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles/:id" element={<ArticleDetail />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
+}
