@@ -104,7 +104,7 @@ export default function Home() {
         <div className="absolute bottom-20 right-40 w-32 h-32 bg-pumpkin/15 rounded-full blur-3xl"></div>
         <div className="absolute top-20 left-40 w-48 h-48 bg-ocean/10 rounded-full blur-3xl"></div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
+        <div className="max-w-8xl mx-auto px-6 lg:px-8 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -112,11 +112,13 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-ocean-light font-heading font-medium text-sm uppercase tracking-wider mb-4">
-                Legal Excellence & Strategic Insight
+                ♕ Legal Excellence & Strategic Insight Since 2002 ♕
               </p>
               <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
-                Where Law Meets
-                <span className="text-pumpkin"> Strategy</span>
+                Boutique <span className="text-pumpkin">expertise</span>,
+              </h1>
+              <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
+                <span className="text-pumpkin">Unique</span> insight
               </h1>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
                 ShawbellConsulting bridges the gap between legal expertise and business advisory, delivering integrated counsel that drives results.
