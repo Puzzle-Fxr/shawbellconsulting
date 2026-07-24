@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Send, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Send, ArrowRight, AtSign } from 'lucide-react';
 import PageHero from '../components/PageHero';
 
 export default function Contact() {
@@ -30,27 +30,30 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-heading font-bold text-3xl text-steel mb-6">Our Offices</h2>
+              <h2 className="font-heading font-bold text-3xl text-steel mb-6">We are Here to Help</h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                With offices in London, Dubai, and Singapore, we provide integrated advisory services across multiple jurisdictions. Reach out to the office nearest you, or submit your inquiry below.
+                Whether you require legal representation, strategic business advice, or integrated counsel, our team is ready to assist. Reach out to schedule a consultation.
               </p>
 
               <div className="space-y-6 mb-8">
-                {[
-                  { icon: MapPin, title: 'London (Headquarters)', detail: '1250 Harbour Ave, Suite 400\nLondon EC2R 8AH, United Kingdom' },
-                  { icon: MapPin, title: 'Dubai', detail: 'Dubai International Financial Centre\nGate Village, Building 5, Level 3' },
-                  { icon: MapPin, title: 'Singapore', detail: 'One Raffles Place, Tower 2\nLevel 30, Singapore 048616' },
-                ].map((office, i) => (
-                  <div key={i} className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-steel/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <office.icon className="w-5 h-5 text-steel" />
-                    </div>
-                    <div>
-                      <p className="font-heading font-semibold text-steel">{office.title}</p>
-                      <p className="text-gray-500 text-sm whitespace-pre-line">{office.detail}</p>
-                    </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-steel/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-steel" />
                   </div>
-                ))}
+                  <div>
+                    <h3 className="font-heading font-medium text-steel pb-2">Our Office</h3>
+                    <p className="text-gray-500 text-sm">No. 7 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-steel/10 rounded-lg flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-steel" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-medium text-steel pb-2">Mailing Address</h3>
+                    <p className="text-gray-500 text-sm">DTD 76, Cantonments Post Office, Accra, GHANA <br />Or<br />P.O. Box KIA9022, Airport, Accra</p>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -59,15 +62,15 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">+44 (0) 20 7123 4567</p>
+                    <p className="font-heading font-medium text-steel">+233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)27 5724540 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-steel/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-steel" />
+                    <AtSign className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">info@shawbellconsulting.com</p>
+                    <p className="font-heading font-medium text-steel">pchristian@shawbellghana.com</p>
                   </div>
                 </div>
               </div>
@@ -75,14 +78,14 @@ export default function Contact() {
               {/* Map */}
               <div className="mt-8 bg-white rounded-2xl border border-platinum shadow-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5!2d-0.08!3d51.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsMwrMzAnNDAuOCJO!5e0!3m2!1sen!2suk!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.5092424452691!2d-0.17662286119857806!3d5.56427739860406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a9cffef610b%3A0x8d188c78ae9001b0!2sShawbellConsulting!5e0!3m2!1sen!2sgh!4v1784898281494!5m2!1sen!2sgh"
                   width="100%"
                   height="250"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="London Office"
+                  title="Accra Office"
                 />
               </div>
             </motion.div>

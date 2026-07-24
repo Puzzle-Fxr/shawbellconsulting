@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, Mail } from 'lucide-react';
+import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, AtSign } from 'lucide-react';
 import { briefs, people, partners, accolades } from '../lib/data';
 
 export default function Home() {
@@ -438,8 +438,8 @@ export default function Home() {
                     <MapPin className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">London Office</p>
-                    <p className="text-gray-500 text-sm">1250 Harbour Ave, Suite 400, EC2R 8AH</p>
+                    <p className="font-heading font-medium text-steel">Our Office</p>
+                    <p className="text-gray-500 text-sm">No. 7 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -448,16 +448,16 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-heading font-medium text-steel">Call Us</p>
-                    <p className="text-gray-500 text-sm">+44 (0) 20 7123 4567</p>
+                    <p className="text-gray-500 text-sm">+233 (0)302 774 112 <br />+233 (0)302 767 498</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-steel/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-steel" />
+                    <AtSign className="w-5 h-5 text-steel" />
                   </div>
                   <div>
                     <p className="font-heading font-medium text-steel">Email</p>
-                    <p className="text-gray-500 text-sm">info@shawbellconsulting.com</p>
+                    <p className="text-gray-500 text-sm">pchristian@shawbellghana.com</p>
                   </div>
                 </div>
               </div>
@@ -478,7 +478,7 @@ export default function Home() {
             >
               <div className="bg-white rounded-2xl border border-platinum shadow-lg overflow-hidden h-full min-h-[300px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5!2d-0.08!3d51.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsMwrMzAnNDAuOCJO!5e0!3m2!1sen!2suk!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.5092424452691!2d-0.17662286119857806!3d5.56427739860406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a9cffef610b%3A0x8d188c78ae9001b0!2sShawbellConsulting!5e0!3m2!1sen!2sgh!4v1784898281494!5m2!1sen!2sgh"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: '300px' }}

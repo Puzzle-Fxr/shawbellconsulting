@@ -286,10 +286,10 @@ export const briefs = [
 
 export const people = [
   {
-    id: 'marcus-shawbell',
-    name: 'Dr. Marcus Shawbell',
+    id: 'phyllis-christian ',
+    name: 'Phyllis M. Christian',
     role: 'Managing Consultant & Founder',
-    bio: 'With over 25 years of experience spanning legal practice and business advisory, Dr. Marcus Shawbell founded ShawbellConsulting to bridge the gap between legal expertise and strategic business counsel. A former partner at a leading international law firm and strategic advisor to Fortune 500 companies, he brings unmatched depth to every engagement.',
+    bio: 'Listed as a leading legal practitioner in the International Who\'s Who of Corporate and Energy Lawyers. Services have been delivered to clients ranked on the Fortune 500 and Forbes Global 2000, plus the World\'s Largest Retailer (Amazon.com), and the firm is a member of the Business Council for Africa.',
     specialties: ['Corporate Law', 'M&A Strategy', 'Regulatory Compliance', 'Board Advisory'],
     isFounder: true,
   },
