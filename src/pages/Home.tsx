@@ -253,7 +253,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.35, delay: i * 0.06 }}
-                  className="bg-platinum/40 rounded-2xl border border-platinum p-6 h-full"
+                  className={`bg-platinum/40 rounded-2xl border border-platinum p-6 h-full ${i === 0 ? 'lg:col-span-2 xl:col-span-3' : ''}`}
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-steel to-ocean rounded-lg flex items-center justify-center">
@@ -261,7 +261,7 @@ export default function Home() {
                     </div>
                     <h3 className="font-heading font-bold text-lg text-steel">{group.title}</h3>
                   </div>
-                  <ul className="space-y-2 text-sm text-gray-600">
+                  <ul className={i === 0 ? 'grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-600' : 'space-y-2 text-sm text-gray-600'}>
                     {group.items.map(item => (
                       <li key={item} className="flex items-start gap-2">
                         <span className="mt-1.5 w-2 h-2 bg-pumpkin rounded-full shrink-0"></span>
