@@ -44,9 +44,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-steel rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <span className="text-white font-heading font-bold text-lg">S</span>
-            </div>
+            <img
+              src="/favicon.png"
+              alt="Shawbell Consulting logo"
+              className="w-10 h-10 rounded-full group-hover:scale-105 transition-transform duration-200"
+            />
             <div className="flex flex-col">
               <span className="font-heading font-bold text-xl text-steel tracking-tight">Shawbell<span className="font-heading font-medium text-xl text-pumpkin -mt-0.5 tracking-wider">Consulting</span></span>
             </div>
