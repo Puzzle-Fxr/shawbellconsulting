@@ -25,14 +25,14 @@ export default function About() {
             >
               <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">Our Journey</p>
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-6">
-                From Boutique Practice to
-                <span className="text-pumpkin"> Global Advisory</span>
+                ShawbellConsulting - an award-winning 
+                <span className="text-pumpkin"> boutique </span>Consulting firm in Ghana
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                When Dr. Marcus Shawbell founded the firm in 1999, he envisioned a practice that would transcend the traditional boundaries between legal counsel and business advisory. That vision has guided our growth from a single-office London practice to a multi-jurisdiction advisory firm serving clients across the globe.
+                ShawbellConsulting was established in Ghana in 2002 as a hybrid firm combining legal and management consultancy services. It was founded by Phyllis Maria Christian, who — after 13 years at Price Waterhouse Associates and its successor firm Ernst & Young in Ghana — set out to build a firm delivering superior professional standards locally. In 2009, the firm established the Ghana Institute of Consulting (GIC) to support capacity building and business performance nationally.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Over 25 years, we have expanded our capabilities, our geographic reach, and our client base—while remaining true to the founding principle that the best counsel comes from understanding both the legal and business dimensions of every challenge.
+                Over more than two decades, the firm has built deep experience across government, multinationals, development partners, and the local private sector — including a 10-year run as Local Manager for Amazon.com in Ghana (2002–2012) and representation of global players like Transocean and a consortium of five global petroleum corporations. Today the firm comprises three entities: The Law Practice, The Consultancy Practice, and the GIC, staffed by permanent professionals across law, finance, economics, IT, and social development.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Today, ShawbellConsulting is recognized as a leading integrated advisory firm, trusted by Fortune 500 corporations, financial institutions, and government agencies across 30+ jurisdictions.
@@ -107,7 +107,7 @@ export default function About() {
             <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean-light mb-4">Recognition</p>
             <h2 className="font-heading font-bold text-3xl text-white">Industry Recognition</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {accolades.map((a, i) => (
               <motion.div
                 key={i}
