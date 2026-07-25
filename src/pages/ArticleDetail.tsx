@@ -4,10 +4,19 @@ import { ArrowRight, Clock, User, ChevronLeft } from 'lucide-react';
 import { briefs } from '../lib/data';
 import PageHero from '../components/PageHero';
 
+type ArticleSection = {
+  heading: string;
+  body: string;
+  imageUrl?: string;  // Matches path inside public/ (e.g. '/images/articles/img.jpg')
+  imageAlt?: string;
+};
+
 type ArticleContent = {
   title: string;
   summary: string;
-  sections: Array<{ heading: string; body: string }>;
+  bannerUrl?: string; // Optional main top banner
+  bannerAlt?: string;
+  sections: ArticleSection[];
 };
 
 const articleModules: Record<string, () => Promise<{ default: ArticleContent }>> = {
@@ -97,6 +106,16 @@ export default function ArticleDetail() {
             </div>
           ) : (
             <div className="prose prose-lg max-w-none">
+              {articleContent?.bannerUrl && (
+                <div className="mb-8 overflow-hidden rounded-xl border border-platinum">
+                  <img 
+                    src={articleContent.bannerUrl} 
+                    alt={articleContent.bannerAlt || ''} 
+                    className="w-full h-auto object-cover max-h-[400px]"
+                  />
+                </div>
+              )}
+
               <p className="text-gray-600 leading-relaxed mb-6 text-lg">
                 {articleContent?.summary ?? brief.excerpt}
               </p>
@@ -105,6 +124,17 @@ export default function ArticleDetail() {
                 <div key={section.heading}>
                   <h3 className="font-heading font-bold text-xl text-steel mb-4">{section.heading}</h3>
                   <p className="text-gray-600 leading-relaxed mb-6">{section.body}</p>
+
+                  {section.imageUrl && (
+                    <div className="my-6 overflow-hidden rounded-lg border border-platinum/60">
+                      <img 
+                        src={section.imageUrl} 
+                        alt={section.imageAlt || ''} 
+                        loading="lazy" // Ensures asset is only downloaded when scrolled into viewport
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
