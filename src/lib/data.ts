@@ -252,7 +252,7 @@ export const publications = [
     excerpt: 'The Iran Situation has regressed into a Zero Tolerance military standoff. As of Thursday, April 23, 2026, energy markets are directly reacting to the reported escalation in the naval rules of engagement.',
     category: 'Research Brief',
     date: 'April 23, 2026',
-    author: 'Karsten Avogo',
+    author: 'Karsten Avogo, ShawbellConsulting',
     readTime: '5 min read',
   },
 ];
