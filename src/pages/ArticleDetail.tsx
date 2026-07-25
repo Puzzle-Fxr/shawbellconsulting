@@ -1,11 +1,65 @@
+import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Clock, User, ChevronLeft } from 'lucide-react';
 import { briefs } from '../lib/data';
 import PageHero from '../components/PageHero';
 
+type ArticleContent = {
+  title: string;
+  summary: string;
+  sections: Array<{ heading: string; body: string }>;
+};
+
+const articleModules: Record<string, () => Promise<{ default: ArticleContent }>> = {
+  'navigating-regulatory-change': () => import('../assets/articles/navigating-regulatory-change'),
+  'strategic-ma-considerations': () => import('../assets/articles/strategic-ma-considerations'),
+  'digital-transformation-governance': () => import('../assets/articles/digital-transformation-governance'),
+  'corporate-compliance-best-practices': () => import('../assets/articles/corporate-compliance-best-practices'),
+  'risk-management-frameworks': () => import('../assets/articles/risk-management-frameworks'),
+};
+
 export default function ArticleDetail() {
-  const { id } = useParams();
-  const brief = briefs.find(a => a.id === id);
+  const { id: slug } = useParams();
+  const brief = briefs.find((article) => article.id === slug);
+  const [articleContent, setArticleContent] = useState<ArticleContent | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (!slug) {
+      setIsLoading(false);
+      setArticleContent(null);
+      return;
+    }
+
+    const loader = articleModules[slug];
+    if (!loader) {
+      setArticleContent(null);
+      setIsLoading(false);
+      return;
+    }
+
+    let isActive = true;
+    setIsLoading(true);
+    setArticleContent(null);
+
+    loader()
+      .then((module) => {
+        if (isActive) {
+          setArticleContent(module.default);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        if (isActive) {
+          setArticleContent(null);
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      isActive = false;
+    };
+  }, [slug]);
 
   if (!brief) {
     return (
@@ -21,7 +75,7 @@ export default function ArticleDetail() {
   return (
     <div className="page-enter">
       <PageHero
-        title={brief.title}
+        title={articleContent?.title ?? brief.title}
         subtitle={brief.category}
       />
 
@@ -37,33 +91,26 @@ export default function ArticleDetail() {
             <span>{brief.date}</span>
           </div>
 
-          {/* Brief body */}
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 leading-relaxed mb-6 text-lg">{brief.excerpt}</p>
-            
-            <h3 className="font-heading font-bold text-xl text-steel mb-4">The Current Landscape</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Organizations today face unprecedented complexity in navigating regulatory frameworks, market dynamics, and competitive pressures. The convergence of legal requirements and business strategy has created a new paradigm where integrated counsel is not merely advantageous—it is essential.
-            </p>
-            
-            <h3 className="font-heading font-bold text-xl text-steel mb-4">Key Considerations</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              First, organizations must adopt a proactive stance toward regulatory change, building compliance frameworks that anticipate rather than merely react to new requirements. Second, strategic decision-making must incorporate legal risk analysis as a fundamental input, not an afterthought. Third, cross-functional collaboration between legal and business teams is critical for achieving optimal outcomes.
-            </p>
-            
-            <h3 className="font-heading font-bold text-xl text-steel mb-4">Our Perspective</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              At ShawbellConsulting, we believe that the most effective counsel comes from understanding both the legal and business dimensions of every challenge. Our integrated approach ensures that our clients receive advice that is not only legally sound but strategically aligned with their broader objectives.
-            </p>
-            
-            <h3 className="font-heading font-bold text-xl text-steel mb-4">Looking Ahead</h3>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              As the regulatory and business environments continue to evolve, organizations that embrace integrated counsel will be best positioned to navigate complexity, seize opportunity, and achieve sustainable success. We remain committed to providing the strategic, integrated perspective our clients need to thrive.
-            </p>
-          </div>
+          {isLoading ? (
+            <div className="rounded-xl border border-platinum bg-platinum/20 p-8 text-center text-gray-600">
+              Loading article content...
+            </div>
+          ) : (
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-600 leading-relaxed mb-6 text-lg">
+                {articleContent?.summary ?? brief.excerpt}
+              </p>
 
-          {/* Back link */}
-          <div className="pt-8 border-t border-platinum">
+              {articleContent?.sections.map((section) => (
+                <div key={section.heading}>
+                  <h3 className="font-heading font-bold text-xl text-steel mb-4">{section.heading}</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">{section.body}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="pt-8 border-t border-platinum mt-8">
             <Link to="/briefs" className="inline-flex items-center gap-2 text-steel font-heading font-medium hover:text-ocean transition-colors">
               <ChevronLeft className="w-4 h-4" /> Back to All Briefs
             </Link>
@@ -71,7 +118,6 @@ export default function ArticleDetail() {
         </div>
       </section>
 
-      {/* Contact CTA */}
       <section className="bg-platinum/30 py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="font-heading font-bold text-2xl text-steel mb-4">Discuss This Topic With Our Team</h3>
