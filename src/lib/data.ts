@@ -238,12 +238,12 @@ export const advisoryServices = [
 
 export const publications = [
   {
-    id: 'navigating-regulatory-change',
-    title: 'Navigating Regulatory Change in the Financial Sector',
-    excerpt: 'As regulatory frameworks continue to evolve, financial institutions must adopt proactive compliance strategies. This publication examines emerging trends and offers practical guidance for staying ahead of regulatory shifts.',
-    category: 'Legal Services',
-    date: 'December 12, 2024',
-    author: 'Dr. Marcus Shawbell',
+    id: 'how-sunshine-can-come-from-rain',
+    title: 'How Sunshine Can Come From Rain',
+    excerpt: 'When a frustrated Ghanaian business executive was asked “how can sunshine come from rain?”, he glibly answered “when the rain stops”!',
+    category: 'Research Brief',
+    date: 'June 26, 2026',
+    author: 'Daniellina Essel, Esq. and Team, ShawbellConsulting',
     readTime: '8 min read',
   },
   {

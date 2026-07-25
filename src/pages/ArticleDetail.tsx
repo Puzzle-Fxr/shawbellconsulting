@@ -21,7 +21,7 @@ type ArticleContent = {
 };
 
 const articleModules: Record<string, () => Promise<{ default: ArticleContent }>> = {
-  'navigating-regulatory-change': () => import('../assets/articles/navigating-regulatory-change'),
+  'navigating-regulatory-change': () => import('../assets/articles/how-sunshine-can-come-from-rain'),
   'the-impact-of-the-current-iran-situation': () => import('../assets/articles/the-impact-of-the-current-iran-situation'),
 };
 

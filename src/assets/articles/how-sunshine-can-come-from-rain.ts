@@ -1,11 +1,16 @@
-type ArticleSection = {
+export type ArticleSection = {
   heading: string;
   body: string;
+  imageUrl?: string; // Optional: Image for this specific section
+  imageAlt?: string;  // Optional: Accessibility text for the section image
+  sources?: string[];
 };
 
 export interface ArticleContent {
   title: string;
   summary: string;
+  bannerUrl?: string; // Optional: Main image at the top of the article
+  bannerAlt?: string;  // Optional: Accessibility text for the banner
   sections: ArticleSection[];
 }
 
@@ -14,8 +19,11 @@ const content: ArticleContent = {
   summary: 'Regulatory transformation now sits at the center of strategic decision-making for financial institutions, demanding proactive governance and disciplined execution.',
   sections: [
     {
-      heading: 'The Current Landscape',
-      body: 'Financial institutions are operating in a period of rapid rulemaking, heightened supervision, and tighter expectations around transparency, accountability, and resilience. The most effective organizations are treating regulatory change as an enterprise priority rather than a compliance afterthought.',
+      heading: 'When a frustrated Ghanaian business executive was asked “how can sunshine come from rain?”, he glibly answered “when the rain stops”!',
+      body: "By considering the deluge as an asset to be captured, rather than an inevitable crisis of infrastructural deficits and commuter frustration to be survived, businesses can truly extract sunshine from rain by:\
+       Implementing value-adding business continuity arrangements\
+       Investing in integrated renewable energy systems, and also by\
+       Lawfully harvesting rainwater.",
     },
     {
       heading: 'Key Considerations',
