@@ -22,10 +22,7 @@ type ArticleContent = {
 
 const articleModules: Record<string, () => Promise<{ default: ArticleContent }>> = {
   'navigating-regulatory-change': () => import('../assets/articles/navigating-regulatory-change'),
-  'strategic-ma-considerations': () => import('../assets/articles/strategic-ma-considerations'),
-  'digital-transformation-governance': () => import('../assets/articles/digital-transformation-governance'),
-  'corporate-compliance-best-practices': () => import('../assets/articles/corporate-compliance-best-practices'),
-  'risk-management-frameworks': () => import('../assets/articles/risk-management-frameworks'),
+  'the-impact-of-the-current-iran-situation': () => import('../assets/articles/the-impact-of-the-current-iran-situation'),
 };
 
 export default function ArticleDetail() {
@@ -124,7 +121,7 @@ export default function ArticleDetail() {
               {articleContent?.sections.map((section) => (
                 <div key={section.heading}>
                   <h3 className="font-heading font-bold text-xl text-steel mb-4">{section.heading}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">{section.body}</p>
+                  <p className="body-text-container" dangerouslySetInnerHTML={{ __html: section.body }} />
 
                   {section.imageUrl && (
                     <div className="my-6 overflow-hidden rounded-lg border border-platinum/60">
