@@ -10,7 +10,7 @@ export default function About() {
       <PageHero
         title="About ShawbellConsulting"
         subtitle="Our Story & Values"
-        description="Founded in 1999, ShawbellConsulting has grown from a boutique legal practice into a premier integrated advisory firm, delivering both legal precision and strategic business insight to organizations worldwide."
+        description="Founded in 2002, ShawbellConsulting is a leading integrated advisory firm in Ghana, combining legal and management consultancy services. We are committed to delivering excellence, integrity, and client-centered solutions across diverse sectors."
       />
 
       {/* History */}
