@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Clock, User, ChevronLeft } from 'lucide-react';
-import { briefs } from '../lib/data';
+import { publications } from '../lib/data';
 import PageHero from '../components/PageHero';
 
 type ArticleSection = {
@@ -30,7 +30,7 @@ const articleModules: Record<string, () => Promise<{ default: ArticleContent }>>
 
 export default function ArticleDetail() {
   const { id: slug } = useParams();
-  const brief = briefs.find((article) => article.id === slug);
+  const publication = publications.find((article) => article.id === slug);
   const [articleContent, setArticleContent] = useState<ArticleContent | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,12 +71,12 @@ export default function ArticleDetail() {
     };
   }, [slug]);
 
-  if (!brief) {
+  if (!publication) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="text-center">
-          <h2 className="font-heading font-bold text-2xl text-steel mb-4">Brief Not Found</h2>
-          <Link to="/briefs" className="text-ocean font-heading font-medium">← Back to Briefs</Link>
+          <h2 className="font-heading font-bold text-2xl text-steel mb-4">Publication Not Found</h2>
+          <Link to="/publications" className="text-ocean font-heading font-medium">← Back to Publications</Link>
         </div>
       </div>
     );
@@ -85,20 +85,20 @@ export default function ArticleDetail() {
   return (
     <div className="page-enter">
       <PageHero
-        title={articleContent?.title ?? brief.title}
-        subtitle={brief.category}
+        title={articleContent?.title ?? publication.title}
+        subtitle={publication.category}
       />
 
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 text-sm text-gray-500 mb-8 pb-8 border-b border-platinum">
             <div className="flex items-center gap-1">
-              <User className="w-4 h-4" /> {brief.author}
+              <User className="w-4 h-4" /> {publication.author}
             </div>
             <div className="flex items-center gap-1">
-              <Clock className="w-4 h-4" /> {brief.readTime}
+              <Clock className="w-4 h-4" /> {publication.readTime}
             </div>
-            <span>{brief.date}</span>
+            <span>{publication.date}</span>
           </div>
 
           {isLoading ? (
@@ -118,7 +118,7 @@ export default function ArticleDetail() {
               )}
 
               <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-                {articleContent?.summary ?? brief.excerpt}
+                {articleContent?.summary ?? publication.excerpt}
               </p>
 
               {articleContent?.sections.map((section) => (
@@ -153,8 +153,8 @@ export default function ArticleDetail() {
           )}
 
           <div className="pt-8 border-t border-platinum mt-8">
-            <Link to="/briefs" className="inline-flex items-center gap-2 text-steel font-heading font-medium hover:text-ocean transition-colors">
-              <ChevronLeft className="w-4 h-4" /> Back to All Briefs
+            <Link to="/publications" className="inline-flex items-center gap-2 text-steel font-heading font-medium hover:text-ocean transition-colors">
+              <ChevronLeft className="w-4 h-4" /> Back to All Publications
             </Link>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function ArticleDetail() {
       <section className="bg-platinum/30 py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="font-heading font-bold text-2xl text-steel mb-4">Discuss This Topic With Our Team</h3>
-          <p className="text-gray-600 max-w-xl mx-auto mb-6">Our consultants can provide deeper insight and practical guidance on the issues discussed in this brief.</p>
+          <p className="text-gray-600 max-w-xl mx-auto mb-6">Our consultants can provide deeper insight and practical guidance on the issues discussed in this publication.</p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 bg-pumpkin hover:bg-pumpkin-dark text-white font-heading font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg"

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, AtSign } from 'lucide-react';
-import { briefs, people, partners, accolades } from '../lib/data';
+import { publications, people, partners, accolades } from '../lib/data';
 
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
-  const latestArticle = briefs[0];
+  const latestArticle = publications[0];
   const marqueePartners = [...partners, ...partners];
 
   const serviceGroups = [

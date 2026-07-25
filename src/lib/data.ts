@@ -236,11 +236,11 @@ export const advisoryServices = [
   },
 ];
 
-export const briefs = [
+export const publications = [
   {
     id: 'navigating-regulatory-change',
     title: 'Navigating Regulatory Change in the Financial Sector',
-    excerpt: 'As regulatory frameworks continue to evolve, financial institutions must adopt proactive compliance strategies. This brief examines emerging trends and offers practical guidance for staying ahead of regulatory shifts.',
+    excerpt: 'As regulatory frameworks continue to evolve, financial institutions must adopt proactive compliance strategies. This publication examines emerging trends and offers practical guidance for staying ahead of regulatory shifts.',
     category: 'Legal Services',
     date: 'December 12, 2024',
     author: 'Dr. Marcus Shawbell',
@@ -258,7 +258,7 @@ export const briefs = [
   {
     id: 'digital-transformation-governance',
     title: 'Governance Frameworks for Digital Transformation',
-    excerpt: 'Effective governance is the cornerstone of successful digital transformation. This brief explores how organizations can establish robust governance frameworks that balance innovation with risk management.',
+    excerpt: 'Effective governance is the cornerstone of successful digital transformation. This publication explores how organizations can establish robust governance frameworks that balance innovation with risk management.',
     category: 'Business Advisory',
     date: 'November 15, 2024',
     author: 'Dr. Marcus Shawbell',
@@ -276,7 +276,7 @@ export const briefs = [
   {
     id: 'risk-management-frameworks',
     title: 'Enterprise Risk Management: A Modern Framework',
-    excerpt: 'Traditional risk management approaches are insufficient for today\'s complex business environment. This brief presents a modern, integrated framework for enterprise-wide risk identification and mitigation.',
+    excerpt: 'Traditional risk management approaches are insufficient for today\'s complex business environment. This publication presents a modern, integrated framework for enterprise-wide risk identification and mitigation.',
     category: 'Business Advisory',
     date: 'October 18, 2024',
     author: 'Dr. Marcus Shawbell',

@@ -8,7 +8,7 @@ import LegalServiceDetail from './pages/LegalServiceDetail';
 import BusinessAdvisory from './pages/BusinessAdvisory';
 import BusinessAdvisoryDetail from './pages/BusinessAdvisoryDetail';
 import People from './pages/People';
-import Briefs from './pages/Briefs';
+import Publications from './pages/Publications';
 import ArticleDetail from './pages/ArticleDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -38,8 +38,8 @@ export default function App() {
             <Route path="/business-advisory" element={<BusinessAdvisory />} />
             <Route path="/business-advisory/:id" element={<BusinessAdvisoryDetail />} />
             <Route path="/people" element={<People />} />
-            <Route path="/briefs" element={<Briefs />} />
-            <Route path="/briefs/:id" element={<ArticleDetail />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/publications/:id" element={<ArticleDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/partners" element={<Partners />} />
             <Route path="/contact" element={<Contact />} />

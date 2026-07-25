@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
-import { briefs, legalServices, advisoryServices } from '../lib/data';
+import { publications, legalServices, advisoryServices } from '../lib/data';
 
 export function LatestArticleCTA() {
-  const latest = briefs[0];
+  const latest = publications[0];
   return (
     <section className="bg-gradient-to-r from-steel to-steel-dark py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-ocean-light font-heading font-medium text-sm uppercase tracking-wider mb-2">Latest Brief</p>
+            <p className="text-ocean-light font-heading font-medium text-sm uppercase tracking-wider mb-2">Latest Publication</p>
             <h3 className="font-heading font-bold text-2xl text-white mb-2">{latest.title}</h3>
             <p className="text-gray-300 text-sm max-w-xl">{latest.excerpt.slice(0, 120)}...</p>
           </div>
           <Link
-            to="/briefs"
+            to="/publications"
             className="flex items-center gap-2 bg-pumpkin hover:bg-pumpkin-light text-white font-heading font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg whitespace-nowrap"
           >
             Read More <ArrowRight className="w-4 h-4" />
@@ -106,7 +106,7 @@ export default function Footer() {
             <div className="flex items-center gap-6">
               <Link to="/about" className="text-sm text-gray-500 hover:text-ocean transition-colors">About</Link>
               <Link to="/people" className="text-sm text-gray-500 hover:text-ocean transition-colors">People</Link>
-              <Link to="/briefs" className="text-sm text-gray-500 hover:text-ocean transition-colors">Briefs</Link>
+              <Link to="/publications" className="text-sm text-gray-500 hover:text-ocean transition-colors">Publications</Link>
               <Link to="/contact" className="text-sm text-gray-500 hover:text-ocean transition-colors">Contact</Link>
             </div>
           </div>

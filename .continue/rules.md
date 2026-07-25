@@ -17,7 +17,7 @@
 - Reuse the existing layout pattern (`Navbar`, `main`, `Footer`) instead of creating a new wrapper.
 
 ## Content and data conventions
-- Prefer updating or extending the exported arrays in `src/lib/data.ts` for service, brief, person, and partner content rather than hard-coding page-local content.
+- Prefer updating or extending the exported arrays in `src/lib/data.ts` for service, publication, person, and partner content rather than hard-coding page-local content.
 - Keep content deterministic and easy to maintain; avoid duplicating the same text across multiple files.
 
 ## Code style
