@@ -9,6 +9,7 @@ type ArticleSection = {
   body: string;
   imageUrl?: string;  // Matches path inside public/ (e.g. '/images/articles/img.jpg')
   imageAlt?: string;
+  sources?: string[]; // Optional: List of sources for this section
 };
 
 type ArticleContent = {
@@ -133,6 +134,17 @@ export default function ArticleDetail() {
                         loading="lazy" // Ensures asset is only downloaded when scrolled into viewport
                         className="w-full h-auto object-cover"
                       />
+                    </div>
+                  )}
+
+                  {section.sources && section.sources.length > 0 && (
+                    <div className="mt-4 mb-6 text-sm text-gray-500">
+                      <strong>Sources:</strong>
+                      <ul className="list-disc list-inside">
+                        {section.sources.map((source, index) => (
+                          <li key={index}>{source}</li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

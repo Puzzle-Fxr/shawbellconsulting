@@ -3,6 +3,7 @@ export type ArticleSection = {
   body: string;
   imageUrl?: string; // Optional: Image for this specific section
   imageAlt?: string;  // Optional: Accessibility text for the section image
+  sources?: string[];
 };
 
 export interface ArticleContent {
@@ -23,16 +24,25 @@ const content: ArticleContent = {
       heading: 'From Reactive to Proactive',
       body: 'Organizations can no longer rely on annual reviews...',
       // No image for this section
+      // no sources for this section
     },
     {
       heading: 'What Strong Programs Include',
       body: 'Strong compliance frameworks define policies...',
       imageUrl: '/images/articles/compliance.jpg', // Placed in public/images/articles/
       imageAlt: 'Diagram showing a modern corporate compliance framework',
+      sources: [
+        'https://www.example.com/compliance-report',
+        'https://www.example.com/guidelines',
+        'https://www.example.com/best-practices'
+      ]
     },
     {
       heading: 'Our Recommendation',
       body: 'We work with clients to design practical compliance systems...',
+      sources: [
+        'https://www.example.com/recommendations'
+      ]
     },
   ],
 };
