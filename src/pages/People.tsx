@@ -28,14 +28,14 @@ export default function People() {
               transition={{ duration: 0.5 }}
               className="mb-16"
             >
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-12 items-top">
                 <div className="bg-gradient-to-br from-steel to-steel-dark rounded-2xl aspect-[4/5] flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 opacity-[0.04]">
                     <div className="absolute top-10 right-10 text-[100px] font-heading font-bold text-white">§</div>
                   </div>
                   <div className="text-center z-10">
                     <div className="w-28 h-28 bg-white/20 rounded-full mx-auto mb-5 flex items-center justify-center border-2 border-white/30">
-                      <span className="font-heading font-bold text-4xl text-white">MS</span>
+                      <img src={founder.imageUrl} alt={founder.name} className="w-24 h-24 rounded-full object-cover" />
                     </div>
                     <p className="font-heading font-bold text-white text-xl">{founder.name}</p>
                     <p className="text-ocean-light text-sm mt-1">{founder.role}</p>
@@ -46,7 +46,7 @@ export default function People() {
                     Founder & Managing Consultant
                   </div>
                   <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel mb-6">{founder.name}</h2>
-                  <p className="text-gray-600 leading-relaxed mb-6">{founder.bio}<br />{founder.details}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: founder.details }} />
                   <div className="flex flex-wrap gap-2 mb-8">
                     {founder.specialties.map(s => (
                       <span key={s} className="bg-steel/10 text-steel font-heading font-medium text-xs px-3 py-1.5 rounded-full">
