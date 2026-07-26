@@ -37,7 +37,8 @@ export default function People() {
                 </div>
                 <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{founder.name}</h4>
                 <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{founder.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{founder.bio.slice(0, 150)}...</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{founder.bio}</p>
+                <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
                 <div className="flex flex-wrap gap-1.5 justify-center">
                   {founder.specialties.map(s => (
                     <span key={s} className="bg-platinum text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
@@ -70,7 +71,8 @@ export default function People() {
                 </div>
                 <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
                 <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{person.bio.slice(0, 150)}...</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{person.bio}</p>
+                <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
                 <div className="flex flex-wrap gap-1.5 justify-center">
                   {person.specialties.map(s => (
                     <span key={s} className="bg-platinum text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
@@ -120,7 +122,7 @@ export default function People() {
               <div className="p-6 space-y-6">
                 <div className="flex gap-4 items-center">
                   <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
-                    <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-60 h-60 rounded-full object-cover" />
+                    <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-58 h-58 rounded-full object-cover" />
                   </div>
                   <div className="basis-1/2 ">
                     <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
