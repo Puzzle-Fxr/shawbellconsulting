@@ -98,7 +98,7 @@ export default function People() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.98 }}
               transition={{ duration: 0.2 }}
-              className="w-full max-w-2xl rounded-3xl bg-white border border-platinum shadow-2xl overflow-hidden"
+              className="w-full max-w-6xl rounded-3xl bg-white border border-platinum shadow-2xl overflow-hidden"
               onClick={e => e.stopPropagation()}
             >
               <div className="flex items-start justify-between gap-4 p-6 border-b border-platinum">
@@ -118,14 +118,11 @@ export default function People() {
               </div>
 
               <div className="p-6 space-y-6">
-                <div className="grid md:grid-cols-[140px_1fr] gap-4 items-start">
-                  <div className="w-24 h-24 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
-                    <span className="font-heading font-bold text-2xl text-steel">
-                      {selectedPerson.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+                <div className="flex gap-4 items-center">
+                  <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
+                    <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-60 h-60 rounded-full object-cover" />
                   </div>
-                  <div>
-                    <p className="text-gray-600 leading-relaxed mb-4">{selectedPerson.bio}</p>
+                  <div className="basis-1/2 ">
                     <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
                       <div className="bg-platinum/50 rounded-xl p-3">
                         <p className="font-heading font-semibold text-steel mb-1">Experience</p>
