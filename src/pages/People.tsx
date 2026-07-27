@@ -150,7 +150,7 @@ export default function People() {
                 </div>
 
                 <div>
-                  <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Highlights</p>
+                  <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Career History</p>
                   <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: selectedPerson.details }} />
                 </div>
               </div>
