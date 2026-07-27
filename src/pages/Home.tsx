@@ -363,16 +363,11 @@ export default function Home() {
               className="relative"
             >
               {/* Founder image placeholder */}
-              <div className="bg-gradient-to-br from-steel to-steel-dark rounded-2xl w-full aspect-[3/4] max-w-md flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-[0.05]">
-                  <div className="absolute top-10 right-10 text-[120px] font-heading font-bold text-white">§</div>
-                </div>
+              <div className="rounded-2xl w-full aspect-[3/4] max-w-md flex items-center justify-center relative overflow-hidden">
                 <div className="text-center z-10">
-                  <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
-                    <span className="font-heading font-bold text-3xl text-white">PC</span>
+                  <div className="w-100 h-100 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-steel-dark">
+                    <img src={founder.imageUrl} alt={founder.name} className="w-98 h-98 rounded-full object-cover" />
                   </div>
-                  <p className="font-heading font-semibold text-white text-lg">Phyllis M. Christian</p>
-                  <p className="text-ocean-light text-sm">Managing Consultant</p>
                 </div>
               </div>
               {/* Decorative */}
