@@ -19,6 +19,7 @@ export default function People() {
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Founder - card */}
+          <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Founder</h3>
           <div className="flex justify-center md:flex-col items-center gap-8 mb-16">
             {people.filter(p => p.isFounder).map(founder => (
               <motion.button
@@ -124,15 +125,14 @@ export default function People() {
                   <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
                     <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-58 h-58 rounded-full object-cover" />
                   </div>
-                  <div className="basis-1/2 ">
-                    <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
-                      <div className="bg-platinum/50 rounded-xl p-3">
-                        <p className="font-heading font-semibold text-steel mb-1">Experience</p>
-                        <p>{selectedPerson.experience}</p>
-                      </div>
+                  <div className="basis-2/3 ">
+                    <div className="text-sm text-gray-700">
                       <div className="bg-platinum/50 rounded-xl p-3">
                         <p className="font-heading font-semibold text-steel mb-1">Focus Areas</p>
-                        <p>{selectedPerson.focusAreas.join(', ')}</p>
+                        <p 
+                          className="columns-1 sm:columns-2 gap-4 text-gray-600 [column-fill:_balance] [&_ul]:m-0 [&_li]:break-inside-avoid" 
+                          dangerouslySetInnerHTML={{ __html: selectedPerson.focusAreas }} 
+                        />
                       </div>
                     </div>
                   </div>
