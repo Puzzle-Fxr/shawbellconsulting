@@ -13,7 +13,7 @@ export default function People() {
       <PageHero
         title="Our People"
         subtitle="The Team Behind ShawbellConsulting"
-        image="images/handshake.jpg"
+        image="images/desk.jpg"
         description="Our team of experienced legal and business professionals brings decades of combined expertise, a commitment to excellence, and the integrated perspective that defines our firm."
       />
 

@@ -10,6 +10,7 @@ export default function BusinessAdvisory() {
       <PageHero
         title="Business Advisory Services"
         subtitle="Strategic Business Counsel"
+        image="images/busydesk.jpg"
         description="Our business advisory practice delivers data-driven strategic insight, financial expertise, and transformation guidance to help organizations navigate complexity, seize opportunity, and achieve sustainable growth."
         cta={{ label: 'Get in Touch', href: '/contact' }}
       />

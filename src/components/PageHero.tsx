@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 interface PageHeroProps {
   title: string;
   subtitle: string;
-  image: string;
+  image?: string;
   description?: string;
   cta?: { label: string; href: string };
   bgPattern?: boolean;
@@ -24,7 +24,7 @@ export default function PageHero({ title, subtitle, image, description, cta, bgP
         {/* Your custom multi-stop gradient overlay sitting right on top of the image */}
         <div className="absolute inset-0 bg-gradient-to-r from-steel-dark via-steel-dark/90 via-steel-dark/60 via-steel-dark/40 to-transparent z-10"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

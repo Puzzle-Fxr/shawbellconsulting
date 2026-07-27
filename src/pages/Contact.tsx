@@ -17,6 +17,7 @@ export default function Contact() {
       <PageHero
         title="Get in Touch"
         subtitle="Contact Us"
+        image="images/laptopscale.jpg"
         description="Whether you require legal representation, strategic business advice, or integrated counsel, our team is ready to assist. Schedule a consultation today."
       />
 

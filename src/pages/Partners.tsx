@@ -10,6 +10,7 @@ export default function Partners() {
       <PageHero
         title="Our Partners"
         subtitle="Our firm has served the following business groups, clients, and sectors"
+        image="images/handshake.jpg"
         description="Our firm has provided services to many governmental bodies and their development partners on policy, strategic planning, governance and organizational development, establishment of operational systems, standard operating procedures for process optimization, monitoring and evaluation, risk management, capacity building and other projects. "
       />
 
