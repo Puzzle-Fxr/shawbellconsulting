@@ -43,7 +43,7 @@ export default function People() {
                 <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
                 <div className="flex flex-wrap gap-1.5 justify-center">
                   {founder.specialties.map(s => (
-                    <span key={s} className="bg-platinum text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
+                    <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
                       {s}
                     </span>
                   ))}
@@ -75,7 +75,7 @@ export default function People() {
                 <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
                 <div className="flex flex-wrap gap-1.5 justify-center">
                   {person.specialties.map(s => (
-                    <span key={s} className="bg-platinum text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
+                    <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
                       {s}
                     </span>
                   ))}
