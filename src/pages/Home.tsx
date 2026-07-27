@@ -2,11 +2,31 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, AtSign } from 'lucide-react';
 import { publications, people, partners, accolades } from '../lib/data';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
   const latestArticle = publications[0];
   const marqueePartners = [...partners, ...partners];
+
+  const heroBackgroundImages: string[] = [
+    '/images/stairs.jpg',
+    '/images/pillars.jpg',
+    '/images/darkpillars.jpg',
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % heroBackgroundImages.length
+      );
+    }, 8000); // Change image every 8 seconds
+
+    return () => clearInterval(interval);
+  }, [heroBackgroundImages.length]);
+
 
   const serviceGroups = [
     {
@@ -94,16 +114,21 @@ export default function Home() {
   return (
     <div className="page-enter">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-steel via-steel-dark to-steel min-h-[80vh] flex items-center">
-        {/* Watermark motifs */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-20 right-20 text-[280px] font-heading font-bold text-white leading-none select-none">⚖</div>
-          <div className="absolute bottom-20 left-20 text-[180px] font-heading font-bold text-white leading-none select-none">§</div>
+      <section className="relative overflow-hidden min-h-[80vh] flex items-center">
+        {/* Background Carousel */}
+        <div className="absolute inset-0 z-0">
+          {heroBackgroundImages.map((image: string, index: number) => (
+            <img
+              key={image}
+              src={image}
+              alt={`Background ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out
+                ${index === currentImageIndex ? 'opacity-70' : 'opacity-0'}`}
+            />
+          ))}
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-steel-dark via-steel-dark/90 via-steel-dark/60 via-steel-dark/40 to-transparent z-10"></div>
         </div>
-        {/* Geometric accents */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-ocean/8 to-transparent"></div>
-        <div className="absolute bottom-20 right-40 w-32 h-32 bg-pumpkin/15 rounded-full blur-3xl"></div>
-        <div className="absolute top-20 left-40 w-48 h-48 bg-ocean/10 rounded-full blur-3xl"></div>
 
         <div className="max-w-8xl mx-auto px-6 lg:px-8 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

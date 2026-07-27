@@ -5,7 +5,7 @@
   --color-steel: #064789;
   --color-ocean: #6699cc;
   --color-silver: #363635;
-  --color-platinum: #f2f2f2;
+  --color-platinum: #e0e0e0;
   --color-pumpkin: #d5ac44;
   --color-steel-dark: #042f57;
   --color-steel-light: #3a77b0;
@@ -23,7 +23,7 @@ html {
 body {
   font-family: var(--font-body);
   color: #363635;
-  background: #f2f2f2;
+  background: #e0e0e0;
   line-height: 1.7;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ p {
 
 ::selection {
   background: #6699cc;
-  color: white;
+  color: #e0e0e0;
 }
 
 /* Custom scrollbar */
@@ -51,7 +51,7 @@ p {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f2f2f2;
+  background: #e0e0e0;
 }
 ::-webkit-scrollbar-thumb {
   background: #6699cc;
