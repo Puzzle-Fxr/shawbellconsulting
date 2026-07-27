@@ -445,7 +445,7 @@ export const partners = [
    detail: "",
   },
   {
-   name: 'Presidency oF Ghana',
+   name: 'Presidency of Ghana',
    logo: "images/logo/ghanaPresidency.png",
    detail: "",
   },
