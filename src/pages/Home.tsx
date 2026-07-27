@@ -113,7 +113,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-ocean-light font-heading font-medium text-sm uppercase tracking-wider mb-4">
-                ♕ Legal Excellence & Strategic Insight Since 2002 ♕
+              Legal Excellence & Strategic Insight Since 2002
               </p>
               <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
                 Boutique <span className="text-pumpkin">expertise</span>,
@@ -174,7 +174,7 @@ export default function Home() {
                     </span>
                   </div>
                   <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
-                    {p}
+                    {p.name}
                   </p>
                 </div>
               ))}

@@ -418,26 +418,106 @@ export const people = [
 ];
 
 export const partners = [
-  'SIC Financial Services Limited',
-  'Bui Power Authority ',
-  'Cocoa Marketing Company',
-  'Ghana Cocoa Board (Cocobod)',
-  'Ghana Export Promotion Authority',
-  'Ghana Revenue Authority',
-  'Ghana Tourism Development Company Ltd',
-  'Komfo- Anokye Teaching Hospital',
-  'National Pensions Regulatory Authority',
-  'Youth Employment Agency',
-  'Ghana Airports Company Limited',
-  'Ghana Highway Authority',
-  'Ghana Meteorological Agency',
-  'New Times Corporation',
-  'Data Protection Commission',
-  'State Housing Company',
-  'Graphic Communications Group',
-  'Middle Belt Development Authority',
-  'National Sports Authority',
-  'Postal And Courier Services Regulatory Commission',
+  {
+   name: 'SIC Financial Services Limited',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Bui Power Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Cocoa Marketing Company',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Cocoa Board (Cocobod)',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Export Promotion Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Revenue Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Tourism Development Company Ltd',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Komfo- Anokye Teaching Hospital',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'National Pensions Regulatory Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Youth Employment Agency',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Airports Company Limited',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Highway Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Ghana Meteorological Agency',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'New Times Corporation',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Data Protection Commission',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'State Housing Company',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Graphic Communications Group',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Middle Belt Development Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'National Sports Authority',
+   logo: "",
+   detail: "",
+  },
+  {
+   name: 'Postal And Courier Services Regulatory Commission',
+   logo: "",
+   detail: "",
+  },
 ];
 
 export const accolades = [

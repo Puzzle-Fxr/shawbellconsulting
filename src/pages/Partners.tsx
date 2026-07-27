@@ -9,13 +9,28 @@ export default function Partners() {
     <div className="page-enter">
       <PageHero
         title="Our Partners"
-        subtitle="Strategic Collaborations"
-        description="We work with aligned organizations and institutions that share our commitment to practical insight, sound governance, and high-quality client delivery."
+        subtitle="Our firm has served the following business groups, clients, and sectors"
+        description="Our firm has provided services to many governmental bodies and their development partners on policy, strategic planning, governance and organizational development, establishment of operational systems, standard operating procedures for process optimization, monitoring and evaluation, risk management, capacity building and other projects. "
       />
 
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          
+          <div className="flow md:flow-row gap-8 md:gap-12 lg:gap-16">
+            {partners.map((partner, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="bg-gray-100 mb-4 p-6 rounded-lg">
+                  <Building2 className="h-12 w-12 text-blue-500 mb-4" />
+                  <h3 className="text-xl font-bold mb-2">{partner.name}</h3>
+                  <p className="text-gray-600">{partner.detail}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
