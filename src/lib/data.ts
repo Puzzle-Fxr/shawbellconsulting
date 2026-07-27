@@ -278,37 +278,128 @@ export const people = [
     isFounder: true,
   },
   {
-    id: 'elena-vasquez',
-    name: 'Elena Vasquez',
-    role: 'Senior Legal Consultant',
-    bio: 'Elena Vasquez specializes in commercial litigation and regulatory compliance, with a distinguished career representing major corporations in complex disputes. Her strategic approach to litigation consistently delivers favorable outcomes while minimizing business disruption.',
-    specialties: ['Commercial Litigation', 'Regulatory Compliance', 'Arbitration'],
-    focusAreas: ['Dispute resolution', 'Regulatory risk', 'Cross-border compliance'],
+    id: 'max-vardon',
+    name: 'Max Vardon',
+    role: 'Permanent Associate',
+    imageUrl: '',
+    bio: "Max was a Team Leader on the firm's project to assess tax sector agencies under the project to strengthen and consolidate the tax sector with responsibility for merging ICT practices and processes in the transformation of sector agencies into one consolidated authority.",
+    specialties: ['Public Sector Transformation', 'Change Management', 'Strategic Planning', 'Organizational Development'],
+    focusAreas: ['Public sector reform', 'Organizational restructuring', 'Strategic advisory'],
     experience: '15+ years in complex commercial disputes, regulatory investigation support, and sensitive negotiations.',
     details: [
-      'Advises clients on high-stakes dispute prevention and enforcement strategy.',
-      'Brings a calm, risk-aware approach to regulatory and commercial conflict management.',
-      'Supports clients through litigation preparedness, negotiation, and resolution planning.',
+      "Max Vardon has been a permanent associate of ShawbellConsulting Limited since the firm's inception in 2002. He brings an extensive combination of knowledge and hands-on expertise of best practices in a range of professional disciplines and fields to our work, particularly as regards Public Sector Transformation and Change Management, Strategic Planning, Organizational Development, Operational Systems, IS/IT, Corporate Finance, Investment and Financial Planning, Analysis and Management, Market Planning, Development, and Implementation. In addition, he has demonstrated strengths in Leadership, Team building, Relationship Management and Corporate Governance.<br /><br />\
+      At ShawbellConsulting, Max was a Team Leader on the firm's project to assess tax sector agencies under the project to strengthen and consolidate the tax sector with responsibility for merging ICT practices and processes in the transformation of sector agencies into one consolidated authority. He is central to our training and capacity building services. For example, he supported the review of organizational structures and systems of the Ghana National Petroleum Corporation, and the training of MMDCEs under the Ghana Urban Migration Pilot Programme on Attracting Investments in the MMAs and Public Private Partnerships. Additionally, he was a senior consultant on the firm's team in the development of a National Entrepreneurship Policy for Ghana, which was conducted in 2018, providing comparative insights from Europe and other countries.<br /><br />\
+      As a Consultant with Price Waterhouse Associates and its successor firm of Ernst and Young in the 1990s and early 2000s, Max was the Team leader for information system design on the governmental Budgeting and Public Expenditure Management System developed under the auspices of the Ministry of Finance and Economic Planning and the World Bank. He also designed a Capacity-Building and Training Strategy for the implementation phase of the governmental Budgeting and Public Expenditure Management System. Max was the Team Leader on the programme to conduct Institutional Re-engineering and develop and implement a Corporate Strategy for the Ghana Audit Service with nation-wide operations. Following reviews of the legal and operating environment, he developed proposals addressing organizational structure and modernization, staffing levels and performance targets, training, and change management, together with an action plan for transformation. In the same year, he was Project Director managing a team of consultants to review the client Corporate Structure and staff loadings of the African Development Bank in Côte d'Ivoire. Prior to this he had directed the establishment of a Share Registration department and its operation during the public flotation of Ghana Commercial Bank.<br /><br />\
+      For two years from 2011 to 2013 Max served as Executive Secretary to the National Council on Persons with Disability. He had, prior to that, served as the Managing Director of the Credit Reference Bureau (Ghana) Ltd which he assisted in setting up from 2002 to 2007 and prior to that, had served as General Manager for UUNet, a JV between UUNET SA and AfricaOnline (Kenya) Ltd from 2001 to 2002.<br /><br />\
+      In the UK, Max served as Managing Consultant at Eurolex Business Systems in Ireland from 1991 to 1996, and also as Operations Director, at Aurag Limited, also in Shannon, Ireland from 1990 to 1991. For one year prior to that, was an Executive Consultant at Fullemploy Consultancy in London, UK and prior to that, had been Acting Chief Executive/Investment Manager at the Haringey Enterprise Board and Investments Limited also in London from 1986 to 1989. He was Finance Director of JazzStar Limited from 1985 to 1996, and an Investment Executive of the Greater London Enterprise Board and Investments Limited from 1984 to 1986. Max was the Founding Partner of Equinox Associates, London and during the period from 1982 to 1987, served as a Project Consultant on a Feasibility Study for a Hotel and Tourism Complex project for a West African country, as well as for a Banking/Financial Services initiative in the London. He had been a Financial Analyst with Phillips Petroleum Co. Europe-Africa Ltd., London from 1981 to 1982 and Management Engineer, Unilever Limited, also in London from1976 to 1979.<br /><br />\
+      He has also held other directorial positions in Finance in both London and Ireland.",
     ],
   },
   {
-    id: 'james-okonkwo',
-    name: 'James Okonkwo',
-    role: 'Senior Business Advisor',
-    bio: 'James Okonkwo brings extensive experience in financial advisory and risk management, having guided organizations through complex restructuring, capital optimization, and enterprise risk implementations across multiple industries.',
+    id: 'henry-paidoo',
+    name: 'Henry Atta Paidoo',
+    role: 'Senior Human Resource Management and Labour Practitioner',
+    imageUrl: '',
+    bio: "Henry Atta Paidoo is a Senior Human Resource Management and Labour Practitioner with professional experience as an ILO-certified specialist in labour matters and a permanent associate of ShawbellConsulting Limited.",
     specialties: ['Financial Advisory', 'Risk Management', 'Corporate Restructuring'],
     focusAreas: ['Restructuring', 'Enterprise risk', 'Performance improvement'],
     experience: '18+ years helping organizations stabilize operations, optimize capital, and navigate transformation initiatives.',
     details: [
-      'Leads strategic reviews that align financial restructuring with long-term business resilience.',
-      'Works closely with leadership teams on operational continuity and risk mitigation.',
-      'Supports performance-focused initiatives across regulated and growth-oriented sectors.',
+      "Henry Atta Paidoo is a Senior Human Resource Management and Labour Practitioner with professional experience as an ILO-certified specialist in labour matters and a permanent associate of ShawbellConsulting Limited. He is an expert in Managerial Practices and Labour-related legislation, Institutional Reform Strategies, and Corporate Governance Systems. Henry Atta Paidoo has been involved in assignments undertaken by the firm since 2007, particularly as regards human resources and change management.<br /><br />\
+      Henry has worked in all functional areas of Human Resource Management over his career, and particularly at top management level as the Director, HR Division of the Forestry Commission. Of note is the fact that, he was the Director in charge of the consolidation of the Commission, which was developed on the recommendations of ShawbellConsulting, including the design and development of an Integrated Grading and Pay Structure. Following his public service career, he joined the ShawbellConsulting team, and has also served as an HR Technical Advisor to corporate entities such as Synlab, and TV3.<br /><br />\
+      Henry is a certified Mediator/Arbitrator of the National Labour Commission. Since 2005, he has mediated and arbitrated on several labour disputes at the National Labour Commission and is an expert in employee management and industrial relations practices in the country. Indeed, he was a member of the Employers' Group that drafted the Labour Act 651, 2003. He has also led and directed the HR Teams to design, develop and roll out HR systems and processes as part of the Institutional Reforms.<br /><br />\
+      He also supported the Agricultural Sector Rehabilitation Project funded by IFAD on behalf of the Government in Sierra Leone.<br /><br />\
+      Henry has been engaged with and facilitated numerous negotiations with major organized groups and Trade Unions affiliated to the National Trade Union Congress, and has membership of the following Associations:<br /><br />\
+      <ul><li>▪ Member, Society for Human Resource Management, USA.</li><li>▪ Member, Institute of Human Resource Management Practitioners </li><li>▪ Member, International Industrial Relations Association, Geneva </li><li>▪ Accredited Mediator/Arbitrator, Ghana Labour Commission </li></ul><br /><br />\
+      He has also been member of the following Industrial Relations Councils:<br /><br />\
+      <ul><li>▪ Governing Council Member, Ghana Employers Association, 2000 -2009</li><li>▪ Vice Chairman, Training Committee, Ghana Employers Association, 2003</li><li>▪ Member, Advisory Committee, Ghana Employers Association, 2000</li><li>▪ Governing Council Member, Institute of Human Resource Management Practitioners 1995-1998, 2008 - 2010</li></ul><br /><br />\
+      Henry Atta Paidoo holds an Executive Diploma in Management, Henley Management College London (2002) and a B.A. (Hons) Geography, University of Ghana (1974).",
     ],
   },
   {
-    id: 'sarah-chen',
-    name: 'Sarah Chen',
-    role: 'Digital Strategy Lead',
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
+    bio: "Kofi Ludwig Amorin is a finance and accounting associate at ShawbellConsulting. Prior to his association with the firm in 2020, he had acquired a 27+ year career with the firms of Price Waterhouse Associates and EY, formerly Ernst and Young. ",
+    specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      "Kofi Ludwig Amorin is a finance and accounting associate at ShawbellConsulting. Prior to his association with the firm in 2020, he had acquired a 27+ year career with the firms of Price Waterhouse Associates and EY, formerly Ernst and Young.<br /><br />\
+      At ShawbellConsulting Kofi has been involved in a range of assignments in which he has applied his audit and accounting qualifications. His work has been to ensure proper governance and compliance by these client organizations. Recently, he was involved in the project to review the business and management of a privately owned resort and other subsidiaries of a major family-owned group and was also part of the team that undertook an assessment of operating procedures in terms of corporate governance practices of ten (10) state entities under SIGA. There, he assessed the implementation of governance, audit and finance procedures and the impact they have on efficient performance of entities' mandate. He is conversant with the development of Strategies and Standard Operating Procedures and participated in the assignment to develop a Transformation Strategy for the Venture Capital Trust Fund. While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
+      While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance, and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
+      Kofi Amorin is travelled widely, having provided finance, audit, and assurance services to clients throughout the West Africa region and the continent. By virtue of his clients, he has been exposed to the public and private organizations that are engaged in Regulatory and Compliance, Finance, Banking and Non-Bank Finance, Trade, Mining, Oil and Gas, Agriculture, Health and the NGO sectors.<br /><br />\
+      Some of the clients he has served are:<br /><br />\
+      <ul><li>• Sasakawa Global 2000</li><li>• West Africa Rice Development Agency</li><li>• Social Security and National Insurance Trust</li><li>• Ghana Commercial Bank</li><li>• Ghana Audit Service</li><li>• Ministry of Finance and its Agencies</li><li>• Ministry of Health and its Agencies</li><li>• Development Partners such as</li><li>• World Bank</li><li>• DFID</li><li>• GIZ</li><li>• DANIDA, etc</li></ul><br /><br />\
+      Kofi Amorin graduated from the School of Business Administration at the University of Ghana in 1979 and possesses extensive Professional Accounting, Tax, and related certifications.",
+    ],
+  },
+  {
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
+    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      'Connects digital innovation with business process redesign and leadership alignment.',
+      'Guides organizations through practical transformation roadmaps and change adoption.',
+      'Helps teams move from technology ambition to sustainable delivery and results.',
+    ],
+  },
+  {
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
+    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      'Connects digital innovation with business process redesign and leadership alignment.',
+      'Guides organizations through practical transformation roadmaps and change adoption.',
+      'Helps teams move from technology ambition to sustainable delivery and results.',
+    ],
+  },
+  {
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
+    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      'Connects digital innovation with business process redesign and leadership alignment.',
+      'Guides organizations through practical transformation roadmaps and change adoption.',
+      'Helps teams move from technology ambition to sustainable delivery and results.',
+    ],
+  },
+  {
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
+    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
+    focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
+    experience: '12+ years delivering technology change programs with measurable operational impact.',
+    details: [
+      'Connects digital innovation with business process redesign and leadership alignment.',
+      'Guides organizations through practical transformation roadmaps and change adoption.',
+      'Helps teams move from technology ambition to sustainable delivery and results.',
+    ],
+  },
+  {
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: '',
     bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
