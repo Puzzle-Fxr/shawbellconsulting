@@ -26,7 +26,7 @@ export default function Partners() {
                 <div className="bg-gray-100 mb-4 p-6 rounded-lg">
                   <img src={partner.logo} alt={partner.name} className="w-auto h-15 tracking-[0.24em] object-cover mb-4" />
                   <h3 className="text-xl font-bold mb-2">{partner.name}</h3>
-                  <p className="text-gray-600">{partner.detail}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: partner.detail }} />
                 </div>
               </motion.div>
             ))}

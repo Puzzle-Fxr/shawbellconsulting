@@ -412,62 +412,62 @@ export const partners = [
   {
    name: 'World Bank',
    logo: "images/logo/worldBank.png",
-   detail: "",
+   detail: "<ul><li>▪ Strategic Planning and Reform of the Venture Capital Trust Fund</li><li>▪ Developed a Governance and Implementation Framework to support oversight of the policies and programmes of all Agencies falling under the Ministry of Environment, Science and Technology sectors, following a review of the enabling legislation, and institutional arrangements for the MEST</li><li>▪ Assessment on Agribusiness Policies in Ghana</li><li>▪ Conducted legislative mandates and institutional reviews of public sector agencies and developed the framework for operationalizing Public Financial Management legislation across public sector agencies under the Ghana Integrated Financial Management and Information System (GIFMIS/ World Bank); Conducted comparative country reviews and drafted the foundational Public Financial Management law .(https://www.pulse.com.gh/news/business/financial-scrutiny-parliament-to-tighten-screws-on-publicfinance/2bfdqkw).</li><li>▪ Conducted the project to establish a Public Private Partnership Resource Centre for Ghana at the Ministry of Finance and Economic Planning.</li><li>▪ Multi-institutional reviews and Capacity building for implementation of three Public Financial Management laws.</li><li>▪ Developed Operational and Accounting Policies and Procedures for the Ghana Railway Development Authority towards best practices for administration of the Railways Sector.</li><li>▪ Evaluation and Review of the Mandate and Organizational Development of the National Labour Commission. (Ministry of Trade/World Bank).</li><li>▪ Conducted strengthening the role of Ghana as the Gateway for Investors in the West African Sub-Region through an Evaluation and Strategic/Corporate Plan and Institutional Assessment project for the Ghana Free Zones Board (now an Authority) under the Ministry of Trade.</li><li>▪ Conducted a review of the Mandate, Structure and Development of a Strategic Plan for the Fair Wages Commission.</li><li>▪ We established Public Private Partnership and Outsourcing Contracts and Guidelines for Local Authorities in Revenue Mobilization and Drafting of Public Private Partnership Contract Templates and Outsourcing Guidelines.</li><li>▪ Legal Research Partner to the World Bank for the World Bank - Enabling the Business of Agriculture study.</li></ul> ",
   },
   {
    name: 'UNDP',
    logo: "images/logo/undp.png",
-   detail: "",
+   detail: "<ul><li>▪ Undertook a major Needs Assessment of Criminal Justice Institutions in Ghana under Judicial Sector Reforms: involving the Judicial Service, Judicial Training Institute; Detective Training School; the Prisons Officers Training School, Office of Public Prosecutions; Legal Aid Scheme; and the Economic and Organized Crime Office.</li><li>▪ Developed Policy and Standard Operating Procedures for the Ministry of Justice and Attorney General’s Department and all Implementing Agencies in the Criminal Justice Value Chain.</li><li>▪ Undertook a project to design the Governance and Organizational Structure of the Ghana National Commission on Small Arms, preceded by a review of its enabling legislation.</li></ul>",
   },
   {
    name: 'GIZ',
    logo: "images/logo/giz.png",
-   detail: "",
+   detail: "<ul><li>▪ GIZ Study of the Accounting & Taxation Framework Analysis For C&I/Captive Renewable Energy Projects in Ghana.</li><li>▪ GIZ Study (Project II) - Legal Aspects of Establishing a Special Purpose Vehicle and Power Purchase Agreements, Assessment of Currency Exchange Risks etc. in Ghana – Project II.</li><li>▪ GIZ Study (Project I) - Legal Aspects of Establishing a Special Purpose Vehicle and Power Purchase Agreements, Assessment of Currency Exchange Risks etc. in Ghana – Project.</li><li>▪ Monitoring and Evaluation training to officials of the Ministry of Finance and associated agencies under the MoFEP Academy Project. (GIZ/Ecorys).</li><li>▪ Developed an HR Management Policy Framework for the National Pensions Regulatory Authority. (GIZ/Ecorys).</li><li>▪ Conducted three (3) Renewable Energy Sector Reviews on the Legal Aspects of Establishing a Special Purpose Vehicle and PV Power Purchase Agreements, Assessment of Currency Exchange Risks, Accounting and Taxation Framework in Ghana in relation to Renewable Energy (GIZ/BBH law firm, Germany).</li><li>▪ We have conducted Training of Trainers programmes for public and private sector organizations such as the Ghana Revenue Authority.</li></ul>",
   },
   {
    name: 'DANIDA',
    logo: "images/logo/danida.png",
-   detail: "",
+   detail: "<ul><li>▪ Undertook a Legal, Organizational and Human Resource review of Ghana’s Commission on Human Rights and Administrative Justice.</li><li>▪ Conducted a Diagnostic and Evaluation of Ghana’s Commercial Courts System as part of a Baseline Survey of Commercial Courts, towards increasing Access to Commercial Justice in Ghana for the private sector and SMEs.</li><li>▪ Institutional Study of the Ministry of Health and its Partner Agencies to evaluate sector-wide Public/Private Partnership Policy and Programmes under the Ministry of Health Programme of Work, including its relationship with the Christian Health Association of Ghana. Developed contractual tools to ensure accountability between the Ministry of Health and private health services providers.</li><li>▪ Undertook a project to Determine the Importance and Role of Traditional Leaders in Adjudication/enhance the adjudication capacity of Traditional Authorities for Improved Access to Justice.</li><li>▪ Conducted a DANIDA-funded review of Health Sector Governance, Legal, Common Management Arrangements and Support Systems under the 2002-2006 Programme of Work.</li><li>▪ We undertook a project to align Traditional Adjudication mechanisms with the Judicial System.</li><li>▪ We conducted an Anti-Corruption Training Programme for the Judicial Service of Ghana.</li><li>▪ Our firm developed Guidelines of Operation for the Coalition of NGOs in Health. </li><li>▪ Our firm conducted a Nationwide Baseline Study of Access to Justice by the Poor and Vulnerable under the auspices of the Judicial Service. This was an extensive study which addressed access to justice by the poor and needy, women, children, and the disabled throughout Ghana.</li></ul>",
   },
   {
    name: 'AFD',
    logo: "images/logo/afd.png",
-   detail: "",
+   detail: "<ul><li>▪ Conducted a Governance Evaluation of Ten (10) Specified Enterprises (SE) for the State Interests and Governance Authority and Preliminary Review of Ten (10) SEs.<BR /><BR /><ul><li>1. SIC Financial Services Limited</li><li>2. Bui Power Authority</li><li>3. Cocoa Marketing Company</li><li>4. Ghana Cocoa Board (Cocobod)</li><li>5. Ghana Export Promotion Authority</li><li>6. Ghana Revenue Authority</li><li>7. Ghana Tourism Development Company Ltd</li><li>8. Komfo- Anokye Teaching Hospital</li><li>9. National Pensions Regulatory Authority</li><li>10. Youth Employment Agency</li><li>11. Ghana Airports Company Limited</li><li>12. Ghana Highway Authority</li><li>13. Ghana Meteorological Agency</li><li>14. New Times Corporation</li><li>15. Data Protection Commission</li><li>16. State Housing Company</li><li>17. Graphic Communications Group</li><li>18. Middle Belt Development Authority</li><li>19. National Sports Authority</li><li>20. Postal And Courier Services Regulatory Commission</li></ul></li><br /><br /><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
   },
   {
    name: 'African Development Bank',
    logo: "images/logo/africanDevBank.png",
-   detail: "",
+   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
   },
   {
-   name: 'Canada',
+   name: 'CIDA',
    logo: "images/logo/canada.png",
-   detail: "",
+   detail: "<ul><li>▪ Conducted Strategic Planning for the Management Development and Productivity Institute.</li></ul>",
   },
   {
-   name: 'Presidency of Ghana',
+   name: 'Office of the President (Ghana)',
    logo: "images/logo/ghanaPresidency.png",
-   detail: "",
+   detail: "<ul><li>▪ Developed Ghana's National Entrepreneurship Policy under the auspices of the Ministry of Business Development/Office of the President.</li></ul>",
   },
   {
    name: 'USAID',
    logo: "images/logo/usaid.png",
-   detail: "",
+   detail: "<ul><li>▪ Our firm developed an Ethics and Standards Regulations and Code for NGOs as a precursor to the passing of the new Trust Bill that would also regulate NGOs. (USAID/POSDEV).</li></ul>",
   },
   {
    name: 'SECO',
    logo: "images/logo/seco.png",
-   detail: "",
+   detail: "<ul><li>▪ Impact Assessment of the Capacity Building Component of the District Development Fund and development of a Monitoring, Evaluation mechanism for Improvement in the Design and Operations of the Capacity Building Mechanism for decentralized agencies under the auspices of the Swiss Secretariat for Economic Affairs</li></ul>",
   },
   {
    name: 'European Union',
    logo: "images/logo/eu.png",
-   detail: "",
+   detail: "<ul><li>▪ We undertook the project to Counter Documentation Fraud and enhance the ease of Trans-border Migration and Transactions. It involved the Registry of Marriages, Ghana Immigration Service, Passports Office, Criminal Investigations Department of the Police Service, Births and Deaths Registry (EU Aeneas Programme).</li></ul>",
   },
   {
    name: 'Government Of Ghana',
    logo: "images/logo/coatOfArms.png",
-   detail: "",
+   detail: "<ul><li>▪ Undertook an Institutional and Staffing Review and Development of a Medium-Term Strategic Plan for the new Greater Accra Regional Hospital.</li><li>▪ Developed Sports Legislation for the Ministry of Youth and Sports.</li><li>▪ Developed Standard Operating Procedures for nine (9) Divisions of the Ministry of Finance.</li><li>▪ Provided Capacity Building services for the Legal Division of the Ministry of Finance</li><li>▪ Reviewed fifteen (15) Health Service enactments and developed a unified Health Service structure for the smooth implementation and execution of health policies, common protocols and standards development for the Ministry of Health and Ghana Health Service (GoG/DPs).</li><li>▪ The Ministry followed up with a request that we provide further professional services to the Ministry in respect of the Railways Sector.</li><li>▪ We provided Transaction Advisory Services for the Development of Transit Terminal for Haulage Trucks under a PPP arrangement for the Sekondi-Takoradi Metropolitan Authority to accommodate 500 haulage trucks at a time.</li><li>▪ We provided Transaction Advisory Services for the Redevelopment of Sekondi Market Project under a Public-Private Partnership Arrangement for the Sekondi-Takoradi Metropolitan Authority.</li><li>▪ Transaction Advisory Services have been provided for the Accra Metropolitan Authority in the Redevelopment of Kantamanto Market Project with an estimated Project Cost of US$25.2m.</li><li>▪ Political Economy Analysis of the Oil and Gas/Energy Sector in Ghana. (GOGIG/DFID).</li><li>▪ Baseline Mapping of the Energy Oil and Gas/Sector in Ghana. (GOGIG/DFID).</li><li>▪ We planned and executed a strategic workshop for the then Ministry of Ports, Harbours & Railways accomplished by directing eighty (80) ports sector stakeholders to obtain consensus on a Universal Sector Policy and Strategic Mission. We also designed and developed an outline strategic plan of direction and development of a Road Map with concrete methods & instruments for ensuring effective oversight of the Ports Sector by the Ministry. The firm had undertaken a pre-conference needs assessment of Ports Operators. (GoG/Ports Operators).</li></ul>",
   },
 ];
 
