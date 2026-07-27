@@ -336,78 +336,83 @@ export const people = [
     ],
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
+    id: 'priscilla-andoh',
+    name: 'Ms. Priscilla Andoh',
+    role: 'Business Consultant and Manager',
     imageUrl: '',
-    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    bio: "Ms. Priscilla Andoh is currently a Business Consultant and Manager at ShawbellConsulting. She is experienced in the Business Development and Advisory Sector, performing specialised functions including organizational development, training/capacity building, programming and coordination, needs assessment, report writing, data analysis and selection.",
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
     experience: '12+ years delivering technology change programs with measurable operational impact.',
     details: [
-      'Connects digital innovation with business process redesign and leadership alignment.',
-      'Guides organizations through practical transformation roadmaps and change adoption.',
-      'Helps teams move from technology ambition to sustainable delivery and results.',
+      "Ms. Priscilla Andoh is currently a Business Consultant and Manager at ShawbellConsulting. She is experienced in the Business Development and Advisory Sector, performing specialised functions including organizational development, training/capacity building, programming and coordination, needs assessment, report writing, data analysis and selection.<br /><br />\
+      Priscilla currently serves as the Project Coordinator for the Evaluation of the Board of Directors of the Bank of Ghana Project, which seeks to develop a bespoke review-based evaluation tool to assess the effectiveness and enhance performance of the Board of Directors of the Bank of Ghana. She has been instrumental in liaising with the Bank of Ghana Functional Units to plan and execute project activities, schedule meetings, prepare relevant documentation and reports and engage critical stakeholders.<br /><br />\
+      In her prior employment, she supported the coordination and implementation of activities under the following Projects:<br /><br />\
+      <ul><li>• GEA/Mastercard Foundation Young Africa Works Project</li><li>• GEA/GAF Command Skills Training</li><li>• GEA/Compassion International Entrepreneurship and Small Business Management for Start-up Businesses</li><li>• GEA/Samira Empowerment and Humanitarian Projects Skills Training for Women</li><li>• GEA Business Integrity Project</li><li>• Coronavirus Alleviation Programme Business Support Scheme</li><li>• GIZ Technical Assistance for High Growth Women-led MSMEs</li><li>• GEA/BADEA Youth for Entrepreneurship Programme</li></ul><br /><br />\
+      She also developed concept notes for the following Projects:<br /><br />\
+      <ul><li>• GIZ Technical Assistance for High Growth Women-led MSMEs</li><li>• GEA/BADEA Youth for Entrepreneurship Programme</li><li>• Alliance for Integrity GEA Business Integrity Project</li><li>• SIFA GEA Entrepreneurship and Employability for Women</li></ul>",
     ],
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
+    id: 'daniellina-essel',
+    name: 'Daniellina Duodu Essel',
+    role: 'Legal Consultant',
     imageUrl: '',
-    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    bio: "Daniellina Duodu Essel is a Legal Consultant at ShawbellConsulting Limited with extensive experience in Corporate and Commercial Law, Dispute Resolution, Debt Recovery, Due Diligence, Regulatory Compliance, and Litigation. She applies a detail-oriented approach to professional service delivery and is adept at translating legal challenges into clear, actionable strategies.",
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
     experience: '12+ years delivering technology change programs with measurable operational impact.',
     details: [
-      'Connects digital innovation with business process redesign and leadership alignment.',
-      'Guides organizations through practical transformation roadmaps and change adoption.',
-      'Helps teams move from technology ambition to sustainable delivery and results.',
+      "Daniellina Duodu Essel is a Legal Consultant at ShawbellConsulting Limited with extensive experience in Corporate and Commercial Law, Dispute Resolution, Debt Recovery, Due Diligence, Regulatory Compliance, and Litigation. She applies a detail-oriented approach to professional service delivery and is adept at translating legal challenges into clear, actionable strategies.<br /><br />\
+      At ShawbellConsulting, Daniellina provides legal and business advisory services to both public and private sector clients. Her work includes Due Diligence Audits, Governance and Compliance Reviews, Company Registration, and assisting in analyzing the impacts of regulatory compliance on organization's business proposals. These roles have enabled her to develop a practical understanding of how organizational development principles intersect with legal frameworks, particularly in public sector projects. Her contributions support reducing client exposure to business risks while enhancing strategic opportunities. Prior to joining the firm in 2025, Daniellina handled legal matters for individuals and companies at KJ Legal Practice, further honing her research and analytical skills essential for public financial management and policy advisory work.",
     ],
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
+    id: 'johanna-ntow',
+    name: 'Ms. Johanna Ntow-Atiemo',
+    role: 'Organizational Development Consultant',
     imageUrl: '',
-    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    bio: "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards.",
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
     experience: '12+ years delivering technology change programs with measurable operational impact.',
     details: [
-      'Connects digital innovation with business process redesign and leadership alignment.',
-      'Guides organizations through practical transformation roadmaps and change adoption.',
-      'Helps teams move from technology ambition to sustainable delivery and results.',
+      "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards. Her responsibilities included participating in the evaluation of institutional compliance with human resource and administrative policies, as well as relevant legislation.<br /><br />\
+      In the Evaluation of the Board of Directors of the Bank of Ghana project, she supported the adaptation of review-based tools to examine governance structures, enhance accountability, and improve organisational effectiveness. Through her involvement in the review of the Cocobod laws, she coordinated meetings and strategic stakeholder discussions, providing essential logistical and facilitative support. She also played a facilitating role in stakeholder engagements, helping to capture expectations, performance insights and satisfaction levels from key groups such as management, board members and staff.<br /><br />\
+      Her experience increasingly connects with broader public sector reform and PFM-related assignments, including projects requiring documentation analysis, institutional assessments, governance reviews and structured consultations with ministries, departments and agencies. This equips her with a strong foundation to support diagnostic exercises such as the PBB framework review, where coordination, analytical insight, governance understanding and stakeholder engagement are critical.",
     ],
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
+    id: 'karsten-avogo',
+    name: 'Karsten Weguri Beauregard Avogo',
+    role: 'Research Consultant',
     imageUrl: '',
-    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    bio: "Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library",
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
     experience: '12+ years delivering technology change programs with measurable operational impact.',
     details: [
-      'Connects digital innovation with business process redesign and leadership alignment.',
-      'Guides organizations through practical transformation roadmaps and change adoption.',
-      'Helps teams move from technology ambition to sustainable delivery and results.',
+      "Karsten Weguri Beauregard Avogo is a Research Consultant at ShawbellConsulting Limited, where his work is primarily focused on research. At ShawbellConsulting Limited, Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library. He is currently engaged on research to examine the current state of Ghana's Renewable Energy sector, the trends, and expectations for the sector going forward. He also provides research support for business development activities, including background research and market analysis. In addition, he may be involved in or provide support on broader consulting assignments across legal, governance, compliance, and strategy engagements, under the guidance of senior consultants.<br /><br />\
+      Karsten's professional experience primarily spans healthcare delivery, health research, and quality assurance, with exposure to clinical, research, and health-sector environments. Prior to joining ShawbellConsulting Limited, he worked in sonography practice, health research institutions, and health-related business development roles, where he supported data collection, analysis, documentation, and evidence-based reporting. These roles strengthened his analytical skills, research capacity, and attention to detail.<br /><br />\
+      Karsten applies a methodical and detail-oriented approach to research and consulting support, with a strong emphasis on accuracy, clarity, and confidentiality. He holds a Bachelor of Science degree in Biological Sciences and is currently pursuing a Master of Public Health (MPH) at the University of Ghana, with expected completion in 2026. His academic training in biological sciences and public health enables him to contribute meaningfully to the health-sciences, social sector and related, while remaining adaptable to research needs across other sectors.",
     ],
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
+    id: 'audrey-fenuku',
+    name: 'Audrey K. Fenuku',
+    role: 'Senior Administrator',
     imageUrl: '',
-    bio: 'Sarah Chen leads our Digital Transformation practice, combining deep technical expertise with strategic business insight. She has successfully guided numerous organizations through comprehensive digital transformation programs.',
+    bio: "Having also been assigned to the Ghana Institute of Consulting (GIC) over the years, Audrey has acquired significant experience in HR, business development, office management, training and executive recruitment, among others.",
     specialties: ['Digital Transformation', 'Technology Strategy', 'Change Management'],
     focusAreas: ['Digital strategy', 'Operational modernization', 'Transformation leadership'],
     experience: '12+ years delivering technology change programs with measurable operational impact.',
     details: [
-      'Connects digital innovation with business process redesign and leadership alignment.',
-      'Guides organizations through practical transformation roadmaps and change adoption.',
-      'Helps teams move from technology ambition to sustainable delivery and results.',
+      "Audrey K. Fenuku is a Senior Administrator at the Firm of ShawbellConsulting Limited. Having also been assigned to the Ghana Institute of Consulting (GIC) over the years, Audrey has acquired significant experience in HR, business development, office management, training and executive recruitment, among others. Since joining the ShawbellConsulting firm in 2010, she has been instrumental in managing the day-to-day training administrative function of the office and has effectively liaised with the Firm's clients and service providers, as regards capacity building.<br /><br />\
+      Audrey sees to the efficient facilitation of the Firm's flagship programme namely the Consultancy Specialist Certificate Programme (CSCP) over the years. She has also been directly involved in training and has trained administrative staff of clients. Her services to the Firm have also been seen in the organization of orientation sessions for new staff.<br /><br />\
+      Ms. Fenuku has been engaged in third party recruitment of top-level executives for organizations such as VRA, USAID, Ministry of Finance and Labadi Beach Hotel. She has also served as panellist during staff recruitments. Audrey manages the GIC's database of alumni namely the Availability Register in support of the Firm's not-for-profit initiative namely the Skills Resource Network (SRN), through which the Firm matches its alumni with its global partner organizations.<br /><br />\
+      Prior to joining the Firm, Audrey was the Human Resource and Training Specialist at Risingdata Solutions, an offshore Business Process Outsourcing (BPO) company. She was tasked with the responsibility of designing training modules, conducting organizational training needs assessment, and maintaining employee databases. She also trained staff and assisted the HR Manager in regulating employee benefits.<br /><br />\
+      Audrey holds a Bachelor of Business Administration in Human Resource Management from the Methodist University College of Ghana. She is also proficient in the use of Ms Office suite and possesses working knowledge of Lean Six Sigma Management.<br /><br />\
+      She is also instrumental in ensuring that the Firm's clients remain tax and legally compliant by ensuring proper statutory filings. Additionally, she has been responsible for liaising with the Ghana Bar Association, General Legal Counsel and Office of the Registrar General on behalf of the Firm. She also performs first-line screening of clients requiring Notary Public services.",
     ],
   },
 ];
