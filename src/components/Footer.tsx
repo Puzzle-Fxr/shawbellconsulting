@@ -34,17 +34,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-ocean rounded-lg flex items-center justify-center">
-                  <span className="text-white font-heading font-bold text-lg">S</span>
-                </div>
-                <div>
-                  <span className="font-heading font-bold text-xl text-white">Shawbell</span>
-                  <span className="font-heading font-medium text-xs text-ocean ml-1 uppercase">Consulting</span>
+              <div className="flex items-center gap-1 mb-3 group">
+                <img
+                src="/favicon.png"
+                alt="Shawbell Consulting logo"
+                className="w-10 h-10 group-hover:scale-105 transition-transform duration-200"
+                />
+                <div className="flex flex-col">
+                  <span className="font-heading font-bold text-xl text-steel tracking-tight">Shawbell<span className="font-heading font-medium text-xl text-pumpkin -mt-0.5 tracking-wider">Consulting</span></span>
                 </div>
               </div>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Bridging legal expertise and strategic business counsel since 1999. Trusted by leading organizations worldwide.
+                Shawbell Consulting is a leading provider of integrated legal and business advisory services, dedicated to helping clients navigate complex challenges and achieve sustainable success.
               </p>
             </div>
 
@@ -87,13 +88,13 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-white mb-4">Contact</h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <MapPin className="w-4 h-4 text-ocean" /> 1250 Harbour Ave, Suite 400, London, EC2R 8AH
+                  <MapPin className="w-4 h-4 text-ocean" /> No.7 Klottey Crescent-Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <Phone className="w-4 h-4 text-ocean" /> +44 (0) 20 7123 4567
+                  <Phone className="w-4 h-4 text-ocean" /> +233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)27 5724540
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <Mail className="w-4 h-4 text-ocean" /> info@shawbellconsulting.com
+                  <Mail className="w-4 h-4 text-ocean" /> pchristian@shawbellghana.com
                 </div>
               </div>
             </div>
@@ -102,7 +103,7 @@ export default function Footer() {
           <div className="h-px bg-gray-700 mt-12 mb-8"></div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-500">© 2024 ShawbellConsulting. All rights reserved.</p>
+            <p className="text-sm text-gray-500">© 2026 ShawbellConsulting. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <Link to="/about" className="text-sm text-gray-500 hover:text-ocean transition-colors">About</Link>
               <Link to="/people" className="text-sm text-gray-500 hover:text-ocean transition-colors">People</Link>
