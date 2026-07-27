@@ -445,7 +445,7 @@ export const partners = [
    detail: "",
   },
   {
-   name: 'Ghana Presidency',
+   name: 'Presidency oF Ghana',
    logo: "images/logo/ghanaPresidency.png",
    detail: "",
   },
@@ -460,7 +460,7 @@ export const partners = [
    detail: "",
   },
   {
-   name: 'EU',
+   name: 'European Union',
    logo: "images/logo/eu.png",
    detail: "",
   },
