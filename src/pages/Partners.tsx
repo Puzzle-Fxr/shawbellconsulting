@@ -24,7 +24,7 @@ export default function Partners() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="bg-gray-100 mb-4 p-6 rounded-lg">
-                  <Building2 className="h-12 w-12 text-blue-500 mb-4" />
+                  <img src={partner.logo} alt={partner.name} className="w-auto h-15 tracking-[0.24em] object-cover mb-4" />
                   <h3 className="text-xl font-bold mb-2">{partner.name}</h3>
                   <p className="text-gray-600">{partner.detail}</p>
                 </div>

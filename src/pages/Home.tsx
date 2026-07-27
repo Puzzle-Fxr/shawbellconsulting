@@ -169,9 +169,7 @@ export default function Home() {
                   className="shrink-0 w-[220px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
                 >
                   <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3">
-                    <span className="text-xs font-heading font-bold uppercase tracking-[0.24em] text-gray-400">
-                      Logo
-                    </span>
+                    <img src={p.logo} alt={p.name} className="w-auto h-15 tracking-[0.24em] object-cover" />
                   </div>
                   <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
                     {p.name}

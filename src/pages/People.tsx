@@ -66,9 +66,7 @@ export default function People() {
                 className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="font-heading font-bold text-xl text-steel">
-                    {person.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                  <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
                 </div>
                 <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
                 <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
