@@ -88,7 +88,7 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-white mb-4">Contact</h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <MapPin className="w-4 h-4 text-ocean" /> No.7 Klottey Crescent-Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA
+                  <MapPin className="w-4 h-4 text-ocean" /> No.9 Klottey Crescent-Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Phone className="w-4 h-4 text-ocean" /> +233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)27 5724540

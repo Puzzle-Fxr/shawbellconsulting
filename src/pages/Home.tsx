@@ -457,7 +457,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-heading font-medium text-steel">Our Office</p>
-                    <p className="text-gray-500 text-sm">No. 7 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA</p>
+                    <p className="text-gray-500 text-sm">No. 9 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
