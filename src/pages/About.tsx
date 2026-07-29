@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="page-enter">
       <PageHero
-        title="About ShawbellConsulting"
+        title={<>Shawbell<span className="text-pumpkin">Consulting</span></>}
         subtitle="Our Story & Values"
         image="images/deskscale.jpg"
         description="Founded in 2002, ShawbellConsulting is a leading integrated advisory firm in Ghana, combining legal and management consultancy services. We are committed to delivering excellence, integrity, and client-centered solutions across diverse sectors."
@@ -26,8 +26,8 @@ export default function About() {
             >
               <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">Our Journey</p>
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-6">
-                ShawbellConsulting - an award-winning 
-                <span className="text-pumpkin"> boutique </span>Consulting firm in Ghana
+                Shawbell<span className="text-pumpkin">Consulting</span> - an award-winning 
+                boutique Consulting firm in Ghana
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 ShawbellConsulting was established in Ghana in 2002 as a hybrid firm combining legal and management consultancy services. It was founded by Phyllis Maria Christian, who — after 13 years at Price Waterhouse Associates and its successor firm Ernst & Young in Ghana — set out to build a firm delivering superior professional standards locally. In 2009, the firm established the Ghana Institute of Consulting (GIC) to support capacity building and business performance nationally.

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 interface PageHeroProps {
-  title: string;
+  title: React.ReactNode;
   subtitle: string;
   image?: string;
   description?: string;
@@ -18,7 +18,7 @@ export default function PageHero({ title, subtitle, image, description, cta, bgP
       <div className="absolute inset-0 z-0">
         <img 
           src={image} // 2. Removed the string quotes
-          alt={title} // Best practice: Use the title for better accessibility (SEO)
+          alt={typeof title === 'string' ? title : ''} // Best practice: Use the title for better accessibility (SEO)
           className="w-full h-full object-cover"
         />
         {/* Your custom multi-stop gradient overlay sitting right on top of the image */}
