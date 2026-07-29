@@ -10,9 +10,9 @@ export default function Home() {
   const marqueePartners = [...partners, ...partners];
 
   const heroBackgroundImages: string[] = [
-    '/images/stairs.jpg',
     '/images/pillars.jpg',
     '/images/darkpillars.jpg',
+    '/images/parliament.jpg',
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);

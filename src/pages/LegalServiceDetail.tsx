@@ -28,7 +28,7 @@ export default function LegalServiceDetail() {
       <PageHero
         title={service.title}
         subtitle="Legal Services"
-        image="images/parliament.jpg"
+        image="images/laptopscale.jpg"
         description={service.long}
         cta={{ label: 'Get in Touch', href: '/contact' }}
       />

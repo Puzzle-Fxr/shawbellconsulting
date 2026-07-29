@@ -84,6 +84,7 @@ export default function ArticleDetail() {
       <PageHero
         title={articleContent?.title ?? publication.title}
         subtitle={publication.category}
+        image={articleContent?.bannerUrl}
       />
 
       <section className="bg-white py-16 lg:py-24">

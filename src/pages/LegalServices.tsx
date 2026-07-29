@@ -10,7 +10,7 @@ export default function LegalServices() {
       <PageHero
         title="Legal Services"
         subtitle="Expert Legal Counsel"
-        image="images/parliament.jpg"
+        image="images/laptopscale.jpg"
         description="Our legal practice delivers strategic, results-oriented counsel across the full spectrum of corporate and commercial law. From formation to litigation, compliance to transactions, we protect your interests with precision and insight."
         cta={{ label: 'Get in Touch', href: '/contact' }}
       />

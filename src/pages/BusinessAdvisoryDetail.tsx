@@ -28,7 +28,7 @@ export default function BusinessAdvisoryDetail() {
       <PageHero
         title={service.title}
         subtitle="Business Advisory Services"
-        image="images/busydesk.jpg"
+        image="images/businessadvise.jpg"
         description={service.long}
         cta={{ label: 'Get in Touch', href: '/contact' }}
       />

@@ -10,7 +10,7 @@ export default function Publications() {
       <PageHero
         title="Publications & Insights"
         subtitle="Thought Leadership"
-        image="images/files.jpg"
+        image="images/books.jpg"
         description="Explore our latest analysis, commentary, and strategic perspectives on the legal and business issues shaping today's landscape."
       />
 
