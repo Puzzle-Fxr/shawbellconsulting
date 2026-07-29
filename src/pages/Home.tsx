@@ -138,7 +138,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-ocean-light font-heading font-medium text-sm uppercase tracking-wider mb-4">
-              Legal Excellence & Strategic Insight Since 2002
+              Legal Excellence & Strategic Insight
               </p>
               <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
                 Boutique <span className="text-pumpkin">expertise</span>,
@@ -147,7 +147,7 @@ export default function Home() {
                 <span className="text-pumpkin">Unique</span> insight
               </h1>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
-                ShawbellConsulting bridges the gap between legal expertise and business advisory, delivering integrated counsel that drives results.
+                Founded in 2002, ShawbellConsulting bridges the gap between legal expertise and business advisory, delivering integrated counsel that drives results.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
