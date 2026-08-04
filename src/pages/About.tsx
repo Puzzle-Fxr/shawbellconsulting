@@ -10,7 +10,7 @@ export default function About() {
       <PageHero
         title={<>Shawbell<span className="text-pumpkin">Consulting</span></>}
         subtitle="Our Story & Values"
-        image="images/deskscale.jpg"
+        image="/images/shawbellhero.jpg"
         description="Founded in 2002, ShawbellConsulting is a leading integrated advisory firm in Ghana, combining legal and management consultancy services. We are committed to delivering excellence, integrity, and client-centered solutions across diverse sectors."
       />
 
