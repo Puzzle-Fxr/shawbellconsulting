@@ -48,14 +48,11 @@ export default function Publications() {
                 </Link>
               </div>
               <div className="bg-gradient-to-br from-steel to-steel-dark rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-[0.05]">
-                  <div className="absolute top-5 right-5 text-[80px] font-heading font-bold text-white">¶</div>
-                  <div className="absolute bottom-5 left-5 text-[60px] font-heading font-bold text-white">§</div>
-                </div>
-                <div className="text-center z-10">
-                  <p className="font-heading font-bold text-white text-lg">Thought Leadership</p>
-                  <p className="text-ocean-light text-sm mt-1">Legal & Business Insights</p>
-                </div>
+                <img
+                  src={publications[0].imageUrl}
+                  alt={publications[0].title}
+                  className="w-full h-full object-cover rounded-xl p-0.5"
+                />
               </div>
             </div>
           </motion.div>

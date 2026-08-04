@@ -239,6 +239,7 @@ export const advisoryServices = [
 export const publications = [
   {
     id: 'how-sunshine-can-come-from-rain',
+    imageUrl: 'images/articles/how_sunshine_banner.jpg',
     title: 'How Sunshine Can Come From Rain',
     excerpt: 'When a frustrated Ghanaian business executive was asked “how can sunshine come from rain?”, he glibly answered “when the rain stops”!',
     category: 'Research Brief',
@@ -248,6 +249,7 @@ export const publications = [
   },
   {
     id: 'the-impact-of-the-current-iran-situation',
+    imageUrl: 'images/articles/iran_situation_banner.jpg',
     title: 'The Impact Of The Current Iran Situation On Renewable Energy Sources',
     excerpt: 'The Iran Situation has regressed into a Zero Tolerance military standoff. As of Thursday, April 23, 2026, energy markets are directly reacting to the reported escalation in the naval rules of engagement.',
     category: 'Research Brief',
