@@ -10,6 +10,7 @@ export default function Home() {
   const marqueePartners = [...partners, ...partners];
 
   const heroBackgroundImages: string[] = [
+    '/images/shawbellhero.jpg',
     '/images/pillars.jpg',
     '/images/darkpillars.jpg',
     '/images/parliament.jpg',
