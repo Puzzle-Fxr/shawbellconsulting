@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X } from 'lucide-react';
@@ -7,6 +7,27 @@ import { people } from '../lib/data';
 
 export default function People() {
   const [selectedPerson, setSelectedPerson] = useState<(typeof people)[number] | null>(null);
+  const previousScrollY = useRef(0);
+  const modalRef = useRef<HTMLDivElement | null>(null);
+
+  const openPerson = (person: (typeof people)[number]) => {
+    previousScrollY.current = window.scrollY;
+    setSelectedPerson(person);
+
+    requestAnimationFrame(() => {
+      modalRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    });
+  };
+
+  const closePerson = () => {
+    const returnScrollY = previousScrollY.current;
+    setSelectedPerson(null);
+
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: returnScrollY, behavior: 'auto' });
+    });
+  };
 
   return (
     <div className="page-enter">
@@ -30,7 +51,7 @@ export default function People() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                onClick={() => setSelectedPerson(founder)}
+                onClick={() => openPerson(founder)}
                 className="card-lift mb-16 bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer w-full max-w-lg mx-auto"
               >
                 {/* Corrected image div */}
@@ -63,7 +84,7 @@ export default function People() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                onClick={() => setSelectedPerson(person)}
+                onClick={() => openPerson(person)}
                 className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -92,10 +113,11 @@ export default function People() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-slate-950/55 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-            onClick={() => setSelectedPerson(null)}
+            className="fixed inset-0 bg-slate-950/55 backdrop-blur-sm z-50 flex items-start justify-center p-4 pt-6"
+            onClick={closePerson}
           >
             <motion.div
+              ref={modalRef}
               initial={{ opacity: 0, y: 20, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.98 }}
@@ -111,7 +133,7 @@ export default function People() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => setSelectedPerson(null)}
+                  onClick={closePerson}
                   className="w-10 h-10 rounded-full bg-platinum hover:bg-ocean/20 text-steel flex items-center justify-center"
                   aria-label="Close profile details"
                 >
