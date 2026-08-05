@@ -102,13 +102,16 @@ export default function Footer() {
 
           <div className="h-px bg-gray-700 mt-12 mb-8"></div>
 
+          {/* Footer Bottom */ }
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">© 2026 ShawbellConsulting. All rights reserved.</p>
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               <Link to="/about" className="text-sm text-gray-500 hover:text-ocean transition-colors">About</Link>
               <Link to="/people" className="text-sm text-gray-500 hover:text-ocean transition-colors">People</Link>
               <Link to="/publications" className="text-sm text-gray-500 hover:text-ocean transition-colors">Publications</Link>
               <Link to="/contact" className="text-sm text-gray-500 hover:text-ocean transition-colors">Contact</Link>
+              <Link to="/privacy-policy" className="text-sm text-gray-500 hover:text-ocean transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-sm text-gray-500 hover:text-ocean transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
