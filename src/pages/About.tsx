@@ -68,8 +68,38 @@ export default function About() {
         </div>
       </section>
 
+      {/* Our Expertise */}
+      <section className="bg-white py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">Integrated Legal & Management Consulting</p>
+            <img className="mx-auto mb-6" src="/images/shawbell_expertise.jpg" alt="Shawbell Consulting Expertise" />
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel">Our Expertise</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+              We have an extensive track record in the provision of Business Advisory and Legal Services, in areas such as Policy and Legislation, Governance, Strategy, Organizational Development, Due Diligence, PPPs and Transactional Advisory, Staff Reviews and Capacity Building, Sector Studies, Programme Evaluation and Assessment, Intermediary, and Investor Services, in addition to other professional services to clients in Ghana and elsewhere. 
+            </p>
+          </div>
+          <div className="text-center mb-8">
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+              The Firm's expertise in the above areas has been acquired through engagements with Government and other Public Agencies, Multinationals, Development Partners, the Local Private sector, and other Business Ventures in Ghana, Africa and globally. Our local and international clients have consistently commended our work over the years. We have held local representative offices of the global giant Amazon International (Amazon.com) and other multinationals. 
+            </p>
+          </div>
+            <div className="text-center">
+              <button className="justify-center bg-pumpkin hover:bg-pumpkin-dark text-white font-heading font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-pumpkin/20" onClick={() => window.location.href = '/partners'}>
+                Learn More About Our Partners <ArrowRight className="w-4 h-4 ml-2 inline-block" />
+              </button>
+            </div>
+          <div className="text-center mt-8 mb-16">
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+             <ul><li>We also established the Ghana Institute of Consulting (GIC) in 2009 to support capacity building and better business performance in Ghana.</li><br /><li>Directed by our seasoned Board of Directors, we provide high-quality professional services to numerous clients, and are proud of our success record in the execution of client assignments.</li><br /><li>ShawbellConsulting has often associated with external firms and other organizations to undertake key assignments in Ghana. We have experienced rewarding alliances and partnerships with professional service providers around the world. To this end, we have often associated with external firms on prospects in Ghana or have provided in-country advice on a range of local projects.</li><br /><li>We employ permanent staff with a mix of competencies in the legal, finance, economics, IT and social development fields. Our firm has, over the past 24 years undertaken a diversity of assignments through which we have come to experience first-hand, the issues that private sector businesses in Ghana contend with, as well as public service perspectives.</li></ul>  
+            </p>
+          </div>
+
+        </div>
+      </section> 
+
       {/* Values */}
-      <section className="bg-gradient-to-b from-white to-platinum/30 py-20 lg:py-28">
+      <section className="bg-gradient-to-b from-white to-platinum/30 py-20 lg:py-15">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">What Defines Us</p>
