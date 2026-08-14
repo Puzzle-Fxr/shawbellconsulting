@@ -2,11 +2,17 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Globe, Users, Scale, Star } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 import { accolades } from '../lib/data';
 
 export default function About() {
   return (
     <div className="page-enter">
+      <SEO
+        title="About"
+        description="Learn about ShawbellConsulting — our history, values, and expertise in legal and business advisory since 2002."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/about'}
+      />
       <PageHero
         title={<>Shawbell<span className="text-pumpkin">Consulting</span></>}
         subtitle="Our Story & Values"

@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   return (
     <div className="page-enter">
+      <SEO
+        title="Privacy Policy"
+        description="ShawbellConsulting's privacy policy explaining how we collect, use, and protect personal information submitted via our website."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/privacy-policy'}
+      />
       <PageHero
         title={<>Privacy <span className="text-pumpkin">Policy</span></>}
         subtitle="Your information matters"

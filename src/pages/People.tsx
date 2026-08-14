@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import { people } from '../lib/data';
+import SEO from '../components/SEO';
 
 export default function People() {
   const [selectedPerson, setSelectedPerson] = useState<(typeof people)[number] | null>(null);
@@ -31,6 +32,11 @@ export default function People() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title="Our People"
+        description="Meet the team at ShawbellConsulting — experienced legal and advisory professionals delivering integrated counsel."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/people'}
+      />
       <PageHero
         title="Our People"
         subtitle="The Team Behind ShawbellConsulting"

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, AtSign } from 'lucide-react';
 import { publications, people, partners, accolades } from '../lib/data';
 import { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const founder = people.find(p => p.isFounder)!;
@@ -115,6 +116,11 @@ export default function Home() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title="Home"
+        description="ShawbellConsulting provides expert legal services and business advisory across private and public sectors in Ghana and internationally."
+        keywords="legal services, business advisory, governance, transaction advisory, Ghana"
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[80vh] flex items-center">
         {/* Background Carousel */}

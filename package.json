@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run generate-sitemap && npm run generate-robots",
+    "generate-sitemap": "node scripts/generate-sitemap.cjs",
+    "generate-robots": "node scripts/generate-robots.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

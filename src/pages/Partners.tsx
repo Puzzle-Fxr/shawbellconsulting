@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Building2, ChevronDown } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 import { partners } from '../lib/data';
 
 const collaborations = [
@@ -53,6 +54,11 @@ export default function Partners() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title="Our Partners"
+        description="ShawbellConsulting's trusted partners and client collaborations across public and private sectors. Learn about our institutional partnerships and experience."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/partners'}
+      />
       <PageHero
         title="Our Partners"
         subtitle="Our firm has served the following business groups, clients, and sectors"

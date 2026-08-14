@@ -3,10 +3,16 @@ import ServiceCard from '../components/ServiceCard';
 import { advisoryServices } from '../lib/data';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Globe } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function BusinessAdvisory() {
   return (
     <div className="page-enter">
+      <SEO
+        title="Business Advisory Services"
+        description="Strategic business advisory services: strategic planning, sector reviews, PPPs, and capacity building to drive sustainable growth."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/business-advisory'}
+      />
       <PageHero
         title="Business Advisory Services"
         subtitle="Strategic Business Counsel"

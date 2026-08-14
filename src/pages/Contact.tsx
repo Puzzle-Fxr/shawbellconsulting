@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Send, ArrowRight, AtSign } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
@@ -14,6 +15,11 @@ export default function Contact() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title="Contact"
+        description="Contact ShawbellConsulting for legal services, business advisory, and consultations. Reach our Accra office or send an inquiry online."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/contact'}
+      />
       <PageHero
         title="Get in Touch"
         subtitle="Contact Us"

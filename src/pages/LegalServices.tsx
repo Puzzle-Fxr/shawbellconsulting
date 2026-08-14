@@ -3,10 +3,16 @@ import ServiceCard from '../components/ServiceCard';
 import { legalServices } from '../lib/data';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Scale, BookOpen } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function LegalServices() {
   return (
     <div className="page-enter">
+      <SEO
+        title="Legal Services"
+        description="ShawbellConsulting's legal services: corporate law, compliance, litigation advisory, transaction support, and statutory services tailored to your needs."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/legal-services'}
+      />
       <PageHero
         title="Legal Services"
         subtitle="Expert Legal Counsel"

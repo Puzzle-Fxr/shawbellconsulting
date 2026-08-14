@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 export default function TermsOfService() {
   return (
     <div className="page-enter">
+      <SEO
+        title="Terms of Service"
+        description="Terms governing use of the ShawbellConsulting website and related services."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/terms-of-service'}
+      />
       <PageHero
         title={<>Terms of <span className="text-pumpkin">Service</span></>}
         subtitle="Our website terms"

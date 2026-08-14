@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, ArrowRightLeft, Building2, Scale, ShieldCheck, BookOpen } from 'lucide-react';
 import { legalServices } from '../lib/data';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 const iconMap: Record<string, React.ElementType> = { Building2, Scale, ShieldCheck, ArrowRightLeft, BookOpen };
 
@@ -25,6 +26,11 @@ export default function LegalServiceDetail() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title={service.title}
+        description={service.short}
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + `/legal-services/${service.id}`}
+      />
       <PageHero
         title={service.title}
         subtitle="Legal Services"

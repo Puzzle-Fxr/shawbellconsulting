@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Target, TrendingUp, Shield, Cpu } from 'lucide-react';
 import { advisoryServices } from '../lib/data';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 const iconMap: Record<string, React.ElementType> = { Target, TrendingUp, Shield, Cpu };
 
@@ -25,6 +26,11 @@ export default function BusinessAdvisoryDetail() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title={service.title}
+        description={service.short}
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + `/business-advisory/${service.id}`}
+      />
       <PageHero
         title={service.title}
         subtitle="Business Advisory Services"

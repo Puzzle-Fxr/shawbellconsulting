@@ -3,10 +3,16 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Clock, User } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import { publications } from '../lib/data';
+import SEO from '../components/SEO';
 
 export default function Publications() {
   return (
     <div className="page-enter">
+      <SEO
+        title="Publications & Insights"
+        description="Explore ShawbellConsulting's analysis, commentary, and strategic perspectives on legal and business issues."
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/publications'}
+      />
       <PageHero
         title="Publications & Insights"
         subtitle="Thought Leadership"

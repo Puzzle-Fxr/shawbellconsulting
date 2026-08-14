@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Clock, User, ChevronLeft } from 'lucide-react';
 import { publications } from '../lib/data';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 type ArticleSection = {
   heading: string;
@@ -81,6 +82,11 @@ export default function ArticleDetail() {
 
   return (
     <div className="page-enter">
+      <SEO
+        title={articleContent?.title ?? publication.title}
+        description={articleContent?.summary ?? publication.excerpt}
+        canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + `/publications/${slug}`}
+      />
       <PageHero
         title={articleContent?.title ?? publication.title}
         subtitle={publication.category}
