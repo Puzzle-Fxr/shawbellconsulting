@@ -9,12 +9,15 @@ interface SEOProps {
 
 function setMeta(name: string, content: string | undefined, attr = 'name') {
   if (!content) return
-  let el = document.querySelector(`meta[${attr}="${name}"]`)
+
+  let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null
+
   if (!el) {
     el = document.createElement('meta')
-    (el as HTMLElement).setAttribute(attr, name)
+    el.setAttribute(attr, name)
     document.head.appendChild(el)
   }
+
   el.setAttribute('content', content)
 }
 
