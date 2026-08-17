@@ -48,9 +48,38 @@ const collaborations = [
   },
 ];
 
+const clients = [
+  {
+   name: 'Ghana Broadasting Corporation (GBC)',
+   logo: "images/logo/gbc.png",
+   detail: "<ul><li>▪ Our firm undertook an Organizational Review and Development of a Strategic Plan for the Ghana Broadcasting Corporation.</li></ul>",
+  },
+  {
+   name: 'Bank of Ghana',
+   logo: "images/logo/bog.png",
+   detail: "<ul><li>▪ Development of a Bespoke Peer Evaluation Tool for the Board of Directors of the Bank of Ghana.</li></ul>",
+  },
+  {
+   name: 'Korle Bu Teaching Hospital',
+   logo: "images/logo/kbth.png",
+   detail: "<ul><li>▪ Undertook an Institutional Review and developed a Strategic Plan for the Korle Bu Teaching Hospital, the third largest hospital in Africa.</li></ul>",
+  },
+  {
+   name: 'Ministry of Communications (Ghana)',
+   logo: "images/logo/minofcom.png",
+   detail: "<ul><li>▪ We undertook a major Evaluation of e-Communications/IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministry of Communications and other governmental agencies.</li></ul>",
+  },
+  {
+   name: 'African Development Bank',
+   logo: "images/logo/africanDevBank.png",
+   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
+  },
+]
+
 export default function Partners() {
   const [openItem, setOpenItem] = useState<number | null>(0);
   const [openPartner, setOpenPartner] = useState<number | null>(0);
+  const [openClient, setOpenClient] = useState<number | null>(0);
 
   return (
     <div className="page-enter">
@@ -118,15 +147,68 @@ export default function Partners() {
           </div>
         </div>
 
+        {/* Clients*/}
+        <section className="bg-slate-50 py-10 lg:py-28 mt-15">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="mb-8">
+              <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Our Optimized Clients</p>
+              <h2 className="text-3xl font-bold text-slate-900">Selected Client Collaborations</h2>
+            </div>
+            <div className="space-y-4">
+              {clients.map((client, index) => {
+                const isOpen = openClient === index;
+
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                      <button
+                        type="button"
+                        onClick={() => setOpenClient(isOpen ? null : index)}
+                        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"
+                        aria-expanded={isOpen}
+                      >
+                        <div className="flex items-center gap-4">
+                          <img src={client.logo} alt={client.name} className="h-12 w-auto rounded-md bg-white p-2 object-contain shadow-sm" />
+                          <div>
+                            <h3 className="text-lg font-bold text-slate-800">{client.name}</h3>
+                            <p className="text-sm text-slate-500">View details</p>
+                          </div>
+                        </div>
+                        <ChevronDown className={`h-5 w-5 shrink-0 text-slate-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {isOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          transition={{ duration: 0.25, ease: 'easeOut' }}
+                          className="border-t border-slate-200 bg-white px-5 py-4 sm:px-6"
+                        >
+                          <p className="text-sm leading-relaxed text-slate-600 sm:text-base" dangerouslySetInnerHTML={{ __html: client.detail }} />
+                        </motion.div>
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* Other Partners Section */}
         <div className="max-w-7xl mx-auto px-6 lg:px-8 mt-14 lg:mt-16">
           <div className="mb-8">
-            <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Collaborations</p>
-            <h2 className="text-3xl font-bold text-slate-900">Other Collaborations</h2>
+            <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Experience</p>
+            <h2 className="text-3xl font-bold text-slate-900">Other Notable Involvements</h2>
           </div>
 
           <p className="text-gray-600 leading-relaxed mb-8 max-w-4xl">
-            We have collaborated with a diverse range of partners, including governmental bodies, development organizations, and private sector entities. Our partnerships have enabled us to deliver impactful solutions and drive positive change across key sectors.
+            Our firm has served the following business groups, clients, and sectors:
           </p>
 
           <div className="space-y-4">

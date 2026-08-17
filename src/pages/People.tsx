@@ -58,17 +58,29 @@ export default function People() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 onClick={() => openPerson(founder)}
-                className="card-lift mb-16 bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer w-full max-w-lg mx-auto"
+                className="card-lift mb-16 bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer w-full max-w-lg mx-auto relative overflow-hidden"
               >
+                <div style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '240px',
+                  height: '240px',
+                  backgroundImage: 'url(/favicon.png)',
+                  backgroundSize: 'contain',
+                  opacity: 0.10,
+                  pointerEvents: 'none'
+                }} />
                 {/* Corrected image div */}
-                <div className="w-32 h-32 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
+                <div className="relative z-10 w-32 h-32 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
                     <img src={founder.imageUrl} alt={founder.name} className="w-28 h-28 rounded-full object-cover" />
                 </div>
-                <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{founder.name}</h4>
-                <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{founder.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{founder.bio}</p>
-                <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
-                <div className="flex flex-wrap gap-1.5 justify-center">
+                <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{founder.name}</h4>
+                <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center mb-4">{founder.role}</p>
+                <p className="relative z-10 text-gray-600 text-sm leading-relaxed mb-4">{founder.bio}</p>
+                <p className="relative z-10 mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
+                <div className="relative z-10 flex flex-wrap gap-1.5 justify-center">
                   {founder.specialties.map(s => (
                     <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
                       {s}
@@ -91,16 +103,28 @@ export default function People() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 onClick={() => openPerson(person)}
-                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col"
+                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col relative overflow-hidden"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '240px',
+                  height: '240px',
+                  backgroundImage: 'url(/favicon.png)',
+                  backgroundSize: 'contain',
+                  opacity: 0.10,
+                  pointerEvents: 'none'
+                }} />
+                <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
                 </div>
-                <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
-                <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">{person.bio}</p>
-                <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
-                <div className="flex flex-wrap gap-1.5 justify-center mt-auto">
+                <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
+                <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
+                <p className="relative z-10 text-gray-600 text-sm leading-relaxed mb-4 flex-grow">{person.bio}</p>
+                <p className="relative z-10 mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
+                <div className="relative z-10 flex flex-wrap gap-1.5 justify-center mt-auto">
                   {person.specialties.map(s => (
                     <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
                       {s}

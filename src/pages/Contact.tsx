@@ -119,13 +119,13 @@ export default function Contact() {
                     <p className="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you promptly.</p>
                     <form onSubmit={handleSubmit} className="space-y-5">
                       <div>
-                        <label className="font-heading font-medium text-sm text-steel mb-1 block">Full Name</label>
+                        <label className="font-heading font-medium text-sm text-steel mb-1 block">Full Name / Company Name</label>
                         <input
                           type="text"
                           value={form.name}
                           onChange={e => setForm({ ...form, name: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
-                          placeholder="John Smith"
+                          placeholder="John Smith / Company A"
                           required
                         />
                       </div>

@@ -334,20 +334,6 @@ export const people = [
     ],
   },
   {
-    id: 'johanna-ntow',
-    name: 'Ms. Johanna Ntow-Atiemo',
-    role: 'Organizational Development Consultant',
-    imageUrl: 'images/people/johanna.jpg',
-    bio: "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards.",
-    specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
-    focusAreas: ['<ul><li>▪ Organizational development and institutional assessments</li><li>▪ Human resource compliance and aligning HR systems with public sector standards</li><li>▪ Renewable energy institutional framework work (assessment and strengthening)</li><li>▪ Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)</li><li>▪ Stakeholder engagement, documentation, and facilitating institutional reform processes</li><li>▪ Experience across education, banking, healthcare, legal and aviation sectors</li><li>▪ Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution</li></ul>'],
-    details: [
-      "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards. Her responsibilities included participating in the evaluation of institutional compliance with human resource and administrative policies, as well as relevant legislation.<br /><br />\
-      In the Evaluation of the Board of Directors of the Bank of Ghana project, she supported the adaptation of review-based tools to examine governance structures, enhance accountability, and improve organisational effectiveness. Through her involvement in the review of the Cocobod laws, she coordinated meetings and strategic stakeholder discussions, providing essential logistical and facilitative support. She also played a facilitating role in stakeholder engagements, helping to capture expectations, performance insights and satisfaction levels from key groups such as management, board members and staff.<br /><br />\
-      Her experience increasingly connects with broader public sector reform and PFM-related assignments, including projects requiring documentation analysis, institutional assessments, governance reviews and structured consultations with ministries, departments and agencies. This equips her with a strong foundation to support diagnostic exercises such as the PBB framework review, where coordination, analytical insight, governance understanding and stakeholder engagement are critical.",
-    ],
-  },
-  {
     id: 'priscilla-andoh',
     name: 'Ms. Priscilla Andoh',
     role: 'Business Consultant and Manager',
@@ -365,6 +351,20 @@ export const people = [
     ],
   },
   {
+    id: 'johanna-ntow',
+    name: 'Ms. Johanna Ntow-Atiemo',
+    role: 'Organizational Development Consultant',
+    imageUrl: 'images/people/johanna.jpg',
+    bio: "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards.",
+    specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
+    focusAreas: ['<ul><li>▪ Organizational development and institutional assessments</li><li>▪ Human resource compliance and aligning HR systems with public sector standards</li><li>▪ Renewable energy institutional framework work (assessment and strengthening)</li><li>▪ Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)</li><li>▪ Stakeholder engagement, documentation, and facilitating institutional reform processes</li><li>▪ Experience across education, banking, healthcare, legal and aviation sectors</li><li>▪ Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution</li></ul>'],
+    details: [
+      "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards. Her responsibilities included participating in the evaluation of institutional compliance with human resource and administrative policies, as well as relevant legislation.<br /><br />\
+      In the Evaluation of the Board of Directors of the Bank of Ghana project, she supported the adaptation of review-based tools to examine governance structures, enhance accountability, and improve organisational effectiveness. Through her involvement in the review of the Cocobod laws, she coordinated meetings and strategic stakeholder discussions, providing essential logistical and facilitative support. She also played a facilitating role in stakeholder engagements, helping to capture expectations, performance insights and satisfaction levels from key groups such as management, board members and staff.<br /><br />\
+      Her experience increasingly connects with broader public sector reform and PFM-related assignments, including projects requiring documentation analysis, institutional assessments, governance reviews and structured consultations with ministries, departments and agencies. This equips her with a strong foundation to support diagnostic exercises such as the PBB framework review, where coordination, analytical insight, governance understanding and stakeholder engagement are critical.",
+    ],
+  },
+  {
     id: 'daniellina-essel',
     name: 'Daniellina Duodu Essel',
     role: 'Legal Consultant',
@@ -375,6 +375,20 @@ export const people = [
     details: [
       "Daniellina Duodu Essel is a Legal Consultant at ShawbellConsulting Limited with extensive experience in Corporate and Commercial Law, Dispute Resolution, Debt Recovery, Due Diligence, Regulatory Compliance, and Litigation. She applies a detail-oriented approach to professional service delivery and is adept at translating legal challenges into clear, actionable strategies.<br /><br />\
       At ShawbellConsulting, Daniellina provides legal and business advisory services to both public and private sector clients. Her work includes Due Diligence Audits, Governance and Compliance Reviews, Company Registration, and assisting in analyzing the impacts of regulatory compliance on organization's business proposals. These roles have enabled her to develop a practical understanding of how organizational development principles intersect with legal frameworks, particularly in public sector projects. Her contributions support reducing client exposure to business risks while enhancing strategic opportunities. Prior to joining the firm in 2025, Daniellina handled legal matters for individuals and companies at KJ Legal Practice, further honing her research and analytical skills essential for public financial management and policy advisory work.",
+    ],
+  },
+  {
+    id: 'karsten-avogo',
+    name: 'Karsten Weguri Beauregard Avogo',
+    role: 'Research Consultant',
+    imageUrl: 'images/people/karsten.jpg',
+    bio: "Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library",
+    specialties: ['research and analysis', 'sector profiling', 'background research', 'evidence-based reporting', 'health-sector research and quality assurance'],
+    focusAreas: ['<ul><li>▪ Sector and market research, sector profiling and background analysis</li><li>▪ Research on renewable energy sector trends in Ghana</li><li>▪ Research support for business development and proposal development</li><li>▪ Health-sector research and quality assurance (clinical and public-health oriented)</li><li>▪ Maintenance and organization of research library; evidence-based reporting</li></ul>'],
+    details: [
+      "Karsten Weguri Beauregard Avogo is a Research Consultant at ShawbellConsulting Limited, where his work is primarily focused on research. At ShawbellConsulting Limited, Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library. He is currently engaged on research to examine the current state of Ghana's Renewable Energy sector, the trends, and expectations for the sector going forward. He also provides research support for business development activities, including background research and market analysis. In addition, he may be involved in or provide support on broader consulting assignments across legal, governance, compliance, and strategy engagements, under the guidance of senior consultants.<br /><br />\
+      Karsten's professional experience primarily spans healthcare delivery, health research, and quality assurance, with exposure to clinical, research, and health-sector environments. Prior to joining ShawbellConsulting Limited, he worked in sonography practice, health research institutions, and health-related business development roles, where he supported data collection, analysis, documentation, and evidence-based reporting. These roles strengthened his analytical skills, research capacity, and attention to detail.<br /><br />\
+      Karsten applies a methodical and detail-oriented approach to research and consulting support, with a strong emphasis on accuracy, clarity, and confidentiality. He holds a Bachelor of Science degree in Biological Sciences and is currently pursuing a Master of Public Health (MPH) at the University of Ghana, with expected completion in 2026. His academic training in biological sciences and public health enables him to contribute meaningfully to the health-sciences, social sector and related, while remaining adaptable to research needs across other sectors.",
     ],
   },
   {
@@ -392,20 +406,6 @@ export const people = [
       Prior to joining the Firm, Audrey was the Human Resource and Training Specialist at Risingdata Solutions, an offshore Business Process Outsourcing (BPO) company. She was tasked with the responsibility of designing training modules, conducting organizational training needs assessment, and maintaining employee databases. She also trained staff and assisted the HR Manager in regulating employee benefits.<br /><br />\
       Audrey holds a Bachelor of Business Administration in Human Resource Management from the Methodist University College of Ghana. She is also proficient in the use of Ms Office suite and possesses working knowledge of Lean Six Sigma Management.<br /><br />\
       She is also instrumental in ensuring that the Firm's clients remain tax and legally compliant by ensuring proper statutory filings. Additionally, she has been responsible for liaising with the Ghana Bar Association, General Legal Counsel and Office of the Registrar General on behalf of the Firm. She also performs first-line screening of clients requiring Notary Public services.",
-    ],
-  },
-  {
-    id: 'karsten-avogo',
-    name: 'Karsten Weguri Beauregard Avogo',
-    role: 'Research Consultant',
-    imageUrl: 'images/people/karsten.jpg',
-    bio: "Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library",
-    specialties: ['research and analysis', 'sector profiling', 'background research', 'evidence-based reporting', 'health-sector research and quality assurance'],
-    focusAreas: ['<ul><li>▪ Sector and market research, sector profiling and background analysis</li><li>▪ Research on renewable energy sector trends in Ghana</li><li>▪ Research support for business development and proposal development</li><li>▪ Health-sector research and quality assurance (clinical and public-health oriented)</li><li>▪ Maintenance and organization of research library; evidence-based reporting</li></ul>'],
-    details: [
-      "Karsten Weguri Beauregard Avogo is a Research Consultant at ShawbellConsulting Limited, where his work is primarily focused on research. At ShawbellConsulting Limited, Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library. He is currently engaged on research to examine the current state of Ghana's Renewable Energy sector, the trends, and expectations for the sector going forward. He also provides research support for business development activities, including background research and market analysis. In addition, he may be involved in or provide support on broader consulting assignments across legal, governance, compliance, and strategy engagements, under the guidance of senior consultants.<br /><br />\
-      Karsten's professional experience primarily spans healthcare delivery, health research, and quality assurance, with exposure to clinical, research, and health-sector environments. Prior to joining ShawbellConsulting Limited, he worked in sonography practice, health research institutions, and health-related business development roles, where he supported data collection, analysis, documentation, and evidence-based reporting. These roles strengthened his analytical skills, research capacity, and attention to detail.<br /><br />\
-      Karsten applies a methodical and detail-oriented approach to research and consulting support, with a strong emphasis on accuracy, clarity, and confidentiality. He holds a Bachelor of Science degree in Biological Sciences and is currently pursuing a Master of Public Health (MPH) at the University of Ghana, with expected completion in 2026. His academic training in biological sciences and public health enables him to contribute meaningfully to the health-sciences, social sector and related, while remaining adaptable to research needs across other sectors.",
     ],
   },
 ];
@@ -437,11 +437,6 @@ export const partners = [
    detail: "<ul><li>▪ Conducted a Governance Evaluation of Ten (10) Specified Enterprises (SE) for the State Interests and Governance Authority and Preliminary Review of Ten (10) SEs.<BR /><BR /><ul><li>1. SIC Financial Services Limited</li><li>2. Bui Power Authority</li><li>3. Cocoa Marketing Company</li><li>4. Ghana Cocoa Board (Cocobod)</li><li>5. Ghana Export Promotion Authority</li><li>6. Ghana Revenue Authority</li><li>7. Ghana Tourism Development Company Ltd</li><li>8. Komfo- Anokye Teaching Hospital</li><li>9. National Pensions Regulatory Authority</li><li>10. Youth Employment Agency</li><li>11. Ghana Airports Company Limited</li><li>12. Ghana Highway Authority</li><li>13. Ghana Meteorological Agency</li><li>14. New Times Corporation</li><li>15. Data Protection Commission</li><li>16. State Housing Company</li><li>17. Graphic Communications Group</li><li>18. Middle Belt Development Authority</li><li>19. National Sports Authority</li><li>20. Postal And Courier Services Regulatory Commission</li></ul></li><br /><br /><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
   },
   {
-   name: 'African Development Bank',
-   logo: "images/logo/africanDevBank.png",
-   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
-  },
-  {
    name: 'CIDA',
    logo: "images/logo/canada.png",
    detail: "<ul><li>▪ Conducted Strategic Planning for the Management Development and Productivity Institute.</li></ul>",
@@ -470,26 +465,6 @@ export const partners = [
    name: 'Government Of Ghana',
    logo: "images/logo/coatOfArms.png",
    detail: "<ul><li>▪ Undertook an Institutional and Staffing Review and Development of a Medium-Term Strategic Plan for the new Greater Accra Regional Hospital.</li><li>▪ Developed Sports Legislation for the Ministry of Youth and Sports.</li><li>▪ Developed Standard Operating Procedures for nine (9) Divisions of the Ministry of Finance.</li><li>▪ Provided Capacity Building services for the Legal Division of the Ministry of Finance</li><li>▪ Reviewed fifteen (15) Health Service enactments and developed a unified Health Service structure for the smooth implementation and execution of health policies, common protocols and standards development for the Ministry of Health and Ghana Health Service (GoG/DPs).</li><li>▪ The Ministry followed up with a request that we provide further professional services to the Ministry in respect of the Railways Sector.</li><li>▪ We provided Transaction Advisory Services for the Development of Transit Terminal for Haulage Trucks under a PPP arrangement for the Sekondi-Takoradi Metropolitan Authority to accommodate 500 haulage trucks at a time.</li><li>▪ We provided Transaction Advisory Services for the Redevelopment of Sekondi Market Project under a Public-Private Partnership Arrangement for the Sekondi-Takoradi Metropolitan Authority.</li><li>▪ Transaction Advisory Services have been provided for the Accra Metropolitan Authority in the Redevelopment of Kantamanto Market Project with an estimated Project Cost of US$25.2m.</li><li>▪ Political Economy Analysis of the Oil and Gas/Energy Sector in Ghana. (GOGIG/DFID).</li><li>▪ Baseline Mapping of the Energy Oil and Gas/Sector in Ghana. (GOGIG/DFID).</li><li>▪ We planned and executed a strategic workshop for the then Ministry of Ports, Harbours & Railways accomplished by directing eighty (80) ports sector stakeholders to obtain consensus on a Universal Sector Policy and Strategic Mission. We also designed and developed an outline strategic plan of direction and development of a Road Map with concrete methods & instruments for ensuring effective oversight of the Ports Sector by the Ministry. The firm had undertaken a pre-conference needs assessment of Ports Operators. (GoG/Ports Operators).</li></ul>",
-  },
-  {
-   name: 'Ghana Broadasting Corporation (GBC)',
-   logo: "images/logo/gbc.png",
-   detail: "<ul><li>▪ Our firm undertook an Organizational Review and Development of a Strategic Plan for the Ghana Broadcasting Corporation.</li></ul>",
-  },
-  {
-   name: 'Bank of Ghana',
-   logo: "images/logo/bog.png",
-   detail: "<ul><li>▪ Development of a Bespoke Peer Evaluation Tool for the Board of Directors of the Bank of Ghana.</li></ul>",
-  },
-  {
-   name: 'Korle Bu Teaching Hospital',
-   logo: "images/logo/kbth.png",
-   detail: "<ul><li>▪ Undertook an Institutional Review and developed a Strategic Plan for the Korle Bu Teaching Hospital, the third largest hospital in Africa.</li></ul>",
-  },
-  {
-   name: 'Ministry of Communications (Ghana)',
-   logo: "images/logo/minofcom.png",
-   detail: "<ul><li>▪ We undertook a major Evaluation of e-Communications/IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministry of Communications and other governmental agencies.</li></ul>",
   },
 ];
 

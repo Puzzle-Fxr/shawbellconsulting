@@ -152,7 +152,7 @@ export default function About() {
           </div>
             <div className="text-center">
               <button className="justify-center bg-pumpkin hover:bg-pumpkin-dark text-white font-heading font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-pumpkin/20" onClick={() => window.location.href = '/partners'}>
-                Learn More About Our Partners <ArrowRight className="w-4 h-4 ml-2 inline-block" />
+                Learn More About some of Our Partners and Clients <ArrowRight className="w-4 h-4 ml-2 inline-block" />
               </button>
             </div>
           <div className="text-center mt-8 mb-16">
