@@ -91,16 +91,16 @@ export default function People() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 onClick={() => openPerson(person)}
-                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer"
+                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
                 </div>
                 <h4 className="font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
                 <p className="text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{person.bio}</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">{person.bio}</p>
                 <p className="mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
-                <div className="flex flex-wrap gap-1.5 justify-center">
+                <div className="flex flex-wrap gap-1.5 justify-center mt-auto">
                   {person.specialties.map(s => (
                     <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
                       {s}
