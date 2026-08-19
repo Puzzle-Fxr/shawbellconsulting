@@ -1,17 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Send, ArrowRight, AtSign } from 'lucide-react';
+import { MapPin, Phone, Mail, Send, AtSign } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
 
   return (
     <div className="page-enter">
@@ -105,24 +99,18 @@ export default function Contact() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="bg-gradient-to-br from-steel/5 to-ocean/5 rounded-2xl border border-platinum p-8">
-                {submitted ? (
-                  <div className="text-center py-12">
-                    <div className="w-16 h-16 bg-pumpkin/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <ArrowRight className="w-8 h-8 text-pumpkin" />
-                    </div>
-                    <h3 className="font-heading font-bold text-2xl text-steel mb-4">Thank You</h3>
-                    <p className="text-gray-600">Your inquiry has been received. Our team will contact you within 24 hours.</p>
-                  </div>
-                ) : (
-                  <>
+                <>
                     <h2 className="font-heading font-bold text-2xl text-steel mb-2">Send Us a Message</h2>
                     <p className="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you promptly.</p>
-                    <form onSubmit={handleSubmit} className="space-y-5">
+                    <form action="https://formsubmit.co/pchristian@shawbellghana.com" method="POST" className="space-y-5">
+                      <input type="hidden" name="_subject" value="New inquiry from ShawbellConsulting website" />
+                      <input type="hidden" name="_template" value="table" />
                       <div>
                         <label className="font-heading font-medium text-sm text-steel mb-1 block">Full Name / Company Name</label>
                         <input
                           type="text"
                           value={form.name}
+                          name="name"
                           onChange={e => setForm({ ...form, name: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
                           placeholder="John Smith / Company A"
@@ -134,6 +122,7 @@ export default function Contact() {
                         <input
                           type="email"
                           value={form.email}
+                          name="_replyto"
                           onChange={e => setForm({ ...form, email: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
                           placeholder="john@company.com"
@@ -145,6 +134,7 @@ export default function Contact() {
                         <input
                           type="tel"
                           value={form.phone}
+                          name="phone"
                           onChange={e => setForm({ ...form, phone: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
                           placeholder="+44 7700 900000"
@@ -154,6 +144,7 @@ export default function Contact() {
                         <label className="font-heading font-medium text-sm text-steel mb-1 block">Service Interest</label>
                         <select
                           value={form.service}
+                          name="service"
                           onChange={e => setForm({ ...form, service: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
                           required
@@ -174,6 +165,7 @@ export default function Contact() {
                         <label className="font-heading font-medium text-sm text-steel mb-1 block">Message</label>
                         <textarea
                           value={form.message}
+                          name="message"
                           onChange={e => setForm({ ...form, message: e.target.value })}
                           rows={4}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all resize-none"
@@ -188,8 +180,7 @@ export default function Contact() {
                         <Send className="w-4 h-4" /> Submit Inquiry
                       </button>
                     </form>
-                  </>
-                )}
+                </>
               </div>
             </motion.div>
           </div>
