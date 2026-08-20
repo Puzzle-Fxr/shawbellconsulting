@@ -5,6 +5,7 @@ import { ArrowRight, Building2, ChevronDown } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import { partners } from '../lib/data';
+import { clients } from '../lib/data';
 
 const collaborations = [
   {
@@ -47,34 +48,6 @@ const collaborations = [
       "Aside from work conducted by ShawbellConsulting in education and training, our flagship Training Institute, namely the Ghana Institute of Consulting (GIC) as mentioned above, has conducted many training courses for private sector organizations in assisting them to set up, as well as to sustain their businesses. The GIC is founded upon the principles, techniques, and discipline of professional and business practices. Based in Accra, Ghana, it has trained people from all over Africa in various skills, practices and procedures that are applicable to a wide range of domains. Our firm's combined experience is as follows:<br /><br /><b>2002 - Present</b><br /><ul><li>• We are Certified Trainers in Creative Training Techniques from the Bob Pike Group, USA.</li><br /><li>• We have held Training Partnerships and MoUs with private and public sector organizations such as the Ghana Association of Consultants, the Business Council for Africa, the Institute of Local Government Services, and several private sector institutions, as mentioned in previous sections.</li><br /><li>• We are certified by the Ministry of Local Government to provide capacity building services to Metropolitan, Municipal and District Assemblies and their External Service Providers.</li><br /><li>• Our firm has conducted a Training Needs Assessment, Development of Training Plan, Training Manuals and Curricula for Training and Capacity Building in support of the Objectives of the Ghana Urban Management Pilot Programme for Public Private Partnerships at the District Level and also for Strategies for Attracting Investments to Regions and Districts (Agence Francaise de Developpement)</li><br /><li>• We have conducted Certificate Training in professional practices at the Ghana Institute of Consulting for 400+ participants since 2009.</li><br /><li>• Through our not-for-profit agency, namely the GIC/Skills Resource Network (SRN), (G - 28,948), we have linked SMEs up with business opportunities that arise at no charge</li><br /><li>• The firm has promoted a Resource Library, namely the Ghana Consultancy Resource Centre. (Sponsored)</li><br /><li>• The 'Every District Is a Star' (EDIAS) Project, developed by ShawbellConsulting was aimed at supporting capacity building and strengthening of institutions involved in fiscal decentralization.</li><br /><li>• We have provided Attitudinal Training for 170 Junior to Middle-Level Executives of the Ghana National Petroleum Corporation, and others.</li><br /><li>• We have undertaken a Skills Audit and Competency Assessments for a Computerized Database of Job Profiles and Staff Development Plans for the Ghana National Petroleum Corporation.</li><br /><li>• We have conducted Training at our Ghana Institute of Consulting and have collaborations with Tech Hubs on the firm's projects that involve Innovation and Entrepreneurship.</li><br /><li>• We have conducted Capacity Building for Members of Professional Associations such as the Chartered Institute of Management.</li><br /><li>• We undertook a major Evaluation of IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministries of Environment, Communication, Food and Agriculture, Health, CSIR, the Global Teenager Project and the University of Uganda in diverse IT projects:</li><br /><li>• Our consultants have worked with COTVET, Gratis and EMPRETEC who are engaged in technical training and support to the business here in Ghana.</li></ul>",
   },
 ];
-
-const clients = [
-  {
-   name: 'Ghana Broadasting Corporation (GBC)',
-   logo: "images/logo/gbc.png",
-   detail: "<ul><li>▪ Our firm undertook an Organizational Review and Development of a Strategic Plan for the Ghana Broadcasting Corporation.</li></ul>",
-  },
-  {
-   name: 'Bank of Ghana',
-   logo: "images/logo/bog.png",
-   detail: "<ul><li>▪ Development of a Bespoke Peer Evaluation Tool for the Board of Directors of the Bank of Ghana.</li></ul>",
-  },
-  {
-   name: 'Korle Bu Teaching Hospital',
-   logo: "images/logo/kbth.png",
-   detail: "<ul><li>▪ Undertook an Institutional Review and developed a Strategic Plan for the Korle Bu Teaching Hospital, the third largest hospital in Africa.</li></ul>",
-  },
-  {
-   name: 'Ministry of Communications (Ghana)',
-   logo: "images/logo/minofcom.png",
-   detail: "<ul><li>▪ We undertook a major Evaluation of e-Communications/IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministry of Communications and other governmental agencies.</li></ul>",
-  },
-  {
-   name: 'African Development Bank',
-   logo: "images/logo/africanDevBank.png",
-   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
-  },
-]
 
 export default function Partners() {
   const [openItem, setOpenItem] = useState<number | null>(0);

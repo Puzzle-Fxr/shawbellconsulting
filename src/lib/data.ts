@@ -468,6 +468,34 @@ export const partners = [
   },
 ];
 
+export const clients = [
+  {
+   name: 'Ghana Broadasting Corporation (GBC)',
+   logo: "images/logo/gbc.png",
+   detail: "<ul><li>▪ Our firm undertook an Organizational Review and Development of a Strategic Plan for the Ghana Broadcasting Corporation.</li></ul>",
+  },
+  {
+   name: 'Bank of Ghana',
+   logo: "images/logo/bog.png",
+   detail: "<ul><li>▪ Development of a Bespoke Peer Evaluation Tool for the Board of Directors of the Bank of Ghana.</li></ul>",
+  },
+  {
+   name: 'Korle Bu Teaching Hospital',
+   logo: "images/logo/kbth.png",
+   detail: "<ul><li>▪ Undertook an Institutional Review and developed a Strategic Plan for the Korle Bu Teaching Hospital, the third largest hospital in Africa.</li></ul>",
+  },
+  {
+   name: 'Ministry of Communications (Ghana)',
+   logo: "images/logo/minofcom.png",
+   detail: "<ul><li>▪ We undertook a major Evaluation of e-Communications/IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministry of Communications and other governmental agencies.</li></ul>",
+  },
+  {
+   name: 'African Development Bank',
+   logo: "images/logo/africanDevBank.png",
+   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
+  },
+]
+
 export const accolades = [
   { title: 'Best in Law Consulting Firm', org: 'Oil and Gas Ghana Industry (OGGA) Awards', year: '2014–2016' },
   { title: 'Consultancy Company of the Year', org: 'Ghana Oil and Gas Awards (GOGA)', year: '2016' },

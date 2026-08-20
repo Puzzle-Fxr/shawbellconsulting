@@ -91,7 +91,20 @@ p {
   animation-play-state: paused;
 }
 
+.client-marquee {
+  animation: client-marquee 40s linear infinite reverse;
+}
+
+.client-marquee:hover {
+  animation-play-state: paused;
+}
+
 @keyframes partner-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.5rem)); }
+}
+
+@keyframes client-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 0.5rem)); }
 }

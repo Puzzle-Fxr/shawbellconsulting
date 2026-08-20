@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, BookOpen, Scale, ChevronRight, Star, Target, MapPin, Phone, AtSign } from 'lucide-react';
-import { publications, people, partners, accolades } from '../lib/data';
+import { publications, people, partners, clients, accolades } from '../lib/data';
 import { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
 
@@ -9,6 +9,7 @@ export default function Home() {
   const founder = people.find(p => p.isFounder)!;
   const latestArticle = publications[0];
   const marqueePartners = [...partners, ...partners];
+  const marqueeClients = [...clients, ...clients];
 
   const heroBackgroundImages: string[] = [
     '/images/hero.jpg',
@@ -178,12 +179,17 @@ export default function Home() {
 
       {/* Partners Strip */}
       <section className="bg-gradient-to-b from-white to-platinum/40 border-b border-platinum py-14 overflow-hidden relative">
+        <div className="absolute inset-0 flex items-end justify-left pointer-events-none">
+          <span className="font-heading text-[5rem] md:text-[15rem] font-bold tracking-[0.25em] text-steel/5 select-none">
+            COLLABORATIONS
+          </span>
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
               <p className="font-heading font-medium text-xs uppercase tracking-[0.28em] text-ocean mb-3">Trusted Partners</p>
               <h2 className="font-heading font-bold text-2xl md:text-3xl text-steel leading-tight">
-                Strategic collaborations that move business forward
+                Strategic Partnerships
               </h2>
             </div>
             <Link
@@ -206,6 +212,39 @@ export default function Home() {
                   </div>
                   <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
                     {p.name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Optimized Clients */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 mt-8">
+            <div>
+              <h2 className="font-heading font-bold text-2xl md:text-3xl text-steel leading-tight">
+                Optimized Clients
+              </h2>
+            </div>
+            <Link
+              to="/partners"
+              className="inline-flex items-center gap-2 text-steel font-heading font-semibold text-sm hover:text-ocean transition-colors"
+            >
+              View More Clients <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="relative overflow-hidden rounded-2xl border border-platinum bg-white/80 py-3">
+            <div className="client-marquee flex w-max items-center gap-6">
+              {marqueeClients.map((c, i) => (
+                <div
+                  key={`${c}-${i}`}
+                  className="shrink-0 w-[220px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
+                >
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3">
+                    <img src={c.logo} alt={c.name} className="w-auto h-15 tracking-[0.24em] object-cover" />
+                  </div>
+                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
+                    {c.name}
                   </p>
                 </div>
               ))}
