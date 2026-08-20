@@ -424,7 +424,7 @@ export default function Home() {
           </span>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -432,17 +432,22 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="relative"
             >
+              <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">LEADERSHIP</p>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-6">
+                {founder.name}
+              </h2>
+              <p className="text-pumpkin font-heading font-medium text-sm mb-6">{founder.role}</p>
               {/* Founder image placeholder */}
               <div className="rounded-2xl w-full aspect-[3/4] max-w-md flex items-center justify-center relative overflow-hidden">
                 <div className="text-center z-10">
-                  <div className="w-100 h-100 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-steel-dark">
+                  <div className="w-100 h-100 bg-white/20 rounded-full mx-auto mb-2 flex items-center justify-center border-2 border-steel-dark">
                     <img src={founder.imageUrl} alt={founder.name} className="w-98 h-98 rounded-full object-cover" />
                   </div>
                 </div>
               </div>
               {/* Decorative */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-pumpkin/20 rounded-full blur-2xl"></div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-ocean/15 rounded-full blur-3xl"></div>
+              <div className="absolute -top-2 -left-4 w-16 h-16 bg-pumpkin/20 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-2 -right-4 w-24 h-24 bg-ocean/15 rounded-full blur-3xl"></div>
             </motion.div>
 
             <motion.div
@@ -451,11 +456,6 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <p className="font-heading font-medium text-xs uppercase tracking-wider text-ocean mb-4">Leadership</p>
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-steel leading-tight mb-6">
-                {founder.name}
-              </h2>
-              <p className="text-pumpkin font-heading font-medium text-sm mb-6">{founder.role}</p>
               <p className="text-gray-600 leading-relaxed mb-6">{founder.bio}</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {founder.specialties.map(s => (
