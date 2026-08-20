@@ -62,7 +62,7 @@ export default function Partners() {
         canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/partners'}
       />
       <PageHero
-        title="Our Partners"
+        title="Our Collaborations"
         subtitle="Our firm has served the following business groups, clients, and sectors"
         image="images/handshake.jpg"
         description="Our firm has provided services to many governmental bodies and their development partners on policy, strategic planning, governance and organizational development, establishment of operational systems, standard operating procedures for process optimization, monitoring and evaluation, risk management, capacity building and other projects. "
@@ -73,7 +73,7 @@ export default function Partners() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mb-8">
             <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Trusted and Respected</p>
-            <h2 className="text-3xl font-bold text-slate-900">Collaborations</h2>
+            <h2 className="text-3xl font-bold text-slate-900">Partners</h2>
           </div>
           <div className="space-y-4">
             {partners.map((partner, i) => {
@@ -125,7 +125,7 @@ export default function Partners() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="mb-8">
               <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Our Optimized Clients</p>
-              <h2 className="text-3xl font-bold text-slate-900">Selected Client Collaborations</h2>
+              <h2 className="text-3xl font-bold text-slate-900">Clients</h2>
             </div>
             <div className="space-y-4">
               {clients.map((client, index) => {
