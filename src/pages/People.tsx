@@ -137,6 +137,7 @@ export default function People() {
         </div>
       </section>
 
+      {/* Modal for selected person */}
       <AnimatePresence>
         {selectedPerson && (
           <motion.div
@@ -172,11 +173,11 @@ export default function People() {
               </div>
 
               <div className="p-6 space-y-6">
-                <div className="flex gap-4 items-center">
-                  <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-center">
+                <div className="grid lg:grid-cols-2 gap-6 items-center">
+                  <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-self-center">
                     <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-58 h-58 rounded-full object-cover" />
                   </div>
-                  <div className="basis-2/3 ">
+                  <div className="basis-2/3">
                     <div className="text-sm text-gray-700">
                       <div className="bg-platinum/50 rounded-xl p-3">
                         <p className="font-heading font-semibold text-steel mb-1">Focus Areas</p>
@@ -189,6 +190,7 @@ export default function People() {
                   </div>
                 </div>
 
+                {/* Specialties */}
                 <div>
                   <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Specialties</p>
                   <div className="flex flex-wrap gap-2">
