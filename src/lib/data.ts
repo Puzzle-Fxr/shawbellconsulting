@@ -234,6 +234,14 @@ export const advisoryServices = [
     features: ['Capability assessment', 'Leadership support', 'Team development', 'Governance strengthening'],
     icon: 'Shield',
   },
+  {
+    id: 'training-and-capacity-building-services',
+    title: 'Training and Capacity Building Services',
+    short: 'Development of skills and knowledge to enhance organizational performance.',
+    long: 'We provide targeted training programs and capacity-building initiatives to equip individuals and teams with the competencies needed to drive organizational success.',
+    features: ['Skill development', 'Knowledge transfer', 'Leadership training', 'Professional development'],
+    icon: 'GraduationCap',
+  }
 ];
 
 export const publications = [
