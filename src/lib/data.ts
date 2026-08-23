@@ -462,6 +462,11 @@ export const partners = [
    detail: "<ul><li>▪ We undertook the project to Counter Documentation Fraud and enhance the ease of Trans-border Migration and Transactions. It involved the Registry of Marriages, Ghana Immigration Service, Passports Office, Criminal Investigations Department of the Police Service, Births and Deaths Registry (EU Aeneas Programme).</li></ul>",
   },
   {
+   name: 'African Development Bank',
+   logo: "images/logo/africanDevBank.png",
+   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
+  },
+  {
    name: 'Government Of Ghana',
    logo: "images/logo/coatOfArms.png",
    detail: "<ul><li>▪ Undertook an Institutional and Staffing Review and Development of a Medium-Term Strategic Plan for the new Greater Accra Regional Hospital.</li><li>▪ Developed Sports Legislation for the Ministry of Youth and Sports.</li><li>▪ Developed Standard Operating Procedures for nine (9) Divisions of the Ministry of Finance.</li><li>▪ Provided Capacity Building services for the Legal Division of the Ministry of Finance</li><li>▪ Reviewed fifteen (15) Health Service enactments and developed a unified Health Service structure for the smooth implementation and execution of health policies, common protocols and standards development for the Ministry of Health and Ghana Health Service (GoG/DPs).</li><li>▪ The Ministry followed up with a request that we provide further professional services to the Ministry in respect of the Railways Sector.</li><li>▪ We provided Transaction Advisory Services for the Development of Transit Terminal for Haulage Trucks under a PPP arrangement for the Sekondi-Takoradi Metropolitan Authority to accommodate 500 haulage trucks at a time.</li><li>▪ We provided Transaction Advisory Services for the Redevelopment of Sekondi Market Project under a Public-Private Partnership Arrangement for the Sekondi-Takoradi Metropolitan Authority.</li><li>▪ Transaction Advisory Services have been provided for the Accra Metropolitan Authority in the Redevelopment of Kantamanto Market Project with an estimated Project Cost of US$25.2m.</li><li>▪ Political Economy Analysis of the Oil and Gas/Energy Sector in Ghana. (GOGIG/DFID).</li><li>▪ Baseline Mapping of the Energy Oil and Gas/Sector in Ghana. (GOGIG/DFID).</li><li>▪ We planned and executed a strategic workshop for the then Ministry of Ports, Harbours & Railways accomplished by directing eighty (80) ports sector stakeholders to obtain consensus on a Universal Sector Policy and Strategic Mission. We also designed and developed an outline strategic plan of direction and development of a Road Map with concrete methods & instruments for ensuring effective oversight of the Ports Sector by the Ministry. The firm had undertaken a pre-conference needs assessment of Ports Operators. (GoG/Ports Operators).</li></ul>",
@@ -472,27 +477,90 @@ export const clients = [
   {
    name: 'Ghana Broadasting Corporation (GBC)',
    logo: "images/logo/gbc.png",
-   detail: "<ul><li>▪ Our firm undertook an Organizational Review and Development of a Strategic Plan for the Ghana Broadcasting Corporation.</li></ul>",
   },
   {
    name: 'Bank of Ghana',
    logo: "images/logo/bog.png",
-   detail: "<ul><li>▪ Development of a Bespoke Peer Evaluation Tool for the Board of Directors of the Bank of Ghana.</li></ul>",
   },
   {
    name: 'Korle Bu Teaching Hospital',
    logo: "images/logo/kbth.png",
-   detail: "<ul><li>▪ Undertook an Institutional Review and developed a Strategic Plan for the Korle Bu Teaching Hospital, the third largest hospital in Africa.</li></ul>",
   },
   {
    name: 'Ministry of Communications (Ghana)',
    logo: "images/logo/minofcom.png",
-   detail: "<ul><li>▪ We undertook a major Evaluation of e-Communications/IT Programme Targets and Training for five Partner Institutions and Projects of the International Institute for Communication and Development (IICD) at the Hague, involving the Ministry of Communications and other governmental agencies.</li></ul>",
   },
   {
-   name: 'African Development Bank',
-   logo: "images/logo/africanDevBank.png",
-   detail: "<ul><li>▪ Our firm was retained by the Ghana Stock Exchange/Ministry of Finance/AfDB to provide Legal Due Diligence Services for SMEs wishing to list the Alternative Stock Market, as part of a team of Transaction Advisors.</li></ul>",
+   name: 'Ministry of Energy and Green Transition (Ghana)',
+   logo: "images/logo/MoEnGT.png",
+  },
+  {
+   name: 'Ministry of Ghana National Petroleum Corporation',
+   logo: "images/logo/gnpc.png",
+  },
+  {
+   name: 'Ghana Coco Board (Cocobod)',
+   logo: "images/logo/Cocobod.png",
+  },
+  {
+   name: 'Passion Air',
+   logo: "images/logo/pa.png",
+  },
+  {
+   name: 'Donewell Insurance Co',
+   logo: "images/logo/donewell.png",
+  },
+  {
+   name: 'State Interest and Governance Authority(Siga)',
+   logo: "images/logo/siga.png",
+  },
+  {
+   name: 'Judiciary Service (Ghana)',
+   logo: "images/logo/gjs.png",
+  },
+  {
+   name: 'Ministry of Justice (Ghana)',
+   logo: "images/logo/mojagd.png",
+  },
+  {
+   name: 'Ministry of Finance (Ghana)',
+   logo: "images/logo/mof.png",
+  },
+  {
+   name: 'Ghana Revenue Authority (GRA)',
+   logo: "images/logo/GRA.png",
+  },
+  {
+   name: 'Forestry Commission (Ghana)',
+   logo: "images/logo/fc.png",
+  },
+  {
+   name: 'Fair Wages and Salaries Commission (Ghana)',
+   logo: "images/logo/FWSC.png",
+  },
+  {
+   name: 'National Labour Commission (Ghana)',
+   logo: "images/logo/nlc.png",
+  },
+  {
+   name: 'MDPI',
+   logo: "images/logo/mdpi.png",
+  },
+  {
+   name: 'Greater Accra Regional Hospital (Ghana)',
+   logo: "images/logo/ridge.png",
+  },
+  {
+   name: 'Commission on Human Rights and Administrative Justice (Ghana)',
+   logo: "images/logo/chraj.png",
+  },
+  {
+   name: 'National Commission on Small Arms (Ghana)',
+   logo: "images/logo/smallarms.png",
+  },
+  {
+   name: 'Ghana Free Zones Authority (Ghana)',
+   logo: "images/logo/gfza.png",
   },
 ]
 

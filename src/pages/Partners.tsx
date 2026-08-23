@@ -52,7 +52,6 @@ const collaborations = [
 export default function Partners() {
   const [openItem, setOpenItem] = useState<number | null>(0);
   const [openPartner, setOpenPartner] = useState<number | null>(0);
-  const [openClient, setOpenClient] = useState<number | null>(0);
 
   return (
     <div className="page-enter">
@@ -127,48 +126,22 @@ export default function Partners() {
               <p className="font-heading text-xs uppercase tracking-[0.28em] text-ocean mb-3">Our Optimized Clients</p>
               <h2 className="text-3xl font-bold text-slate-900">Clients</h2>
             </div>
-            <div className="space-y-4">
-              {clients.map((client, index) => {
-                const isOpen = openClient === index;
 
-                return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
-                      <button
-                        type="button"
-                        onClick={() => setOpenClient(isOpen ? null : index)}
-                        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"
-                        aria-expanded={isOpen}
-                      >
-                        <div className="flex items-center gap-4">
-                          <img src={client.logo} alt={client.name} className="h-12 w-auto rounded-md bg-white p-2 object-contain shadow-sm" />
-                          <div>
-                            <h3 className="text-lg font-bold text-slate-800">{client.name}</h3>
-                            <p className="text-sm text-slate-500">View details</p>
-                          </div>
-                        </div>
-                        <ChevronDown className={`h-5 w-5 shrink-0 text-slate-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
-                      </button>
-
-                      {isOpen && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          transition={{ duration: 0.25, ease: 'easeOut' }}
-                          className="border-t border-slate-200 bg-white px-5 py-4 sm:px-6"
-                        >
-                          <p className="text-sm leading-relaxed text-slate-600 sm:text-base" dangerouslySetInnerHTML={{ __html: client.detail }} />
-                        </motion.div>
-                      )}
-                    </div>
-                  </motion.div>
-                );
-              })}
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {clients.map((client, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+                >
+                  <img src={client.logo} alt={client.name} className="h-14 w-14 rounded-lg bg-slate-50 p-2 object-contain shadow-sm" />
+                  <div>
+                    <h3 className="text-base font-bold text-slate-800 sm:text-lg">{client.name}</h3>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
