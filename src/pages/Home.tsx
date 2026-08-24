@@ -205,12 +205,12 @@ export default function Home() {
               {marqueePartners.map((p, i) => (
                 <div
                   key={`${p}-${i}`}
-                  className="shrink-0 w-[220px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
+                  className="shrink-0 h-[138px] w-max min-w-[160px] max-w-[320px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
                 >
-                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3">
-                    <img src={p.logo} alt={p.name} className="w-auto h-15 tracking-[0.24em] object-cover" />
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3 px-3">
+                    <img src={p.logo} alt={p.name} className="w-auto max-w-full h-15 object-contain" />
                   </div>
-                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
+                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-nowrap overflow-hidden text-ellipsis">
                     {p.name}
                   </p>
                 </div>
@@ -218,7 +218,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Optimized Clients */}
+          {/* Clients */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 mt-8">
             <div>
               <h2 className="font-heading font-bold text-2xl md:text-3xl text-steel leading-tight">
@@ -238,12 +238,12 @@ export default function Home() {
               {marqueeClients.map((c, i) => (
                 <div
                   key={`${c}-${i}`}
-                  className="shrink-0 w-[220px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
+                  className="shrink-0 h-[138px] w-max min-w-[160px] max-w-[320px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
                 >
-                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3">
-                    <img src={c.logo} alt={c.name} className="w-auto h-15 tracking-[0.24em] object-cover" />
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3 px-3">
+                    <img src={c.logo} alt={c.name} className="w-auto max-w-full h-15 object-contain" />
                   </div>
-                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-normal break-words">
+                  <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-nowrap overflow-hidden text-ellipsis">
                     {c.name}
                   </p>
                 </div>
@@ -277,7 +277,7 @@ export default function Home() {
                 ShawbellConsulting was established in Ghana in 2002 as a hybrid firm combining legal and management consultancy services. It was founded by Phyllis Maria Christian, who — after 13 years at Price Waterhouse Associates and its successor firm Ernst & Young in Ghana — set out to build a firm delivering superior professional standards locally. In 2009, the firm established the Ghana Institute of Consulting (GIC) to support capacity building and business performance nationally.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Over more than two decades, the firm has built deep experience across government, multinationals, development partners, and the local private sector — including a 10-year run as Local Manager for Amazon.com in Ghana (2002–2012) and representation of global players like Transocean and a consortium of five global petroleum corporations. Today the firm comprises three entities: The Law Practice, The Consultancy Practice, and the GIC, staffed by permanent professionals across law, finance, economics, IT, and social development.
+                Over more than two decades, the firm has built deep experience across government, multinationals, development partners, and the local private sector — including a 10-year run as Local Manager for Amazon.com in Ghana (2002-2012) and representation of global players such as Transocean and a consortium of five global petroleum corporations. Today the firm comprises three entities: The Law Practice, The Consultancy Practice, and the GIC, staffed by permanent professionals across law, finance, economics, IT, and social development.
               </p>
               <Link
                 to="/about"
@@ -337,7 +337,7 @@ export default function Home() {
               Integrated Legal & Advisory Services
             </h2>
             <p className="text-gray-500 max-w-3xl mx-auto">
-              Our work spans private-sector legal counsel, government and public-sector reform, institutional strengthening, public financial management, transaction support, and investor intermediary services.
+              Our work spans private sector legal counsel, government and public-sector reform, institutional strengthening, public financial management, transaction support, and investor intermediary services.
             </p>
           </div>
 
@@ -522,7 +522,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-heading font-medium text-steel">Email</p>
-                    <p className="text-gray-500 text-sm">pchristian@shawbellghana.com</p>
+                    <p className="text-gray-500 text-sm">info@shawbellghana.com</p>
                   </div>
                 </div>
               </div>

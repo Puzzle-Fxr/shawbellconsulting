@@ -84,27 +84,20 @@ p {
 
 /* Partners marquee */
 .partner-marquee {
-  animation: partner-marquee 40s linear infinite;
-}
-
-.partner-marquee:hover {
-  animation-play-state: paused;
+  animation: marquee 40s linear infinite;
 }
 
 .client-marquee {
-  animation: client-marquee 40s linear infinite reverse;
+  animation: marquee 40s linear infinite;
+  animation-direction: reverse;
 }
 
+.partner-marquee:hover,
 .client-marquee:hover {
   animation-play-state: paused;
 }
 
-@keyframes partner-marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(calc(-50% - 0.5rem)); }
-}
-
-@keyframes client-marquee {
+@keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 0.5rem)); }
 }

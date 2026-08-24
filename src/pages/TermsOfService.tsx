@@ -65,7 +65,7 @@ export default function TermsOfService() {
       <section className="bg-platinum/30 py-16">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="font-heading font-bold text-2xl text-steel mb-4">Need clarification?</h3>
-          <p className="text-gray-600 mb-6">Contact us if you would like help understanding any part of these terms.</p>
+          <p className="text-gray-600 mb-6">Contact us if you need help understanding any part of these terms.</p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 bg-pumpkin hover:bg-pumpkin-dark text-white font-heading font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg"

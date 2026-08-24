@@ -52,7 +52,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-heading font-medium text-steel pb-2">Mailing Address</h3>
-                    <p className="text-gray-500 text-sm">DTD 76, Cantonments Post Office, Accra, GHANA <br />Or<br />P.O. Box KIA9022, Airport, Accra</p>
+                    <p className="text-gray-500 text-sm">P.O. Box KIA9022, Airport, Accra</p>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">+233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)27 5724540 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
+                    <p className="font-heading font-medium text-steel">+233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)20 814 9262 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ export default function Contact() {
                     <AtSign className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">pchristian@shawbellghana.com</p>
+                    <p className="font-heading font-medium text-steel">info@shawbellghana.com</p>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function Contact() {
                 <>
                     <h2 className="font-heading font-bold text-2xl text-steel mb-2">Send Us a Message</h2>
                     <p className="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you promptly.</p>
-                    <form action="https://formsubmit.co/pchristian@shawbellghana.com" method="POST" className="space-y-5">
+                    <form action="https://formsubmit.co/info@shawbellghana.com" method="POST" className="space-y-5">
                       <input type="hidden" name="_subject" value="New inquiry from ShawbellConsulting website" />
                       <input type="hidden" name="_template" value="table" />
                       <div>

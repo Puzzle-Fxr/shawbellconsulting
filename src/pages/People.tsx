@@ -6,6 +6,28 @@ import PageHero from '../components/PageHero';
 import { people } from '../lib/data';
 import SEO from '../components/SEO';
 
+type Person = (typeof people)[number];
+
+function MemberCard({ person, index, onOpen }: { person: Person; index: number; onOpen: (person: Person) => void }) {
+  return (
+    <motion.button
+      type="button"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.1 }}
+      onClick={() => onOpen(person)}
+      className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col relative overflow-hidden"
+    >
+      <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+        <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
+      </div>
+      <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
+      <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center">{person.role}</p>
+    </motion.button>
+  );
+}
+
 export default function People() {
   const [selectedPerson, setSelectedPerson] = useState<(typeof people)[number] | null>(null);
   const previousScrollY = useRef(0);
@@ -29,6 +51,11 @@ export default function People() {
       window.scrollTo({ top: returnScrollY, behavior: 'auto' });
     });
   };
+
+  const members = people.filter(person => !person.isFounder);
+  const ourTeam = members.filter(person => ['priscilla-andoh', 'daniellina-essel', 'johanna-ntow', 'audrey-fenuku', 'karsten-avogo'].includes(person.id));
+  const poolOfExperts = members.filter(person => ['estelle-appiah', 'cephas-galley', 'margaret-prah', 'max-vardon', 'gheysika-agambila', 'henry-paidoo', 'tracie-annan'].includes(person.id));
+  const financeAndAccountingAssociates = members.filter(person => person.id === 'kofi-amorin');
 
   return (
     <div className="page-enter">
@@ -91,48 +118,27 @@ export default function People() {
             ))}
           </div>
 
-          {/* Other team members */}
-          <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {people.filter(p => !p.isFounder).map((person, i) => (
-              <motion.button
-                key={person.id}
-                type="button"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                onClick={() => openPerson(person)}
-                className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col relative overflow-hidden"
-              >
-                <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  width: '240px',
-                  height: '240px',
-                  backgroundImage: 'url(/favicon.png)',
-                  backgroundSize: 'contain',
-                  opacity: 0.10,
-                  pointerEvents: 'none'
-                }} />
-                <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
-                </div>
-                <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
-                <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center mb-4">{person.role}</p>
-                <p className="relative z-10 text-gray-600 text-sm leading-relaxed mb-4 flex-grow">{person.bio}</p>
-                <p className="relative z-10 mt-4 mb-6 text-sm text-gray-500 text-center"> - Click for More Info - </p>
-                <div className="relative z-10 flex flex-wrap gap-1.5 justify-center mt-auto">
-                  {person.specialties.map(s => (
-                    <span key={s} className="bg-platinum/50 text-steel font-heading font-medium text-xs px-2 py-1 rounded-full">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </motion.button>
-            ))}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-8">
+            <div>
+              <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {ourTeam.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Pool of Experts</h3>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {poolOfExperts.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
+              </div>
+            </div>
+
+            <div className="lg:col-span-2">
+              <h3 className="font-heading font-semibold text-2xl text-steel mb-8">F &amp; A Associates</h3>
+              <div className="grid gap-6">
+                {financeAndAccountingAssociates.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
+              </div>
+            </div>
           </div>
         </div>
       </section>

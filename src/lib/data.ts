@@ -277,12 +277,10 @@ export const people = [
     specialties: ['Legal practice and litigation', 'Policy and legislation', 'Strategic planning and public financial management', 'Government policy and legislative reform', 'Corporate governance, board advisory and institutional reform', 'Transactional advisory (due diligence, PPPs, contracts, shareholder agreements)', 'Value-for-money and monitoring, evaluation, impact assessment', 'Sector experience: power, petroleum/oil & gas, mining, ports, renewable energy, communications/ICT, tax, environment, justice, banking & financial services, health, cocoa, and others', 'Training and capacity building; project and programme leadership', 'Investor liaison and local representation for multinationals'],
     focusAreas: ["<ul><li>▪ Legal practice and litigation (Senior Member of the Ghana Bar; Notary Public)</li><li>▪ Policy and legislation, interpretation and drafting of laws/regulations</li><li>▪ Strategic planning and public financial management</li><li>▪ Government policy and legislative reform</li><li>▪ Corporate governance, board advisory and institutional reform</li><li>▪ Transactional advisory (due diligence, PPPs, contracts, shareholder agreements)</li><br /><br /><li>▪ Value-for-money and monitoring, evaluation, impact assessment</li><li>▪ Sector experience: power, petroleum/oil &amp; gas, mining, ports, renewable energy, communications/ICT, tax, environment, justice, banking &amp; financial services, health, cocoa, and others</li><li>▪ Training and capacity building; project and programme leadership</li><li>▪ Investor liaison and local representation for multinationals</li></ul>"],
     details: [
-      "A seasoned Lawyer, with an extensive professional and experiential track record in legal, business advisory and management consultancy services. A Senior Member of the Ghana Bar and Solicitor of the Superior Courts of Judicature in Ghana and Notary Public, Ms. Christian has worked at senior and executive levels of public and private sector organizations locally and internationally, and has done so in both substantive positions, as well as at governing board level. Ms. Christian is the founder and CEO of the firm of ShawbellConsulting and its subsidiaries including the Ghana Institute of Consulting, Skills Resource Network, and Ghana Consultancy Resource Centre. She also serves as the Managing Partner of its law practice.<br /><br />\
-      Before establishing the firm in 2002, Ms. Christian had worked for 13 years with the international firm of Price Waterhouse Associates, and its successor firm of Ernst and Young in Ghana, rising to senior executive level.<br /><br />\
-      Since graduating from University in 1977, Phyllishas developed an impressive track record of 43 years in the public and public sectors, particularly in the areas of strategic planning, public financial management, government policy and legislative reform, interpretation of laws and regulations, drafting agreements, political economy analyses, corporate governance advisory and structuring, standard operating procedures, transactional advisory services, including value for money and due diligence services, monitoring, evaluation, and impact assessment, and training and capacity building in diverse sectors. These have included: power, petroleum, mining, ports, renewable energy, communications and IT, tax, environment, justice, banking and non-bank financial services, health, cocoa, and other business sectors.<br /><br />\
-      Starting out as a Senior Legal Officer of the Ghana Cocoa Board in 1982, she has successfully provided various legal and other advisory services to government, local and international private sector. For 10 years she served as the Local Manager for the global giant Amazon International (Amazon.com) in Ghana and has represented listed firms such as Transocean and Tap Oil in Ghana managing all their activities in Ghana. Ms Christian has also held high office throughout her career in Ghana and abroad and has been/is a member of the Boards of Directors of industrial, consultancy, non-governmental and financial service institutions. She served as Advisor to the Board of Directors of the Ghana Infrastructure Investment Fund in 2015. She has also served on the Boards of the Ghana Water Company, Community Water and Sanitation Agency, Prudential Bank, agencies of the Ministry of Trade and Industry, and other governing boards. She is currently on the Advisory Board of Tullow Ghana, and Chairperson of the Ethics Committee of the Ghana Football Association.<br /><br />\
-      ShawbellConsulting has won three (3) awards for best legal and consulting firm within Ghana's oil industry and Ms Christian has been listed as a leading legal practitioner in the International Who's Who of Corporate and Energy Lawyers.<br /><br />\
-      Having been called to the Ghana Bar in 1981, she is a Senior Member of Bar and a Solicitor of the Superior Courts of Judicature of Ghana. Additionally, she holds post-graduate qualifications in International Law & Business from the City University of London. She also holds other educational qualifications in finance, law, and oil and gas.",
+      "Phyllis Maria Christian (1972/74 year group) is a distinguished lawyer with a career spanning over four decades. She received her foundational training from influential educators, including Rev. Sisters Mary Connelly, Philomena Powers, and Jacqueline McCann, as well as Roger Porkess and Amos Abanyie. Phyllis served as School Prefect in 1974.<br /><br />\
+      At the University of Ghana, Legon, she was Volta Hall President and graduated with a 2nd Upper degree in Philosophy and Literature in 1977. She returned to her alma mater as National Service teacher, before studying Law, and was called to the Ghana Bar in 1981. Aside from other academic laurels, Phyllis also graduated in International Law and Business with distinction, from the City University, UK. Her diverse career of excellence was furthered after her pupillage, with her role as Senior Legal Officer at the Ghana Cocoa Board, international experience in the U.S. legal, business, and financial sectors, and 13 years at two of the 'Big Four' accounting firms in Ghana.<br /><br />\
+      In 2002, she founded ShawbellConsulting, a hybrid firm of lawyers and business advisors.<br /><br />\
+      As of 2026, the firm maintains a stellar 24-year track record of legal and business advisory, strategy, innovation, and institutional reform services provided to public and private organizations. Phyllis has served as Chair of the Ethics Committee for the Ghana Football Association, member of the Advisory Board of Tullow Ghana, and others.",
     ],
     isFounder: true,
   },
@@ -291,7 +289,6 @@ export const people = [
     name: 'Kofi Ludwig Amorin',
     role: 'Finance and Accounting Associate',
     imageUrl: 'images/people/kofi.jpg',
-    bio: "Kofi Ludwig Amorin is a finance and accounting associate at ShawbellConsulting. Prior to his association with the firm in 2020, he had acquired a 27+ year career with the firms of Price Waterhouse Associates and EY, formerly Ernst and Young. ",
     specialties: ['Audit, assurance, tax and financial services', 'Corporate governance, compliance reviews and internal controls', 'Financial analysis, audit management and guidance of audit teams', 'Development of strategies and standard operating procedures relating to finance', 'Experience across banking, regulatory bodies, mining, oil & gas, agriculture, health and NGOs', 'Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund', 'Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)'],
     focusAreas: ['<ul><li>▪ Audit, assurance, tax and financial services</li><li>▪ Corporate governance, compliance reviews and internal controls</li><li>▪ Financial analysis, audit management and guidance of audit teams</li><li>▪ Development of strategies and standard operating procedures relating to finance</li><li>▪ Experience across banking, regulatory bodies, mining, oil &amp; gas, agriculture, health and NGOs</li><li>▪ Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund</li><li>▪ Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)</li></ul>'],
     details: [
@@ -307,9 +304,8 @@ export const people = [
   {
     id: 'max-vardon',
     name: 'Max Vardon',
-    role: 'Permanent Associate',
-    imageUrl: 'images/people/male.png',
-    bio: "Max was a Team Leader on the firm's project to assess tax sector agencies under the project to strengthen and consolidate the tax sector with responsibility for merging ICT practices and processes in the transformation of sector agencies into one consolidated authority.",
+    role: 'Governance, Risk and IT Systems',
+    imageUrl: 'images/people/maxv.jpg',
     specialties: ['Public Sector Transformation', 'Change Management', 'Strategic Planning', 'Organizational Development'],
     focusAreas: ['<ul><li>▪ Public sector transformation and change management</li><li>▪ Strategic planning, organizational development and operational systems</li><li>▪ IS/IT systems integration in institutional reform</li><li>▪ Corporate finance, investment and financial planning, financial analysis</li><li>▪ Market planning and implementation</li><li>▪ Leadership, team building and training/capacity building</li><li>▪ PPPs and attracting investment (including comparative policy inputs)</li></ul>'],
     details: [
@@ -325,8 +321,7 @@ export const people = [
     id: 'henry-paidoo',
     name: 'Henry Atta Paidoo',
     role: 'Senior Human Resource Management and Labour Practitioner',
-    imageUrl: 'images/people/male.png',
-    bio: "Henry Atta Paidoo is a Senior Human Resource Management and Labour Practitioner with professional experience as an ILO-certified specialist in labour matters and a permanent associate of ShawbellConsulting Limited.",
+    imageUrl: 'images/people/henrya.jpg',
     specialties: ['Human Resource Management', 'Labour Relations', 'Institutional Reform Strategies', 'Corporate Governance Systems'],
     focusAreas: ['<ul><li>▪ Human resource management and labour relations</li><li>▪ Institutional reform strategies and design of HR systems (grading/pay structures)</li><li>▪ Managerial practices and corporate governance systems</li><li>▪ Mediation/arbitration in labour disputes (ILO-certified; National Labour Commission accredited)</li><li>▪ Employee management, industrial relations, negotiations with trade unions</li><li>▪ HR technical advisory to corporate and public-sector bodies</li></ul>'],
     details: [
@@ -346,7 +341,6 @@ export const people = [
     name: 'Ms. Priscilla Andoh',
     role: 'Business Consultant and Manager',
     imageUrl: 'images/people/priscilla.jpg',
-    bio: "Ms. Priscilla Andoh is currently a Business Consultant and Manager at ShawbellConsulting. She is experienced in the Business Development and Advisory Sector, performing specialised functions including organizational development, training/capacity building, programming and coordination, needs assessment, report writing, data analysis and selection.",
     specialties: ['Business development and advisory', 'Organisational development, training and capacity building', 'Programme coordination, needs assessment, report writing and data analysis', 'Project coordination for governance and board-evaluation assignments (Bank of Ghana Board evaluation)', 'Liaising with functional units and stakeholders, scheduling and documentation', 'Experience with youth, women and entrepreneurship projects (Mastercard)'],
     focusAreas: ['<ul><li>▪ Business development and advisory</li><li>▪ Organisational development, training and capacity building</li><li>▪ Programme coordination, needs assessment, report writing and data analysis</li><li>▪ Project coordination for governance and board-evaluation assignments (Bank of Ghana Board evaluation)</li><li>▪ Liaising with functional units and stakeholders, scheduling and documentation</li><li>▪ Experience with youth, women and entrepreneurship projects (Mastercard Foundation Young Africa Works, GEA initiatives, GIZ support for women-led MSMEs)</li><li>▪ Concept note and proposal development for donor-funded programmes</li></ul>'],
     details: [
@@ -363,7 +357,6 @@ export const people = [
     name: 'Ms. Johanna Ntow-Atiemo',
     role: 'Organizational Development Consultant',
     imageUrl: 'images/people/johanna.jpg',
-    bio: "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards.",
     specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
     focusAreas: ['<ul><li>▪ Organizational development and institutional assessments</li><li>▪ Human resource compliance and aligning HR systems with public sector standards</li><li>▪ Renewable energy institutional framework work (assessment and strengthening)</li><li>▪ Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)</li><li>▪ Stakeholder engagement, documentation, and facilitating institutional reform processes</li><li>▪ Experience across education, banking, healthcare, legal and aviation sectors</li><li>▪ Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution</li></ul>'],
     details: [
@@ -377,7 +370,6 @@ export const people = [
     name: 'Daniellina Duodu Essel',
     role: 'Legal Consultant',
     imageUrl: 'images/people/daniellina.jpg',
-    bio: "Daniellina Duodu Essel is a Legal Consultant at ShawbellConsulting Limited with extensive experience in Corporate and Commercial Law, Dispute Resolution, Debt Recovery, Due Diligence, Regulatory Compliance, and Litigation. She applies a detail-oriented approach to professional service delivery and is adept at translating legal challenges into clear, actionable strategies.",
     specialties: ['Corporate and commercial law', 'Dispute resolution and litigation support', 'Debt recovery', 'Due diligence and regulatory compliance audits', 'Company registration, governance and compliance reviews', 'Translating legal/regulatory issues into business risk mitigation and strategy'],
     focusAreas: ['<ul><li>▪ Corporate and commercial law</li><li>▪ Dispute resolution and litigation support</li><li>▪ Debt recovery</li><li>▪ Due diligence and regulatory compliance audits</li><li>▪ Company registration, governance and compliance reviews</li><li>▪ Translating legal/regulatory issues into business risk mitigation and strategy</li></ul>'],
     details: [
@@ -390,7 +382,6 @@ export const people = [
     name: 'Karsten Weguri Beauregard Avogo',
     role: 'Research Consultant',
     imageUrl: 'images/people/karsten.jpg',
-    bio: "Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library",
     specialties: ['research and analysis', 'sector profiling', 'background research', 'evidence-based reporting', 'health-sector research and quality assurance'],
     focusAreas: ['<ul><li>▪ Sector and market research, sector profiling and background analysis</li><li>▪ Research on renewable energy sector trends in Ghana</li><li>▪ Research support for business development and proposal development</li><li>▪ Health-sector research and quality assurance (clinical and public-health oriented)</li><li>▪ Maintenance and organization of research library; evidence-based reporting</li></ul>'],
     details: [
@@ -404,7 +395,6 @@ export const people = [
     name: 'Audrey K. Fenuku',
     role: 'Senior Administrator',
     imageUrl: 'images/people/audrey.jpg',
-    bio: "Having also been assigned to the Ghana Institute of Consulting (GIC) over the years, Audrey has acquired significant experience in HR, business development, office management, training and executive recruitment, among others.",
     specialties: ['Office and training administration', 'Human resources administration and training coordination', 'Executive recruitment and third-party recruitment (placements for VRA, USAID, Ministry of Finance, hotels)', 'Management of training programmes (Consultancy Specialist Certificate Programme) and alumni databases (Availability Register)', 'Liaison with regulatory and legal bodies (Ghana Bar Association, Registrar General) and first-line screening for notary/public legal services', 'Records management, statutory filings and ensuring client compliance', 'Use of MS Office and working knowledge of Lean Six Sigma'],
     focusAreas: ['<ul><li>▪ Office and training administration</li><li>▪ Human resources administration and training coordination</li><li>▪ Executive recruitment and third-party recruitment (placements for VRA, USAID, Ministry of Finance, hotels)</li><li>▪ Management of training programmes (Consultancy Specialist Certificate Programme) and alumni databases (Availability Register)</li><li>▪ Liaison with regulatory and legal bodies (Ghana Bar Association, Registrar General) and first-line screening for notary/public legal services</li><li>▪ Records management, statutory filings and ensuring client compliance</li><li>▪ Use of MS Office and working knowledge of Lean Six Sigma</li></ul>'],
     details: [
@@ -414,6 +404,71 @@ export const people = [
       Prior to joining the Firm, Audrey was the Human Resource and Training Specialist at Risingdata Solutions, an offshore Business Process Outsourcing (BPO) company. She was tasked with the responsibility of designing training modules, conducting organizational training needs assessment, and maintaining employee databases. She also trained staff and assisted the HR Manager in regulating employee benefits.<br /><br />\
       Audrey holds a Bachelor of Business Administration in Human Resource Management from the Methodist University College of Ghana. She is also proficient in the use of Ms Office suite and possesses working knowledge of Lean Six Sigma Management.<br /><br />\
       She is also instrumental in ensuring that the Firm's clients remain tax and legally compliant by ensuring proper statutory filings. Additionally, she has been responsible for liaising with the Ghana Bar Association, General Legal Counsel and Office of the Registrar General on behalf of the Firm. She also performs first-line screening of clients requiring Notary Public services.",
+    ],
+  },
+  {
+    id: 'estelle-appiah',
+    name: 'Estelle Appiah',
+    role: 'RLegislative Drafting',
+    imageUrl: 'images/people/female.png',
+    specialties: ['Legislative drafting and legal research', 'Legal advisory services for public and private sector clients', 'Policy analysis and development', 'Regulatory compliance and governance reviews', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Legislative drafting and legal research</li><li>▪ Legal advisory services for public and private sector clients</li><li>▪ Policy analysis and development</li><li>▪ Regulatory compliance and governance reviews</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    details: [
+      "Estelle Appiah is a Legislative Drafting Consultant at ShawbellConsulting Limited, where she provides expertise in legislative drafting, legal research, and policy analysis. She has been involved in various projects that require the development of legal frameworks, regulatory compliance assessments, and governance reviews for both public and private sector clients.<br /><br />\
+      In her role, Estelle has facilitated stakeholder engagement and consultation processes, ensuring that diverse perspectives are considered in the development of policies and regulations. She has contributed to the drafting of legislation and regulatory documents, providing clear and actionable legal guidance to support organizational objectives.<br /><br />\
+      She is adept at translating complex legal concepts into practical solutions that align with organizational goals and regulatory requirements. Her work supports the firm's commitment to delivering high-quality legal and consulting services to its clients.",
+    ],
+  },
+  {
+    id: 'margaret-prah',
+    name: 'Margaret Prah',
+    role: 'Governance, Solicitor (UK)',
+    imageUrl: 'images/people/prah.jpg',
+    specialties: ['Governance and compliance advisory', 'Legal services for corporate and public sector clients', 'Policy development and implementation support', 'Stakeholder engagement and consultation facilitation', 'Regulatory compliance and risk management'],
+    focusAreas: ['<ul><li>▪ Governance and compliance advisory</li><li>▪ Legal services for corporate and public sector clients</li><li>▪ Policy development and implementation support</li><li>▪ Stakeholder engagement and consultation facilitation</li><li>▪ Regulatory compliance and risk management</li></ul>'],
+    details: [
+      "Margaret Prah is a Governance and Compliance Consultant at ShawbellConsulting Limited, where she provides legal services and advisory support to corporate and public sector clients. She has extensive experience in governance, compliance, policy development, and regulatory risk management.<br /><br />\
+      In her role, Margaret has been involved in the development and implementation of governance frameworks, ensuring that organizations adhere to best practices and regulatory requirements. She has facilitated stakeholder engagement processes, providing guidance on policy development and implementation strategies.<br /><br />\
+      Margaret's expertise in legal services and governance advisory enables her to support clients in navigating complex regulatory environments, mitigating risks, and enhancing organizational effectiveness. Her work contributes to the firm's mission of delivering high-quality consulting services that promote good governance and compliance.",
+    ],
+  },
+  {
+    id: 'cephas-galley',
+    name: 'Cephas Galley',
+    role: 'Energy (Power) Sector, Lawyer',
+    imageUrl: 'images/people/galley.jpg',
+    specialties: ['Energy sector law and policy', 'Power sector regulatory compliance', 'Contract negotiation and drafting', 'Project finance and investment advisory', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Energy sector law and policy</li><li>▪ Power sector regulatory compliance</li><li>▪ Contract negotiation and drafting</li><li>▪ Project finance and investment advisory</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    details: [
+      "Cephas Galley is an Energy (Power) Sector Lawyer at ShawbellConsulting Limited, where he provides legal services and advisory support to clients in the energy and power sectors. He has extensive experience in energy law, regulatory compliance, contract negotiation, and project finance.<br /><br />\
+      In his role, Cephas has been involved in advising clients on legal matters related to energy projects, ensuring compliance with regulatory requirements, and facilitating contract negotiations. He has also provided guidance on investment strategies and project financing.<br /><br />\
+      Cephas's expertise in energy sector law enables him to support clients in navigating the complexities of the industry, mitigating risks, and achieving their business objectives. His work contributes to the firm's mission of delivering high-quality legal services that promote sustainable development in the energy sector.",
+    ],
+  },
+  {
+    id: 'gheysika-agambila',
+    name: 'Gheysika Agambila',
+    role: 'CPA, Finance/Accounting',
+    imageUrl: 'images/people/doctor.jpg',
+    specialties: ['CPA, Finance and Accounting', 'Financial reporting and analysis', 'Budgeting and forecasting', 'Internal controls and compliance', 'Financial advisory and consulting services'],
+    focusAreas: ['<ul><li>▪ CPA, Finance and Accounting</li><li>▪ Financial reporting and analysis</li><li>▪ Budgeting and forecasting</li><li>▪ Internal controls and compliance</li><li>▪ Financial advisory and consulting services</li></ul>'],
+    details: [
+      "Gheysika Agambila is a Certified Public Accountant (CPA) with expertise in finance and accounting. She provides comprehensive financial services to clients, including financial reporting, budgeting, and compliance.<br /><br />\
+      Gheysika has extensive experience in preparing financial statements, conducting financial analysis, and developing budgets. She also assists clients with internal control implementation and regulatory compliance.<br /><br />\
+      Her work contributes to the firm's mission of delivering high-quality financial services that support client growth and success.",
+    ],
+  },
+  {
+    id: 'tracie-annan',
+    name: 'Tracie Annan',
+    role: 'Training and Capacity Building',
+    imageUrl: 'images/people/tracy.jpg',
+    specialties: ['Training and Capacity Building', 'Curriculum development and instructional design', 'Workshop facilitation and adult learning methodologies', 'Monitoring and evaluation of training programs', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Training and Capacity Building</li><li>▪ Curricula development and instructional design</li><li>▪ Workshop facilitation and adult learning methodologies</li><li>▪ Monitoring and evaluation of training programs</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    details: [
+      "Tracie Annan is an expert in training and capacity building. She specializes in developing curricula, facilitating workshops, and designing instructional materials for adult learners.<br /><br />\
+      Tracie has extensive experience in conducting needs assessments, designing training programs, and evaluating the effectiveness of educational initiatives. Her work ensures that participants receive high-quality training that meets their professional development needs.<br /><br />\
+      Her contributions support the firm's commitment to enhancing organizational capabilities through effective training and development strategies.",
     ],
   },
 ];
