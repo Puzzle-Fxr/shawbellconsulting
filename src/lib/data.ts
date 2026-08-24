@@ -285,20 +285,42 @@ export const people = [
     isFounder: true,
   },
   {
-    id: 'kofi-amorin',
-    name: 'Kofi Ludwig Amorin',
-    role: 'Finance and Accounting Associate',
-    imageUrl: 'images/people/kofi.jpg',
-    specialties: ['Audit, assurance, tax and financial services', 'Corporate governance, compliance reviews and internal controls', 'Financial analysis, audit management and guidance of audit teams', 'Development of strategies and standard operating procedures relating to finance', 'Experience across banking, regulatory bodies, mining, oil & gas, agriculture, health and NGOs', 'Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund', 'Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)'],
-    focusAreas: ['<ul><li>▪ Audit, assurance, tax and financial services</li><li>▪ Corporate governance, compliance reviews and internal controls</li><li>▪ Financial analysis, audit management and guidance of audit teams</li><li>▪ Development of strategies and standard operating procedures relating to finance</li><li>▪ Experience across banking, regulatory bodies, mining, oil &amp; gas, agriculture, health and NGOs</li><li>▪ Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund</li><li>▪ Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)</li></ul>'],
+    id: 'estelle-appiah',
+    name: 'Estelle Appiah',
+    role: 'RLegislative Drafting',
+    imageUrl: 'images/people/female.png',
+    specialties: ['Legislative drafting and legal research', 'Legal advisory services for public and private sector clients', 'Policy analysis and development', 'Regulatory compliance and governance reviews', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Legislative drafting and legal research</li><li>▪ Legal advisory services for public and private sector clients</li><li>▪ Policy analysis and development</li><li>▪ Regulatory compliance and governance reviews</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
     details: [
-      "Kofi Ludwig Amorin is a finance and accounting associate at ShawbellConsulting. Prior to his association with the firm in 2020, he had acquired a 27+ year career with the firms of Price Waterhouse Associates and EY, formerly Ernst and Young.<br /><br />\
-      At ShawbellConsulting Kofi has been involved in a range of assignments in which he has applied his audit and accounting qualifications. His work has been to ensure proper governance and compliance by these client organizations. Recently, he was involved in the project to review the business and management of a privately owned resort and other subsidiaries of a major family-owned group and was also part of the team that undertook an assessment of operating procedures in terms of corporate governance practices of ten (10) state entities under SIGA. There, he assessed the implementation of governance, audit and finance procedures and the impact they have on efficient performance of entities' mandate. He is conversant with the development of Strategies and Standard Operating Procedures and participated in the assignment to develop a Transformation Strategy for the Venture Capital Trust Fund. While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
-      While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance, and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
-      Kofi Amorin is travelled widely, having provided finance, audit, and assurance services to clients throughout the West Africa region and the continent. By virtue of his clients, he has been exposed to the public and private organizations that are engaged in Regulatory and Compliance, Finance, Banking and Non-Bank Finance, Trade, Mining, Oil and Gas, Agriculture, Health and the NGO sectors.<br /><br />\
-      Some of the clients he has served are:<br /><br />\
-      <ul><li>• Sasakawa Global 2000</li><li>• West Africa Rice Development Agency</li><li>• Social Security and National Insurance Trust</li><li>• Ghana Commercial Bank</li><li>• Ghana Audit Service</li><li>• Ministry of Finance and its Agencies</li><li>• Ministry of Health and its Agencies</li><li>• Development Partners such as</li><li>• World Bank</li><li>• DFID</li><li>• GIZ</li><li>• DANIDA, etc</li></ul><br /><br />\
-      Kofi Amorin graduated from the School of Business Administration at the University of Ghana in 1979 and possesses extensive Professional Accounting, Tax, and related certifications.",
+      "Estelle Appiah is a Legislative Drafting Consultant at ShawbellConsulting Limited, where she provides expertise in legislative drafting, legal research, and policy analysis. She has been involved in various projects that require the development of legal frameworks, regulatory compliance assessments, and governance reviews for both public and private sector clients.<br /><br />\
+      In her role, Estelle has facilitated stakeholder engagement and consultation processes, ensuring that diverse perspectives are considered in the development of policies and regulations. She has contributed to the drafting of legislation and regulatory documents, providing clear and actionable legal guidance to support organizational objectives.<br /><br />\
+      She is adept at translating complex legal concepts into practical solutions that align with organizational goals and regulatory requirements. Her work supports the firm's commitment to delivering high-quality legal and consulting services to its clients.",
+    ],
+  },
+  {
+    id: 'cephas-galley',
+    name: 'Cephas Galley',
+    role: 'Energy (Power) Sector, Lawyer',
+    imageUrl: 'images/people/galley.jpg',
+    specialties: ['Energy sector law and policy', 'Power sector regulatory compliance', 'Contract negotiation and drafting', 'Project finance and investment advisory', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Energy sector law and policy</li><li>▪ Power sector regulatory compliance</li><li>▪ Contract negotiation and drafting</li><li>▪ Project finance and investment advisory</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    details: [
+      "Cephas Galley is an Energy (Power) Sector Lawyer at ShawbellConsulting Limited, where he provides legal services and advisory support to clients in the energy and power sectors. He has extensive experience in energy law, regulatory compliance, contract negotiation, and project finance.<br /><br />\
+      In his role, Cephas has been involved in advising clients on legal matters related to energy projects, ensuring compliance with regulatory requirements, and facilitating contract negotiations. He has also provided guidance on investment strategies and project financing.<br /><br />\
+      Cephas's expertise in energy sector law enables him to support clients in navigating the complexities of the industry, mitigating risks, and achieving their business objectives. His work contributes to the firm's mission of delivering high-quality legal services that promote sustainable development in the energy sector.",
+    ],
+  },
+  {
+    id: 'margaret-prah',
+    name: 'Margaret Prah',
+    role: 'Governance, Solicitor (UK)',
+    imageUrl: 'images/people/prah.jpg',
+    specialties: ['Governance and compliance advisory', 'Legal services for corporate and public sector clients', 'Policy development and implementation support', 'Stakeholder engagement and consultation facilitation', 'Regulatory compliance and risk management'],
+    focusAreas: ['<ul><li>▪ Governance and compliance advisory</li><li>▪ Legal services for corporate and public sector clients</li><li>▪ Policy development and implementation support</li><li>▪ Stakeholder engagement and consultation facilitation</li><li>▪ Regulatory compliance and risk management</li></ul>'],
+    details: [
+      "Margaret Prah is a Governance and Compliance Consultant at ShawbellConsulting Limited, where she provides legal services and advisory support to corporate and public sector clients. She has extensive experience in governance, compliance, policy development, and regulatory risk management.<br /><br />\
+      In her role, Margaret has been involved in the development and implementation of governance frameworks, ensuring that organizations adhere to best practices and regulatory requirements. She has facilitated stakeholder engagement processes, providing guidance on policy development and implementation strategies.<br /><br />\
+      Margaret's expertise in legal services and governance advisory enables her to support clients in navigating complex regulatory environments, mitigating risks, and enhancing organizational effectiveness. Her work contributes to the firm's mission of delivering high-quality consulting services that promote good governance and compliance.",
     ],
   },
   {
@@ -315,6 +337,19 @@ export const people = [
       For two years from 2011 to 2013 Max served as Executive Secretary to the National Council on Persons with Disability. He had, prior to that, served as the Managing Director of the Credit Reference Bureau (Ghana) Ltd which he assisted in setting up from 2002 to 2007 and prior to that, had served as General Manager for UUNet, a JV between UUNET SA and AfricaOnline (Kenya) Ltd from 2001 to 2002.<br /><br />\
       In the UK, Max served as Managing Consultant at Eurolex Business Systems in Ireland from 1991 to 1996, and also as Operations Director, at Aurag Limited, also in Shannon, Ireland from 1990 to 1991. For one year prior to that, was an Executive Consultant at Fullemploy Consultancy in London, UK and prior to that, had been Acting Chief Executive/Investment Manager at the Haringey Enterprise Board and Investments Limited also in London from 1986 to 1989. He was Finance Director of JazzStar Limited from 1985 to 1996, and an Investment Executive of the Greater London Enterprise Board and Investments Limited from 1984 to 1986. Max was the Founding Partner of Equinox Associates, London and during the period from 1982 to 1987, served as a Project Consultant on a Feasibility Study for a Hotel and Tourism Complex project for a West African country, as well as for a Banking/Financial Services initiative in the London. He had been a Financial Analyst with Phillips Petroleum Co. Europe-Africa Ltd., London from 1981 to 1982 and Management Engineer, Unilever Limited, also in London from1976 to 1979.<br /><br />\
       He has also held other directorial positions in Finance in both London and Ireland.",
+    ],
+  },
+  {
+    id: 'gheysika-agambila',
+    name: 'Gheysika Agambila',
+    role: 'CPA, Finance/Accounting',
+    imageUrl: 'images/people/doctor.jpg',
+    specialties: ['CPA, Finance and Accounting', 'Financial reporting and analysis', 'Budgeting and forecasting', 'Internal controls and compliance', 'Financial advisory and consulting services'],
+    focusAreas: ['<ul><li>▪ CPA, Finance and Accounting</li><li>▪ Financial reporting and analysis</li><li>▪ Budgeting and forecasting</li><li>▪ Internal controls and compliance</li><li>▪ Financial advisory and consulting services</li></ul>'],
+    details: [
+      "Gheysika Agambila is a Certified Public Accountant (CPA) with expertise in finance and accounting. She provides comprehensive financial services to clients, including financial reporting, budgeting, and compliance.<br /><br />\
+      Gheysika has extensive experience in preparing financial statements, conducting financial analysis, and developing budgets. She also assists clients with internal control implementation and regulatory compliance.<br /><br />\
+      Her work contributes to the firm's mission of delivering high-quality financial services that support client growth and success.",
     ],
   },
   {
@@ -337,6 +372,19 @@ export const people = [
     ],
   },
   {
+    id: 'tracie-annan',
+    name: 'Tracie Annan',
+    role: 'Training and Capacity Building',
+    imageUrl: 'images/people/tracy.jpg',
+    specialties: ['Training and Capacity Building', 'Curriculum development and instructional design', 'Workshop facilitation and adult learning methodologies', 'Monitoring and evaluation of training programs', 'Stakeholder engagement and consultation facilitation'],
+    focusAreas: ['<ul><li>▪ Training and Capacity Building</li><li>▪ Curricula development and instructional design</li><li>▪ Workshop facilitation and adult learning methodologies</li><li>▪ Monitoring and evaluation of training programs</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    details: [
+      "Tracie Annan is an expert in training and capacity building. She specializes in developing curricula, facilitating workshops, and designing instructional materials for adult learners.<br /><br />\
+      Tracie has extensive experience in conducting needs assessments, designing training programs, and evaluating the effectiveness of educational initiatives. Her work ensures that participants receive high-quality training that meets their professional development needs.<br /><br />\
+      Her contributions support the firm's commitment to enhancing organizational capabilities through effective training and development strategies.",
+    ],
+  },
+  {
     id: 'priscilla-andoh',
     name: 'Ms. Priscilla Andoh',
     role: 'Business Consultant and Manager',
@@ -353,19 +401,6 @@ export const people = [
     ],
   },
   {
-    id: 'johanna-ntow',
-    name: 'Ms. Johanna Ntow-Atiemo',
-    role: 'Organizational Development Consultant',
-    imageUrl: 'images/people/johanna.jpg',
-    specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
-    focusAreas: ['<ul><li>▪ Organizational development and institutional assessments</li><li>▪ Human resource compliance and aligning HR systems with public sector standards</li><li>▪ Renewable energy institutional framework work (assessment and strengthening)</li><li>▪ Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)</li><li>▪ Stakeholder engagement, documentation, and facilitating institutional reform processes</li><li>▪ Experience across education, banking, healthcare, legal and aviation sectors</li><li>▪ Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution</li></ul>'],
-    details: [
-      "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards. Her responsibilities included participating in the evaluation of institutional compliance with human resource and administrative policies, as well as relevant legislation.<br /><br />\
-      In the Evaluation of the Board of Directors of the Bank of Ghana project, she supported the adaptation of review-based tools to examine governance structures, enhance accountability, and improve organisational effectiveness. Through her involvement in the review of the Cocobod laws, she coordinated meetings and strategic stakeholder discussions, providing essential logistical and facilitative support. She also played a facilitating role in stakeholder engagements, helping to capture expectations, performance insights and satisfaction levels from key groups such as management, board members and staff.<br /><br />\
-      Her experience increasingly connects with broader public sector reform and PFM-related assignments, including projects requiring documentation analysis, institutional assessments, governance reviews and structured consultations with ministries, departments and agencies. This equips her with a strong foundation to support diagnostic exercises such as the PBB framework review, where coordination, analytical insight, governance understanding and stakeholder engagement are critical.",
-    ],
-  },
-  {
     id: 'daniellina-essel',
     name: 'Daniellina Duodu Essel',
     role: 'Legal Consultant',
@@ -378,16 +413,42 @@ export const people = [
     ],
   },
   {
-    id: 'karsten-avogo',
-    name: 'Karsten Weguri Beauregard Avogo',
-    role: 'Research Consultant',
-    imageUrl: 'images/people/karsten.jpg',
-    specialties: ['research and analysis', 'sector profiling', 'background research', 'evidence-based reporting', 'health-sector research and quality assurance'],
-    focusAreas: ['<ul><li>▪ Sector and market research, sector profiling and background analysis</li><li>▪ Research on renewable energy sector trends in Ghana</li><li>▪ Research support for business development and proposal development</li><li>▪ Health-sector research and quality assurance (clinical and public-health oriented)</li><li>▪ Maintenance and organization of research library; evidence-based reporting</li></ul>'],
+    id: 'kojo-kwakwa',
+    name: 'Kojo Kwakwa',
+    role: '-',
+    imageUrl: 'images/people/kojo.jpg',
+    specialties: ['-', '-', '-', '-'],
+    focusAreas: ['<ul><li>▪ -</li></ul>'],
     details: [
-      "Karsten Weguri Beauregard Avogo is a Research Consultant at ShawbellConsulting Limited, where his work is primarily focused on research. At ShawbellConsulting Limited, Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library. He is currently engaged on research to examine the current state of Ghana's Renewable Energy sector, the trends, and expectations for the sector going forward. He also provides research support for business development activities, including background research and market analysis. In addition, he may be involved in or provide support on broader consulting assignments across legal, governance, compliance, and strategy engagements, under the guidance of senior consultants.<br /><br />\
-      Karsten's professional experience primarily spans healthcare delivery, health research, and quality assurance, with exposure to clinical, research, and health-sector environments. Prior to joining ShawbellConsulting Limited, he worked in sonography practice, health research institutions, and health-related business development roles, where he supported data collection, analysis, documentation, and evidence-based reporting. These roles strengthened his analytical skills, research capacity, and attention to detail.<br /><br />\
-      Karsten applies a methodical and detail-oriented approach to research and consulting support, with a strong emphasis on accuracy, clarity, and confidentiality. He holds a Bachelor of Science degree in Biological Sciences and is currently pursuing a Master of Public Health (MPH) at the University of Ghana, with expected completion in 2026. His academic training in biological sciences and public health enables him to contribute meaningfully to the health-sciences, social sector and related, while remaining adaptable to research needs across other sectors.",
+      "Kojo Kwakwa ...<br /><br />\
+      Kojo has extensive experience in ...<br /><br />\
+      His contributions support the firm's commitment to ...",
+    ],
+  },
+  {
+    id: 'oheneba',
+    name: 'Oheneba',
+    role: '-',
+    imageUrl: 'images/people/oheneba.jpg',
+    specialties: ['-', '-', '-', '-'],
+    focusAreas: ['<ul><li>▪ -</li></ul>'],
+    details: [
+      "Oheneba ...<br /><br />\
+      Oheneba has extensive experience in ...<br /><br />\
+      His contributions support the firm's commitment to ...",
+    ],
+  },
+  {
+    id: 'johanna-ntow',
+    name: 'Ms. Johanna Ntow-Atiemo',
+    role: 'Organizational Development Consultant',
+    imageUrl: 'images/people/johanna.jpg',
+    specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
+    focusAreas: ['<ul><li>▪ Organizational development and institutional assessments</li><li>▪ Human resource compliance and aligning HR systems with public sector standards</li><li>▪ Renewable energy institutional framework work (assessment and strengthening)</li><li>▪ Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)</li><li>▪ Stakeholder engagement, documentation, and facilitating institutional reform processes</li><li>▪ Experience across education, banking, healthcare, legal and aviation sectors</li><li>▪ Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution</li></ul>'],
+    details: [
+      "Ms. Johanna Ntow-Atiemo is an Organizational Development Consultant with broad professional experience across the education, banking, healthcare, legal and aviation sectors. She was engaged in the project to establish a Renewable Energy Authority in Ghana, where she contributed to assessing and strengthening institutional frameworks by aligning her work with organisational objectives, regulatory requirements, and public sector standards. Her responsibilities included participating in the evaluation of institutional compliance with human resource and administrative policies, as well as relevant legislation.<br /><br />\
+      In the Evaluation of the Board of Directors of the Bank of Ghana project, she supported the adaptation of review-based tools to examine governance structures, enhance accountability, and improve organisational effectiveness. Through her involvement in the review of the Cocobod laws, she coordinated meetings and strategic stakeholder discussions, providing essential logistical and facilitative support. She also played a facilitating role in stakeholder engagements, helping to capture expectations, performance insights and satisfaction levels from key groups such as management, board members and staff.<br /><br />\
+      Her experience increasingly connects with broader public sector reform and PFM-related assignments, including projects requiring documentation analysis, institutional assessments, governance reviews and structured consultations with ministries, departments and agencies. This equips her with a strong foundation to support diagnostic exercises such as the PBB framework review, where coordination, analytical insight, governance understanding and stakeholder engagement are critical.",
     ],
   },
   {
@@ -407,68 +468,46 @@ export const people = [
     ],
   },
   {
-    id: 'estelle-appiah',
-    name: 'Estelle Appiah',
-    role: 'RLegislative Drafting',
-    imageUrl: 'images/people/female.png',
-    specialties: ['Legislative drafting and legal research', 'Legal advisory services for public and private sector clients', 'Policy analysis and development', 'Regulatory compliance and governance reviews', 'Stakeholder engagement and consultation facilitation'],
-    focusAreas: ['<ul><li>▪ Legislative drafting and legal research</li><li>▪ Legal advisory services for public and private sector clients</li><li>▪ Policy analysis and development</li><li>▪ Regulatory compliance and governance reviews</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    id: 'karsten-avogo',
+    name: 'Karsten Weguri Beauregard Avogo',
+    role: 'Research Consultant',
+    imageUrl: 'images/people/karsten.jpg',
+    specialties: ['research and analysis', 'sector profiling', 'background research', 'evidence-based reporting', 'health-sector research and quality assurance'],
+    focusAreas: ['<ul><li>▪ Sector and market research, sector profiling and background analysis</li><li>▪ Research on renewable energy sector trends in Ghana</li><li>▪ Research support for business development and proposal development</li><li>▪ Health-sector research and quality assurance (clinical and public-health oriented)</li><li>▪ Maintenance and organization of research library; evidence-based reporting</li></ul>'],
     details: [
-      "Estelle Appiah is a Legislative Drafting Consultant at ShawbellConsulting Limited, where she provides expertise in legislative drafting, legal research, and policy analysis. She has been involved in various projects that require the development of legal frameworks, regulatory compliance assessments, and governance reviews for both public and private sector clients.<br /><br />\
-      In her role, Estelle has facilitated stakeholder engagement and consultation processes, ensuring that diverse perspectives are considered in the development of policies and regulations. She has contributed to the drafting of legislation and regulatory documents, providing clear and actionable legal guidance to support organizational objectives.<br /><br />\
-      She is adept at translating complex legal concepts into practical solutions that align with organizational goals and regulatory requirements. Her work supports the firm's commitment to delivering high-quality legal and consulting services to its clients.",
+      "Karsten Weguri Beauregard Avogo is a Research Consultant at ShawbellConsulting Limited, where his work is primarily focused on research. At ShawbellConsulting Limited, Karsten supports the development of sector profiles, contributes to research papers, and assists with the maintenance and organization of the firm's research library. He is currently engaged on research to examine the current state of Ghana's Renewable Energy sector, the trends, and expectations for the sector going forward. He also provides research support for business development activities, including background research and market analysis. In addition, he may be involved in or provide support on broader consulting assignments across legal, governance, compliance, and strategy engagements, under the guidance of senior consultants.<br /><br />\
+      Karsten's professional experience primarily spans healthcare delivery, health research, and quality assurance, with exposure to clinical, research, and health-sector environments. Prior to joining ShawbellConsulting Limited, he worked in sonography practice, health research institutions, and health-related business development roles, where he supported data collection, analysis, documentation, and evidence-based reporting. These roles strengthened his analytical skills, research capacity, and attention to detail.<br /><br />\
+      Karsten applies a methodical and detail-oriented approach to research and consulting support, with a strong emphasis on accuracy, clarity, and confidentiality. He holds a Bachelor of Science degree in Biological Sciences and is currently pursuing a Master of Public Health (MPH) at the University of Ghana, with expected completion in 2026. His academic training in biological sciences and public health enables him to contribute meaningfully to the health-sciences, social sector and related, while remaining adaptable to research needs across other sectors.",
     ],
   },
   {
-    id: 'margaret-prah',
-    name: 'Margaret Prah',
-    role: 'Governance, Solicitor (UK)',
-    imageUrl: 'images/people/prah.jpg',
-    specialties: ['Governance and compliance advisory', 'Legal services for corporate and public sector clients', 'Policy development and implementation support', 'Stakeholder engagement and consultation facilitation', 'Regulatory compliance and risk management'],
-    focusAreas: ['<ul><li>▪ Governance and compliance advisory</li><li>▪ Legal services for corporate and public sector clients</li><li>▪ Policy development and implementation support</li><li>▪ Stakeholder engagement and consultation facilitation</li><li>▪ Regulatory compliance and risk management</li></ul>'],
+    id: 'kofi-amorin',
+    name: 'Kofi Ludwig Amorin',
+    role: 'Finance and Accounting Associate',
+    imageUrl: 'images/people/kofi.jpg',
+    specialties: ['Audit, assurance, tax and financial services', 'Corporate governance, compliance reviews and internal controls', 'Financial analysis, audit management and guidance of audit teams', 'Development of strategies and standard operating procedures relating to finance', 'Experience across banking, regulatory bodies, mining, oil & gas, agriculture, health and NGOs', 'Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund', 'Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)'],
+    focusAreas: ['<ul><li>▪ Audit, assurance, tax and financial services</li><li>▪ Corporate governance, compliance reviews and internal controls</li><li>▪ Financial analysis, audit management and guidance of audit teams</li><li>▪ Development of strategies and standard operating procedures relating to finance</li><li>▪ Experience across banking, regulatory bodies, mining, oil &amp; gas, agriculture, health and NGOs</li><li>▪ Work on governance and finance assessments for state entities (SIGA) and transformation strategy support for Venture Capital Trust Fund</li><li>▪ Extensive professional accounting and tax certifications; BSc Business Administration (University of Ghana)</li></ul>'],
     details: [
-      "Margaret Prah is a Governance and Compliance Consultant at ShawbellConsulting Limited, where she provides legal services and advisory support to corporate and public sector clients. She has extensive experience in governance, compliance, policy development, and regulatory risk management.<br /><br />\
-      In her role, Margaret has been involved in the development and implementation of governance frameworks, ensuring that organizations adhere to best practices and regulatory requirements. She has facilitated stakeholder engagement processes, providing guidance on policy development and implementation strategies.<br /><br />\
-      Margaret's expertise in legal services and governance advisory enables her to support clients in navigating complex regulatory environments, mitigating risks, and enhancing organizational effectiveness. Her work contributes to the firm's mission of delivering high-quality consulting services that promote good governance and compliance.",
+      "Kofi Ludwig Amorin is a finance and accounting associate at ShawbellConsulting. Prior to his association with the firm in 2020, he had acquired a 27+ year career with the firms of Price Waterhouse Associates and EY, formerly Ernst and Young.<br /><br />\
+      At ShawbellConsulting Kofi has been involved in a range of assignments in which he has applied his audit and accounting qualifications. His work has been to ensure proper governance and compliance by these client organizations. Recently, he was involved in the project to review the business and management of a privately owned resort and other subsidiaries of a major family-owned group and was also part of the team that undertook an assessment of operating procedures in terms of corporate governance practices of ten (10) state entities under SIGA. There, he assessed the implementation of governance, audit and finance procedures and the impact they have on efficient performance of entities' mandate. He is conversant with the development of Strategies and Standard Operating Procedures and participated in the assignment to develop a Transformation Strategy for the Venture Capital Trust Fund. While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
+      While at EY he served as Associate Director responsible for Audit, Tax and Financial services. His role was to perform professional audit, finance, and accounting tasks, as well as to guide audit teams in the delivery of services to the firm's multinational and local clients.<br /><br />\
+      Kofi Amorin is travelled widely, having provided finance, audit, and assurance services to clients throughout the West Africa region and the continent. By virtue of his clients, he has been exposed to the public and private organizations that are engaged in Regulatory and Compliance, Finance, Banking and Non-Bank Finance, Trade, Mining, Oil and Gas, Agriculture, Health and the NGO sectors.<br /><br />\
+      Some of the clients he has served are:<br /><br />\
+      <ul><li>• Sasakawa Global 2000</li><li>• West Africa Rice Development Agency</li><li>• Social Security and National Insurance Trust</li><li>• Ghana Commercial Bank</li><li>• Ghana Audit Service</li><li>• Ministry of Finance and its Agencies</li><li>• Ministry of Health and its Agencies</li><li>• Development Partners such as</li><li>• World Bank</li><li>• DFID</li><li>• GIZ</li><li>• DANIDA, etc</li></ul><br /><br />\
+      Kofi Amorin graduated from the School of Business Administration at the University of Ghana in 1979 and possesses extensive Professional Accounting, Tax, and related certifications.",
     ],
   },
   {
-    id: 'cephas-galley',
-    name: 'Cephas Galley',
-    role: 'Energy (Power) Sector, Lawyer',
-    imageUrl: 'images/people/galley.jpg',
-    specialties: ['Energy sector law and policy', 'Power sector regulatory compliance', 'Contract negotiation and drafting', 'Project finance and investment advisory', 'Stakeholder engagement and consultation facilitation'],
-    focusAreas: ['<ul><li>▪ Energy sector law and policy</li><li>▪ Power sector regulatory compliance</li><li>▪ Contract negotiation and drafting</li><li>▪ Project finance and investment advisory</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    id: 'david-asare-manu',
+    name: 'David Asare Manu',
+    role: '-',
+    imageUrl: 'images/people/david.jpg',
+    specialties: ['-', '-', '-', '-'],
+    focusAreas: ['<ul><li>▪ -</li></ul>'],
     details: [
-      "Cephas Galley is an Energy (Power) Sector Lawyer at ShawbellConsulting Limited, where he provides legal services and advisory support to clients in the energy and power sectors. He has extensive experience in energy law, regulatory compliance, contract negotiation, and project finance.<br /><br />\
-      In his role, Cephas has been involved in advising clients on legal matters related to energy projects, ensuring compliance with regulatory requirements, and facilitating contract negotiations. He has also provided guidance on investment strategies and project financing.<br /><br />\
-      Cephas's expertise in energy sector law enables him to support clients in navigating the complexities of the industry, mitigating risks, and achieving their business objectives. His work contributes to the firm's mission of delivering high-quality legal services that promote sustainable development in the energy sector.",
-    ],
-  },
-  {
-    id: 'gheysika-agambila',
-    name: 'Gheysika Agambila',
-    role: 'CPA, Finance/Accounting',
-    imageUrl: 'images/people/doctor.jpg',
-    specialties: ['CPA, Finance and Accounting', 'Financial reporting and analysis', 'Budgeting and forecasting', 'Internal controls and compliance', 'Financial advisory and consulting services'],
-    focusAreas: ['<ul><li>▪ CPA, Finance and Accounting</li><li>▪ Financial reporting and analysis</li><li>▪ Budgeting and forecasting</li><li>▪ Internal controls and compliance</li><li>▪ Financial advisory and consulting services</li></ul>'],
-    details: [
-      "Gheysika Agambila is a Certified Public Accountant (CPA) with expertise in finance and accounting. She provides comprehensive financial services to clients, including financial reporting, budgeting, and compliance.<br /><br />\
-      Gheysika has extensive experience in preparing financial statements, conducting financial analysis, and developing budgets. She also assists clients with internal control implementation and regulatory compliance.<br /><br />\
-      Her work contributes to the firm's mission of delivering high-quality financial services that support client growth and success.",
-    ],
-  },
-  {
-    id: 'tracie-annan',
-    name: 'Tracie Annan',
-    role: 'Training and Capacity Building',
-    imageUrl: 'images/people/tracy.jpg',
-    specialties: ['Training and Capacity Building', 'Curriculum development and instructional design', 'Workshop facilitation and adult learning methodologies', 'Monitoring and evaluation of training programs', 'Stakeholder engagement and consultation facilitation'],
-    focusAreas: ['<ul><li>▪ Training and Capacity Building</li><li>▪ Curricula development and instructional design</li><li>▪ Workshop facilitation and adult learning methodologies</li><li>▪ Monitoring and evaluation of training programs</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
-    details: [
-      "Tracie Annan is an expert in training and capacity building. She specializes in developing curricula, facilitating workshops, and designing instructional materials for adult learners.<br /><br />\
-      Tracie has extensive experience in conducting needs assessments, designing training programs, and evaluating the effectiveness of educational initiatives. Her work ensures that participants receive high-quality training that meets their professional development needs.<br /><br />\
-      Her contributions support the firm's commitment to enhancing organizational capabilities through effective training and development strategies.",
+      "David Asare Manu ...<br /><br />\
+      David has extensive experience in ...<br /><br />\
+      His contributions support the firm's commitment to ...",
     ],
   },
 ];

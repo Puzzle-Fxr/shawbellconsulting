@@ -53,9 +53,9 @@ export default function People() {
   };
 
   const members = people.filter(person => !person.isFounder);
-  const ourTeam = members.filter(person => ['priscilla-andoh', 'daniellina-essel', 'johanna-ntow', 'audrey-fenuku', 'karsten-avogo'].includes(person.id));
+  const ourTeam = members.filter(person => ['priscilla-andoh', 'daniellina-essel', 'kojo-kwakwa', 'oheneba', 'johanna-ntow', 'audrey-fenuku', 'karsten-avogo'].includes(person.id));
   const poolOfExperts = members.filter(person => ['estelle-appiah', 'cephas-galley', 'margaret-prah', 'max-vardon', 'gheysika-agambila', 'henry-paidoo', 'tracie-annan'].includes(person.id));
-  const financeAndAccountingAssociates = members.filter(person => person.id === 'kofi-amorin');
+  const financeAndAccountingAssociates = members.filter(person => ['kofi-amorin', 'david-asare-manu'].includes(person.id));
 
   return (
     <div className="page-enter">
