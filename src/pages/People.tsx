@@ -17,8 +17,14 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
       onClick={() => onOpen(person)}
-      className="card-lift bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer h-full flex flex-col relative overflow-hidden"
+      className="card-lift w-full max-w-xs h-56 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
     >
+      <img
+        src="/favicon.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute bottom-3 right-3 z-0 w-16 h-16 object-contain opacity-25 pointer-events-none"
+      />
       <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
         <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
       </div>
