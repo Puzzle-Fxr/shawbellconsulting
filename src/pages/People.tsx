@@ -17,7 +17,7 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
       onClick={() => onOpen(person)}
-      className="card-lift w-56 h-56 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
+      className="card-lift w-60 h-68 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
     >
       <img
         src="/favicon.png"
@@ -25,7 +25,7 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
         aria-hidden="true"
         className="absolute bottom-3 right-3 z-0 w-16 h-16 object-contain opacity-25 pointer-events-none"
       />
-      <div className="relative z-10 w-20 h-20 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+      <div className="relative z-10 w-20 h-20 bg-gradient-to-br from-steel to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
         <img src={person.imageUrl} alt={person.name} className="w-18 h-18 rounded-full object-cover" />
       </div>
       <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
@@ -106,7 +106,7 @@ export default function People() {
                   pointerEvents: 'none'
                 }} />
                 {/* Corrected image div */}
-                <div className="relative z-10 w-32 h-32 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
+                <div className="relative z-10 w-32 h-32 bg-gradient-to-br from-pumpkin to-pumpkin/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-white/30">
                     <img src={founder.imageUrl} alt={founder.name} className="w-28 h-28 rounded-full object-cover" />
                 </div>
                 <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{founder.name}</h4>
@@ -180,7 +180,7 @@ export default function People() {
 
               <div className="p-6 space-y-6">
                 <div className="grid lg:grid-cols-2 gap-6 items-center">
-                  <div className="w-60 h-60 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto md:mx-0 flex items-center justify-self-center">
+                  <div className="w-60 h-60 bg-gradient-to-br from-pumpkin/20 to-pumpkin rounded-full mx-auto md:mx-0 flex items-center justify-self-center">
                     <img src={selectedPerson.imageUrl} alt={selectedPerson.name} className="w-58 h-58 rounded-full object-cover" />
                   </div>
                   <div className="basis-2/3">

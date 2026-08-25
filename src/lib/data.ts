@@ -287,7 +287,7 @@ export const people = [
   {
     id: 'estelle-appiah',
     name: 'Estelle Appiah, Esq.',
-    role: 'Legislative Drafting',
+    role: 'Lawyer (Ghana, UK, Lesotho) and Senior Legislative Drafting Consultant',
     imageUrl: 'images/people/estelle.jpg',
     specialties: ['Legislative drafting', 'Expert advice related to legislation', 'Peer review mechanisms and promotes awareness of legislation at the highest professional level'],
     focusAreas: ['<ul><li>▪ Legislative drafting</li><li>▪ Expert advice related to legislation</li><li>▪ Peer review mechanisms and promotes awareness of legislation at the highest professional level</li></ul>'],
@@ -300,7 +300,7 @@ export const people = [
   {
     id: 'cephas-galley',
     name: 'Cephas Galley, Esq.',
-    role: 'Energy (Power) Sector, Lawyer',
+    role: 'Legal Practitioner (Ghana) and Senior Energy Sector Consultant',
     imageUrl: 'images/people/galley.jpg',
     specialties: ['Energy sector law and policy', 'Power sector regulatory compliance', 'Contract negotiation and drafting', 'Project finance and investment advisory', 'Stakeholder engagement and consultation facilitation'],
     focusAreas: ['<ul><li>▪ Energy sector law and policy</li><li>▪ Power sector regulatory compliance</li><li>▪ Contract negotiation and drafting</li><li>▪ Project finance and investment advisory</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
@@ -313,14 +313,14 @@ export const people = [
   {
     id: 'gheysika-agambila',
     name: 'Dr. Gheysika Agambila',
-    role: 'CPA, Finance/Accounting',
+    role: 'CPA (USA, Ghana) and Senior Finance Consultant',
     imageUrl: 'images/people/doctor.jpg',
     specialties: ['CPA, Finance and Accounting', 'Financial reporting and analysis', 'Budgeting and forecasting', 'Internal controls and compliance', 'Financial advisory and consulting services'],
     focusAreas: ['<ul><li>▪ CPA, Finance and Accounting</li><li>▪ Financial reporting and analysis</li><li>▪ Budgeting and forecasting</li><li>▪ Internal controls and compliance</li><li>▪ Financial advisory and consulting services</li></ul>'],
     details: [
-      "Gheysika Agambila is a Certified Public Accountant (CPA) with expertise in finance and accounting. She provides comprehensive financial services to clients, including financial reporting, budgeting, and compliance.<br /><br />\
-      Gheysika has extensive experience in preparing financial statements, conducting financial analysis, and developing budgets. She also assists clients with internal control implementation and regulatory compliance.<br /><br />\
-      Her work contributes to the firm's mission of delivering high-quality financial services that support client growth and success.",
+      "Dr. Gheysika A. Agambila is a senior public finance professional, economist, and financial analyst with deep expertise in macroeconomic policy, public finance, financial management, and resource mobilization. His experience spans Ghana, the wider Sub-Region, and the United States.<br /><br />\
+      Gheysika Adombire Agambila (PhD, New York University) has worked as an internal auditor, consultant, Minister of State in the Ghana Government and a lecturer and senior lecturer at the University of Ghana Business School and the Ghana Institute of Management and Public Administration, respectively.<br /><br />\
+      Dr Agambila also serves on several prestigious boards in Ghana and the USA, and has published extensively on development policy in Ghana.  He currently works as a visiting professor at colleges in both the USA and Ghana while engaged on the firm's projects.",
     ],
   },
   {
@@ -345,14 +345,17 @@ export const people = [
   {
     id: 'tracie-annan',
     name: 'Tracie Annan',
-    role: 'Training and Capacity Building',
+    role: 'Learning & Development Consultant',
     imageUrl: 'images/people/tracy.jpg',
-    specialties: ['Training and Capacity Building', 'Curriculum development and instructional design', 'Workshop facilitation and adult learning methodologies', 'Monitoring and evaluation of training programs', 'Stakeholder engagement and consultation facilitation'],
-    focusAreas: ['<ul><li>▪ Training and Capacity Building</li><li>▪ Curricula development and instructional design</li><li>▪ Workshop facilitation and adult learning methodologies</li><li>▪ Monitoring and evaluation of training programs</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
+    specialties: ['Leadership Development', 'Learning & Development Strategy', 'Executive and Management Training', 'AI HR & Learning Systems', 'Human Resource Management', 'Organisational Development', 'Performance Management', 'Change Management', 'Talent Development', 'Customer Experience Training', 'Facilitation and Coaching', 'Training Needs Analysis', 'Employee Engagement', 'HR Policy Development', 'Team Effectiveness', 'Train-the-Trainer Programme'],
+    focusAreas: ['<ul><li>▪ Leadership Development</li><li>▪ Learning & Development Strategy</li><li>▪ Executive and Management Training</li><li>▪ AI HR & Learning Systems</li><li>▪ Human Resource Management</li><li>▪ Organisational Development</li><li>▪ Performance Management</li><li>▪ Change Management</li><li>▪ Talent Development</li><li>▪ Customer Experience Training</li><li>▪ Facilitation and Coaching</li><li>▪ Training Needs Analysis</li><li>▪ Employee Engagement</li><li>▪ HR Policy Development</li><li>▪ Team Effectiveness</li><li>▪ Train-the-Trainer Programme</li></ul>'],
     details: [
-      "Tracie Annan is an expert in training and capacity building. She specializes in developing curricula, facilitating workshops, and designing instructional materials for adult learners.<br /><br />\
-      Tracie has extensive experience in conducting needs assessments, designing training programs, and evaluating the effectiveness of educational initiatives. Her work ensures that participants receive high-quality training that meets their professional development needs.<br /><br />\
-      Her contributions support the firm's commitment to enhancing organizational capabilities through effective training and development strategies.",
+      "Tracie N.D. Annan is an accomplished Human Resources and Learning & Development professional with more than fifteen years of experience delivering strategic HR solutions, leadership development programmes, organisational development initiatives, and employee capability-building across consulting, FMCG, and international business process outsourcing environments.<br /><br />\
+      Her expertise spans leadership development, experience in AI learning systems talent management, organisational change, customer experience, performance management, employee engagement, policy development, facilitation, coaching, and executive learning. She is recognised for creating engaging, learner-centred programmes that translate business objectives into practical workplace performance.<br /><br />\
+      Tracie has successfully designed and delivered training programmes for employees, supervisors, managers, and emerging leaders, using interactive facilitation techniques that encourage collaboration, critical thinking, and practical application. Her approach combines adult learning principles with real-world business experience to produce measurable and sustainable learning outcomes.<br /><br />\
+      A significant milestone in her consulting career was contributing to the successful delivery of the GNPC Junior Executive Certificate Programme through Shawbell Consulting in 2014. She is honoured to have the opportunity to support the programme once again, bringing both previous experience and a refreshed perspective to leadership development.<br /><br />\
+      Tracie believes that effective learning extends beyond knowledge transfer. Her facilitation style promotes active participation, experiential learning, practical problem-solving, collaboration, and reflection, enabling participants to confidently apply new knowledge within their organisations.<br /><br />\
+      She is committed to delivering high-quality consultancy services that support organisational excellence, leadership effectiveness, and sustainable business performance.",
     ],
   },
   {
