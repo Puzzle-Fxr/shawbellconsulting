@@ -17,7 +17,7 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
       onClick={() => onOpen(person)}
-      className="card-lift w-full max-w-xs h-56 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
+      className="card-lift w-56 h-56 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
     >
       <img
         src="/favicon.png"
@@ -25,11 +25,12 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
         aria-hidden="true"
         className="absolute bottom-3 right-3 z-0 w-16 h-16 object-contain opacity-25 pointer-events-none"
       />
-      <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-        <img src={person.imageUrl} alt={person.name} className="w-15 h-15 rounded-full object-cover" />
+      <div className="relative z-10 w-20 h-20 bg-gradient-to-br from-ocean/20 to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+        <img src={person.imageUrl} alt={person.name} className="w-18 h-18 rounded-full object-cover" />
       </div>
       <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
       <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center">{person.role}</p>
+      <p className="relative z-10 mt-auto pt-2 text-xs text-gray-500 text-center">Click for More Info</p>
     </motion.button>
   );
 }
@@ -59,9 +60,8 @@ export default function People() {
   };
 
   const members = people.filter(person => !person.isFounder);
-  const ourTeam = members.filter(person => ['priscilla-andoh', 'daniellina-essel', 'kojo-kwakwa', 'oheneba', 'johanna-ntow', 'audrey-fenuku', 'karsten-avogo'].includes(person.id));
-  const poolOfExperts = members.filter(person => ['estelle-appiah', 'cephas-galley', 'margaret-prah', 'max-vardon', 'gheysika-agambila', 'henry-paidoo', 'tracie-annan'].includes(person.id));
-  const financeAndAccountingAssociates = members.filter(person => ['kofi-amorin', 'david-asare-manu'].includes(person.id));
+  const ourTeam = members.filter(person => ['kofi-amorin', 'priscilla-andoh', 'daniellina-essel', 'kojo-kwakwa', 'oheneba', 'johanna-ntow', 'karsten-avogo', 'audrey-fenuku', 'david-asare-manu'].includes(person.id));
+  const poolOfExperts = members.filter(person => ['estelle-appiah', 'cephas-galley', 'gheysika-agambila', 'henry-paidoo', 'tracie-annan'].includes(person.id));
 
   return (
     <div className="page-enter">
@@ -124,25 +124,19 @@ export default function People() {
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-8">
-            <div>
+          {/* Team and Experts */}
+          <div className="grid lg:grid-cols-4 gap-10 lg:gap-8">
+            <div className="lg:col-span-3 p-3 mx-3">
               <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {ourTeam.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
               </div>
             </div>
 
-            <div>
+            <div className="lg:col-span-1 p-3">
               <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Pool of Experts</h3>
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 {poolOfExperts.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
-              </div>
-            </div>
-
-            <div className="lg:col-span-2">
-              <h3 className="font-heading font-semibold text-2xl text-steel mb-8">F &amp; A Associates</h3>
-              <div className="grid gap-6">
-                {financeAndAccountingAssociates.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
               </div>
             </div>
           </div>
