@@ -420,7 +420,7 @@ export const people = [
     id: 'oheneba',
     name: 'Oheneba, Esq.',
     role: '-',
-    imageUrl: 'images/people/male.png',
+    imageUrl: 'images/people/oheneba.jpg',
     specialties: ['-', '-', '-', '-'],
     focusAreas: ['<ul><li>▪ -</li></ul>'],
     details: [

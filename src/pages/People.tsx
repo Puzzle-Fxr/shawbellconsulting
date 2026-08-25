@@ -22,7 +22,7 @@ function MemberCard({ person, index, onOpen, theme }: { person: Person; index: n
       onClick={() => onOpen(person)}
       className={`card-lift w-60 h-68 mx-auto rounded-2xl border p-6 text-left cursor-pointer flex flex-col relative overflow-hidden ${
         isTeamCard
-          ? 'bg-pumpkin/5 border-pumpkin/20 hover:border-pumpkin/50'
+          ? 'bg-pumpkin/5 border-pumpkin/50 hover:border-pumpkin/60'
           : 'bg-ocean/5 border-ocean/20 hover:border-ocean/50'
       }`}
     >
@@ -86,11 +86,11 @@ export default function People() {
         description="Our team of experienced legal and business professionals brings decades of combined expertise, a commitment to excellence, and the integrated perspective that defines our firm."
       />
 
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-white py-10 lg:py-18" aria-labelledby="founder-heading">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Founder - card */}
 
-          <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Founder</h3>
+          <h3 className="font-heading font-semibold text-2xl text-steel text-center mb-8">Our Founder</h3>
           <div className="flex justify-center md:flex-col items-center gap-8 mb-16">
             {people.filter(p => p.isFounder).map(founder => (
               <motion.button
@@ -133,18 +133,22 @@ export default function People() {
               </motion.button>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Team and Experts */}
-          <div className="grid lg:grid-cols-4 gap-10 lg:gap-8">
-            <div className="lg:col-span-3 p-3 mx-3">
+      <section className="bg-white py-5 lg:py-8" aria-labelledby="team-and-experts-heading">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 id="team-and-experts-heading" className="font-heading font-bold text-3xl text-steel text-center mb-12">Team and Experts</h2>
+          <div className="grid lg:grid-cols-4 gap-10 lg:gap-6">
+            <div className="lg:col-span-3">
               <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {ourTeam.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} theme="experts" />)}
               </div>
             </div>
 
-            <div className="lg:col-span-1 p-3">
-              <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Pool of Experts</h3>
+            <div className="lg:col-span-1 rounded-2xl border border-pumpkin/20 bg-pumpkin/10 p-4">
+              <h3 className="font-heading font-semibold text-2xl text-center text-steel mb-4">Our Pool of Experts</h3>
               <div className="grid grid-cols-1 gap-6">
                 {poolOfExperts.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} theme="team" />)}
               </div>
