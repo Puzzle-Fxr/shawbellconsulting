@@ -226,7 +226,7 @@ export default function Home() {
               </h2>
             </div>
             <Link
-              to="/partners"
+              to="/partners#clients"
               className="inline-flex items-center gap-2 text-steel font-heading font-semibold text-sm hover:text-ocean transition-colors"
             >
               View More Clients <ChevronRight className="w-4 h-4" />

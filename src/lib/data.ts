@@ -407,7 +407,7 @@ export const people = [
     id: 'kojo-kwakwa',
     name: 'Kojo Kwakwa',
     role: '-',
-    imageUrl: 'images/people/male.png',
+    imageUrl: 'images/people/kojo.jpg',
     specialties: ['-', '-', '-', '-'],
     focusAreas: ['<ul><li>▪ -</li></ul>'],
     details: [
@@ -579,6 +579,18 @@ export const clients = [
    logo: "images/logo/Cocobod.png",
   },
   {
+   name: 'Amazon',
+   logo: "images/logo/amazon.png",
+  },
+  {
+   name: 'TSL Logistics',
+   logo: "images/logo/tsl.png",
+  },
+  {
+   name: 'CEIBS',
+   logo: "images/logo/ceibs.png",
+  },
+  {
    name: 'Passion Air',
    logo: "images/logo/pa.png",
   },
@@ -637,6 +649,30 @@ export const clients = [
   {
    name: 'Ghana Free Zones Authority (Ghana)',
    logo: "images/logo/gfza.png",
+  },
+  {
+   name: 'Afex Oil',
+   logo: "images/logo/afex.png",
+  },
+  {
+   name: 'Tap Oil, Perth Australia',
+   logo: "images/logo/tapoil.png",
+  },
+  {
+   name: 'Challenger Minerals Inc.',
+   logo: "images/logo/cmi.png",
+  },
+  {
+   name: 'AquaTerra Energy',
+   logo: "images/logo/aquaterra.png",
+  },
+  {
+   name: 'Rialto Energy',
+   logo: "images/logo/rialto.png",
+  },
+  {
+   name: 'Oxfam International',
+   logo: "images/logo/oxfam.png",
   },
 ]
 
