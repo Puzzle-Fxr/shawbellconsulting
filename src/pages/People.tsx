@@ -7,8 +7,11 @@ import { people } from '../lib/data';
 import SEO from '../components/SEO';
 
 type Person = (typeof people)[number];
+type MemberCardTheme = 'team' | 'experts';
 
-function MemberCard({ person, index, onOpen }: { person: Person; index: number; onOpen: (person: Person) => void }) {
+function MemberCard({ person, index, onOpen, theme }: { person: Person; index: number; onOpen: (person: Person) => void; theme: MemberCardTheme }) {
+  const isTeamCard = theme === 'team';
+
   return (
     <motion.button
       type="button"
@@ -17,7 +20,11 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
       onClick={() => onOpen(person)}
-      className="card-lift w-60 h-68 mx-auto bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer flex flex-col relative overflow-hidden"
+      className={`card-lift w-60 h-68 mx-auto rounded-2xl border p-6 text-left cursor-pointer flex flex-col relative overflow-hidden ${
+        isTeamCard
+          ? 'bg-pumpkin/5 border-pumpkin/20 hover:border-pumpkin/50'
+          : 'bg-ocean/5 border-ocean/20 hover:border-ocean/50'
+      }`}
     >
       <img
         src="/favicon.png"
@@ -25,11 +32,13 @@ function MemberCard({ person, index, onOpen }: { person: Person; index: number; 
         aria-hidden="true"
         className="absolute bottom-3 right-3 z-0 w-16 h-16 object-contain opacity-25 pointer-events-none"
       />
-      <div className="relative z-10 w-20 h-20 bg-gradient-to-br from-steel to-steel/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+      <div className={`relative z-10 w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center ${
+        isTeamCard ? 'bg-gradient-to-br from-pumpkin to-pumpkin/20' : 'bg-gradient-to-br from-ocean to-steel/20'
+      }`}>
         <img src={person.imageUrl} alt={person.name} className="w-18 h-18 rounded-full object-cover" />
       </div>
       <h4 className="relative z-10 font-heading font-bold text-lg text-steel text-center mb-1">{person.name}</h4>
-      <p className="relative z-10 text-ocean font-heading font-medium text-sm text-center">{person.role}</p>
+      <p className={`relative z-10 font-heading font-medium text-sm text-center ${isTeamCard ? 'text-pumpkin' : 'text-ocean'}`}>{person.role}</p>
       <p className="relative z-10 mt-auto pt-2 text-xs text-gray-500 text-center">Click for More Info</p>
     </motion.button>
   );
@@ -80,6 +89,7 @@ export default function People() {
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Founder - card */}
+
           <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Founder</h3>
           <div className="flex justify-center md:flex-col items-center gap-8 mb-16">
             {people.filter(p => p.isFounder).map(founder => (
@@ -91,7 +101,7 @@ export default function People() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 onClick={() => openPerson(founder)}
-                className="card-lift mb-16 bg-white rounded-2xl border border-platinum p-6 hover:border-ocean/30 text-left cursor-pointer w-full max-w-lg mx-auto relative overflow-hidden"
+                className="card-lift rounded-2xl border mb-16 p-8 bg-ocean/5 border-ocean/20 hover:border-ocean/50 text-left cursor-pointer w-full max-w-lg mx-auto relative overflow-hidden"
               >
                 <div style={{
                   position: 'absolute',
@@ -129,14 +139,14 @@ export default function People() {
             <div className="lg:col-span-3 p-3 mx-3">
               <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Team</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {ourTeam.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
+                {ourTeam.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} theme="experts" />)}
               </div>
             </div>
 
             <div className="lg:col-span-1 p-3">
               <h3 className="font-heading font-semibold text-2xl text-steel mb-8">Our Pool of Experts</h3>
               <div className="grid grid-cols-1 gap-6">
-                {poolOfExperts.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} />)}
+                {poolOfExperts.map((person, index) => <MemberCard key={person.id} person={person} index={index} onOpen={openPerson} theme="team" />)}
               </div>
             </div>
           </div>
