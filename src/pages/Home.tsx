@@ -207,7 +207,7 @@ export default function Home() {
                   key={`${p}-${i}`}
                   className="shrink-0 h-[138px] w-max min-w-[160px] max-w-[320px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
                 >
-                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3 px-3">
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-steel/10 to-steel/20 border border-pumpkin flex items-center justify-center mb-3 px-3">
                     <img src={p.logo} alt={p.name} className="w-auto max-w-full h-15 object-contain" />
                   </div>
                   <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-nowrap overflow-hidden text-ellipsis">
@@ -240,7 +240,7 @@ export default function Home() {
                   key={`${c}-${i}`}
                   className="shrink-0 h-[138px] w-max min-w-[160px] max-w-[320px] rounded-2xl border border-platinum bg-white px-4 py-3 shadow-sm shadow-slate-200/60"
                 >
-                  <div className="h-16 rounded-xl bg-gradient-to-br from-platinum to-white border border-platinum flex items-center justify-center mb-3 px-3">
+                  <div className="h-16 rounded-xl bg-gradient-to-br from-steel/10 to-steel/20 border border-pumpkin flex items-center justify-center mb-3 px-3">
                     <img src={c.logo} alt={c.name} className="w-auto max-w-full h-15 object-contain" />
                   </div>
                   <p className="text-[13px] font-heading font-semibold text-steel tracking-[0.16em] uppercase leading-snug whitespace-nowrap overflow-hidden text-ellipsis">
