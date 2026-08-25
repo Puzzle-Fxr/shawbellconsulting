@@ -88,8 +88,8 @@ export default function People() {
 
       <section className="bg-white py-10 lg:py-18" aria-labelledby="founder-heading">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Founder - card */}
-
+          
+        {/* Founder - card */}
           <h3 className="font-heading font-semibold text-2xl text-steel text-center mb-8">Our Founder</h3>
           <div className="flex justify-center md:flex-col items-center gap-8 mb-16">
             {people.filter(p => p.isFounder).map(founder => (

@@ -345,7 +345,7 @@ export const people = [
   {
     id: 'tracie-annan',
     name: 'Tracie Annan',
-    role: 'Learning & Development Consultant',
+    role: 'Learning & Development Specialist',
     imageUrl: 'images/people/tracy.jpg',
     specialties: ['Leadership Development', 'Learning & Development Strategy', 'Executive and Management Training', 'AI HR & Learning Systems', 'Human Resource Management', 'Organisational Development', 'Performance Management', 'Change Management', 'Talent Development', 'Customer Experience Training', 'Facilitation and Coaching', 'Training Needs Analysis', 'Employee Engagement', 'HR Policy Development', 'Team Effectiveness', 'Train-the-Trainer Programme'],
     focusAreas: ['<ul><li>▪ Leadership Development</li><li>▪ Learning & Development Strategy</li><li>▪ Executive and Management Training</li><li>▪ AI HR & Learning Systems</li><li>▪ Human Resource Management</li><li>▪ Organisational Development</li><li>▪ Performance Management</li><li>▪ Change Management</li><li>▪ Talent Development</li><li>▪ Customer Experience Training</li><li>▪ Facilitation and Coaching</li><li>▪ Training Needs Analysis</li><li>▪ Employee Engagement</li><li>▪ HR Policy Development</li><li>▪ Team Effectiveness</li><li>▪ Train-the-Trainer Programme</li></ul>'],
