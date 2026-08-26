@@ -375,7 +375,7 @@ export const people = [
   },
   {
     id: 'priscilla-andoh',
-    name: 'Ms. Priscilla Andoh',
+    name: 'Priscilla Andoh',
     role: 'Business Consultant and Manager',
     imageUrl: 'images/people/priscilla.jpg',
     specialties: ['Business development and advisory', 'Organisational development, training and capacity building', 'Programme coordination, needs assessment, report writing and data analysis', 'Project coordination for governance and board-evaluation assignments (Bank of Ghana Board evaluation)', 'Liaising with functional units and stakeholders, scheduling and documentation', 'Experience with youth, women and entrepreneurship projects (Mastercard)'],
@@ -431,7 +431,7 @@ export const people = [
   },
   {
     id: 'johanna-ntow',
-    name: 'Ms. Johanna Ntow-Atiemo',
+    name: 'Johanna Ntow-Atiemo',
     role: 'Organizational Development Consultant',
     imageUrl: 'images/people/johanna.jpg',
     specialties: ['Organizational development and institutional assessments', 'Human resource compliance and aligning HR systems with public sector standards', 'Renewable energy institutional framework work (assessment and strengthening)', 'Evaluation and governance reviews (e.g., Board evaluation work for Bank of Ghana)', 'Stakeholder engagement, documentation, and facilitating institutional reform processes', 'Experience across education, banking, healthcare, legal and aviation sectors', 'Qualifications in psychology, law (LLB), and LLM in Alternative Dispute Resolution'],
