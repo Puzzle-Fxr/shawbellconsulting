@@ -63,7 +63,7 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-steel" />
                   </div>
                   <div>
-                    <p className="font-heading font-medium text-steel">+233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)20 814 9262 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
+                    <p className="font-heading font-medium text-steel">+233 (0)20 814 9262 <br />+233 (0)302 767 498 <br />+233 (0)302 774 112 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

@@ -91,7 +91,7 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-ocean" /> No.9 Klottey Crescent-Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <Phone className="w-4 h-4 text-ocean" /> +233 (0)302 774 112 <br />+233 (0)302 767 498 <br />+233 (0)20 814 9262
+                  <Phone className="w-4 h-4 text-ocean" /> +233 (0)20 814 9262 <br />+233 (0)302 767 498 <br />+233 (0)302 774 112
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Mail className="w-4 h-4 text-ocean" /> info@shawbellghana.com
