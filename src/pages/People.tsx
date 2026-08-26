@@ -200,10 +200,10 @@ export default function People() {
                   <div className="basis-2/3">
                     <div className="text-sm text-gray-700">
                       <div className="bg-platinum/50 rounded-xl p-3">
-                        <p className="font-heading font-semibold text-steel mb-1">Focus Areas</p>
+                        <p className="font-heading font-semibold text-steel mb-1">Qualifications</p>
                         <p 
                           className="columns-1 sm:columns-2 gap-4 text-gray-600 [column-fill:_balance] [&_ul]:m-0 [&_li]:break-inside-avoid" 
-                          dangerouslySetInnerHTML={{ __html: selectedPerson.focusAreas }} 
+                          dangerouslySetInnerHTML={{ __html: selectedPerson.qualifications }} 
                         />
                       </div>
                     </div>
