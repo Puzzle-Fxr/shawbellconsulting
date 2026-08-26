@@ -286,7 +286,7 @@ export const people = [
   },
   {
     id: 'estelle-appiah',
-    name: 'Estelle Appiah, Esq.',
+    name: 'Estelle Matilda Appiah, Esq.',
     role: 'Lawyer (Ghana, UK, Lesotho) and Senior Legislative Drafting Consultant',
     imageUrl: 'images/people/estelle.jpg',
     specialties: ['Legislative drafting', 'Expert advice related to legislation', 'Peer review mechanisms and promotes awareness of legislation at the highest professional level'],
@@ -300,7 +300,7 @@ export const people = [
   {
     id: 'cephas-galley',
     name: 'Cephas Galley, Esq.',
-    role: 'Legal Practitioner (Ghana) and Senior Energy Sector Consultant',
+    role: 'Lawyer (Ghana) and Senior Energy Sector Consultant',
     imageUrl: 'images/people/galley.jpg',
     specialties: ['Energy sector law and policy', 'Power sector regulatory compliance', 'Contract negotiation and drafting', 'Project finance and investment advisory', 'Stakeholder engagement and consultation facilitation'],
     focusAreas: ['<ul><li>▪ Energy sector law and policy</li><li>▪ Power sector regulatory compliance</li><li>▪ Contract negotiation and drafting</li><li>▪ Project finance and investment advisory</li><li>▪ Stakeholder engagement and consultation facilitation</li></ul>'],
