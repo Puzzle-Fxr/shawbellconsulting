@@ -438,9 +438,9 @@ export default function Home() {
               </h2>
               <p className="text-pumpkin font-heading font-medium text-sm mb-6">{founder.role}</p>
               {/* Founder image placeholder */}
-              <div className="rounded-2xl w-full aspect-[3/4] max-w-md flex items-center justify-center relative overflow-hidden">
+              <div className="rounded-2xl w-full max-w-md flex items-center justify-center relative overflow-hidden">
                 <div className="text-center z-10">
-                  <div className="w-100 h-100 bg-white/20 rounded-full mx-auto mb-2 flex items-center justify-center border-2 border-steel-dark">
+                  <div className="w-100 h-100 bg-white/20 rounded-full mx-auto mb-2 flex items-center justify-center border-2 border-pumpkin-dark">
                     <img src={founder.imageUrl} alt={founder.name} className="w-98 h-98 rounded-full object-cover" />
                   </div>
                 </div>

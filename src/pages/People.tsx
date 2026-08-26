@@ -226,6 +226,7 @@ export default function People() {
                   <p className="font-heading font-semibold text-sm text-steel uppercase tracking-[0.2em] mb-3">Career History</p>
                   <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: selectedPerson.details }} />
                 </div>
+                <img src="/favicon.png" alt="" aria-hidden="true" className="block w-24 h-24 mx-auto object-cover opacity-75 pointer-events-none" />
               </div>
             </motion.div>
           </motion.div>
