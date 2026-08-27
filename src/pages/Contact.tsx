@@ -102,7 +102,7 @@ export default function Contact() {
                 <>
                     <h2 className="font-heading font-bold text-2xl text-steel mb-2">Send Us a Message</h2>
                     <p className="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you promptly.</p>
-                    <form action="https://formsubmit.co/info@shawbellghana.com" method="POST" className="space-y-5">
+                    <form action="https://formsubmit.co/e36b38daf5b922fa895a54a106db6411" method="POST" className="space-y-5">
                       <input type="hidden" name="_subject" value="New inquiry from ShawbellConsulting website" />
                       <input type="hidden" name="_template" value="table" />
                       <div>
