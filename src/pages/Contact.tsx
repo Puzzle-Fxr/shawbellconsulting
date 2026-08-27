@@ -43,7 +43,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-heading font-medium text-steel pb-2">Our Office</h3>
-                    <p className="text-gray-500 text-sm">No. 9 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra – GHANA</p>
+                    <p className="text-gray-500 text-sm">No. 9 Klottey Crescent, Ring Road East,<br /> Labone Junction By-Pass, North Labone,<br /> Accra - GHANA<br />GL-0303-9456</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-heading font-medium text-steel pb-2">Mailing Address</h3>
-                    <p className="text-gray-500 text-sm">P.O. Box KIA9022, Airport, Accra</p>
+                    <p className="text-gray-500 text-sm">P.O. Box KIA9022,<br /> Airport, Accra</p>
                   </div>
                 </div>
               </div>
