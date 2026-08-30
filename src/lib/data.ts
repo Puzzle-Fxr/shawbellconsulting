@@ -24,6 +24,14 @@ export const legalServices = [
     icon: 'ShieldCheck',
   },
   {
+    id: 'judicial-services',
+    title: 'Judicial Services',
+    short: 'Judicial support for dispute resolution, litigation strategy, and court representation.',
+    long: 'We provide comprehensive judicial support to help clients navigate the legal system effectively, ensuring their interests are protected throughout the dispute resolution process.',
+    features: ['Dispute resolution', 'Litigation strategy', 'Court representation'],
+    icon: 'Building2',
+  },
+  {
     id: 'obtaining-licenses-and-permits',
     title: 'Obtaining Licenses and Permits',
     short: 'Support for securing the approvals and registrations businesses need to operate lawfully and efficiently.',
@@ -88,20 +96,20 @@ export const legalServices = [
     icon: 'Scale',
   },
   {
-    id: 'sec-advisors',
-    title: 'SEC Advisors',
-    short: 'Practical support for securities-related legal, disclosure, and regulatory processes.',
-    long: 'Our SEC advisory services help clients navigate disclosure obligations, reporting expectations, and securities-related compliance requirements with confidence.',
-    features: ['Regulatory advice', 'Disclosure support', 'Reporting guidance', 'Compliance alignment'],
-    icon: 'ShieldCheck',
-  },
-  {
     id: 'drafting-policy-and-legislation',
     title: 'Drafting Policy and Legislation for Government of Ghana and its Agencies',
     short: 'High-quality policy and legislation drafting support for public-sector institutions and agencies.',
     long: 'We support government institutions with technically sound drafting, legal analysis, and reform-oriented policy development that mirrors national priorities and statutory needs.',
     features: ['Policy drafting', 'Legislative drafting', 'Public sector reform support', 'Administrative legal drafting'],
     icon: 'Building2',
+  },
+  {
+    id: 'sec-advisors',
+    title: 'SEC Advisors',
+    short: 'Practical support for securities-related legal, disclosure, and regulatory processes.',
+    long: 'Our SEC advisory services help clients navigate disclosure obligations, reporting expectations, and securities-related compliance requirements with confidence.',
+    features: ['Regulatory advice', 'Disclosure support', 'Reporting guidance', 'Compliance alignment'],
+    icon: 'ShieldCheck',
   },
   {
     id: 'justice-human-rights-public-sector-reform',
@@ -128,20 +136,20 @@ export const legalServices = [
     icon: 'ArrowRightLeft',
   },
   {
-    id: 'drafting-reviewing-contracts-memoranda',
-    title: 'Drafting and Reviewing Contracts and Legal Memoranda',
-    short: 'Clear drafting, practical review, and negotiation support for contracts and legal memoranda.',
-    long: 'We draft, review, and refine contracts and legal memoranda to reduce ambiguity, manage risk, and support sound business decision-making.',
-    features: ['Contract drafting', 'Legal memorandum support', 'Negotiation support', 'Risk-focused review'],
-    icon: 'Scale',
-  },
-  {
     id: 'negotiating-agreements',
     title: 'Negotiating Agreements',
     short: 'Skilled negotiation assistance to protect priorities, reduce exposure, and secure favorable outcomes.',
     long: 'We help parties structure, negotiate, and manage agreements with a focus on clarity, leverage, and practical commercial outcomes.',
     features: ['Negotiation strategy', 'Term alignment', 'Risk allocation', 'Outcome optimization'],
     icon: 'ArrowRightLeft',
+  },
+  {
+    id: 'drafting-reviewing-contracts-memoranda',
+    title: 'Drafting and Reviewing Contracts and Legal Memoranda',
+    short: 'Clear drafting, practical review, and negotiation support for contracts and legal memoranda.',
+    long: 'We draft, review, and refine contracts and legal memoranda to reduce ambiguity, manage risk, and support sound business decision-making.',
+    features: ['Contract drafting', 'Legal memorandum support', 'Negotiation support', 'Risk-focused review'],
+    icon: 'Scale',
   },
 ];
 
@@ -591,7 +599,7 @@ export const clients = [
    logo: "images/logo/ceibs.png",
   },
   {
-   name: 'Passion Air',
+   name: 'PassionAir',
    logo: "images/logo/pa.png",
   },
   {
