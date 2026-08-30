@@ -9,8 +9,9 @@ export default function LegalServices() {
   return (
     <div className="page-enter">
       <SEO
-        title="Legal Services"
-        description="ShawbellConsulting's legal services: corporate law, compliance, litigation advisory, transaction support, and statutory services tailored to your needs."
+        title="Legal Services | Corporate, Compliance & Judicial Services"
+        description="ShawbellConsulting provides corporate law, compliance, judicial services, litigation advisory, transaction support, and statutory services tailored to businesses and institutions in Ghana."
+        keywords="legal services, judicial services, corporate law, compliance, litigation advisory, transaction advisory, statutory services, Ghana"
         canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/legal-services'}
       />
       <PageHero

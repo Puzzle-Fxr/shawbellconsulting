@@ -119,8 +119,8 @@ export default function Home() {
     <div className="page-enter">
       <SEO
         title="Home"
-        description="ShawbellConsulting provides expert legal services and business advisory across private and public sectors in Ghana and internationally."
-        keywords="legal services, business advisory, governance, transaction advisory, Ghana"
+        description="ShawbellConsulting provides expert legal services, judicial services, and business advisory across private and public sectors in Ghana and internationally."
+        keywords="legal services, judicial services, business advisory, governance, litigation advisory, transaction advisory, Ghana"
       />
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[80vh] flex items-center">
