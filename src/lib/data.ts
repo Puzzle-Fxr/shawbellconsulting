@@ -603,7 +603,7 @@ export const clients = [
    logo: "images/logo/siga.png",
   },
   {
-   name: 'Judiciary Service (Ghana)',
+   name: 'Judicial Service (Ghana)',
    logo: "images/logo/gjs.png",
   },
   {
