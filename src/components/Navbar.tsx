@@ -86,12 +86,12 @@ export default function Navbar() {
                         </Link>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-3">
                       {legalServices.map(s => (
                         <Link
                           key={s.id}
                           to={`/legal-services/${s.id}`}
-                          className="block rounded-xl px-4 py-2 text-sm text-gray-700 hover:text-ocean hover:bg-platinum/60 transition-colors"
+                          className="block rounded-xl px-4 py-3 text-sm text-gray-700 hover:text-ocean hover:bg-platinum/60 transition-colors"
                         >
                           <span className="font-semibold text-steel">{s.title}</span>
                         </Link>

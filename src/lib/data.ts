@@ -24,14 +24,6 @@ export const legalServices = [
     icon: 'ShieldCheck',
   },
   {
-    id: 'judicial-services',
-    title: 'Judicial Services',
-    short: 'Judicial support for dispute resolution, litigation strategy, and court representation.',
-    long: 'We provide comprehensive judicial support to help clients navigate the legal system effectively, ensuring their interests are protected throughout the dispute resolution process.',
-    features: ['Dispute resolution', 'Litigation strategy', 'Court representation'],
-    icon: 'Building2',
-  },
-  {
     id: 'obtaining-licenses-and-permits',
     title: 'Obtaining Licenses and Permits',
     short: 'Support for securing the approvals and registrations businesses need to operate lawfully and efficiently.',
