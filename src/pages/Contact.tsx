@@ -4,8 +4,58 @@ import { MapPin, Phone, Mail, Send, AtSign } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 
+const initialForm = { name: '', email: '', phone: '', service: '', message: '' };
+
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [form, setForm] = useState(initialForm);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatusMessage(null);
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/e36b38daf5b922fa895a54a106db6411', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+          _subject: 'New inquiry from ShawbellConsulting website',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Unable to send your message right now.');
+      }
+
+      const data = await response.json();
+      if (data?.success === false) {
+        throw new Error(data?.message || 'Unable to send your message right now.');
+      }
+
+      setStatusMessage({
+        type: 'success',
+        text: 'Thank you for your inquiry. Your message has been sent successfully, and our team will be in touch shortly.',
+      });
+      setForm(initialForm);
+    } catch (error) {
+      setStatusMessage({
+        type: 'error',
+        text: 'We could not send your message at this time. Please email info@shawbellghana.com or call our office directly.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="page-enter">
@@ -102,9 +152,7 @@ export default function Contact() {
                 <>
                     <h2 className="font-heading font-bold text-2xl text-steel mb-2">Send Us a Message</h2>
                     <p className="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you promptly.</p>
-                    <form action="https://formsubmit.co/e36b38daf5b922fa895a54a106db6411" method="POST" className="space-y-5">
-                      <input type="hidden" name="_subject" value="New inquiry from ShawbellConsulting website" />
-                      <input type="hidden" name="_template" value="table" />
+                    <form onSubmit={handleSubmit} className="space-y-5">
                       <div>
                         <label className="font-heading font-medium text-sm text-steel mb-1 block">Full Name / Company Name</label>
                         <input
@@ -122,7 +170,7 @@ export default function Contact() {
                         <input
                           type="email"
                           value={form.email}
-                          name="_replyto"
+                          name="email"
                           onChange={e => setForm({ ...form, email: e.target.value })}
                           className="w-full bg-white border border-platinum rounded-lg px-4 py-2.5 text-sm text-gray-700 focus:border-ocean focus:ring-1 focus:ring-ocean/20 outline-none transition-all"
                           placeholder="john@company.com"
@@ -173,11 +221,27 @@ export default function Contact() {
                           required
                         />
                       </div>
+
+                      {statusMessage && (
+                        <div
+                          className={`rounded-lg border px-4 py-3 text-sm ${
+                            statusMessage.type === 'success'
+                              ? 'border-emerald-200 bg-emerald-50 text-emerald-700'
+                              : 'border-red-200 bg-red-50 text-red-700'
+                          }`}
+                          role="status"
+                          aria-live="polite"
+                        >
+                          {statusMessage.text}
+                        </div>
+                      )}
+
                       <button
                         type="submit"
-                        className="w-full flex items-center justify-center gap-2 bg-pumpkin hover:bg-pumpkin-dark text-white font-heading font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg"
+                        disabled={isSubmitting}
+                        className="w-full flex items-center justify-center gap-2 bg-pumpkin hover:bg-pumpkin-dark disabled:opacity-70 disabled:cursor-not-allowed text-white font-heading font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg"
                       >
-                        <Send className="w-4 h-4" /> Submit Inquiry
+                        <Send className="w-4 h-4" /> {isSubmitting ? 'Sending...' : 'Submit Inquiry'}
                       </button>
                     </form>
                 </>
