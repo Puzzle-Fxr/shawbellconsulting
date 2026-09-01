@@ -551,7 +551,7 @@ export const partners = [
 
 export const clients = [
   {
-   name: 'Ghana Broadasting Corporation (GBC)',
+   name: 'Ghana Broadcasting Corporation (GBC)',
    logo: "images/logo/gbc.png",
   },
   {
