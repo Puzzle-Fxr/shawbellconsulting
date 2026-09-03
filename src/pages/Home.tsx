@@ -513,7 +513,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-heading font-medium text-steel">Call Us</p>
-                    <p className="text-gray-500 text-sm">+233 (0)302 774 112 <br />+233 (0)302 767 498</p>
+                    <p className="text-gray-500 text-sm">+233 (0)20 814 9262 <br />+233 (0)302 767 498 <br />+233 (0)302 774 112 <br />+233 (0)302 767609 (Ghana Institute of Consulting)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
