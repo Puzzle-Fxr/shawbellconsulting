@@ -22,6 +22,7 @@ type ArticleContent = {
 };
 
 const articleModules: Record<string, () => Promise<{ default: ArticleContent }>> = {
+  'your-will-is-a-beautiful-thing': () => import('../assets/articles/your-will-is-a-beautiful-thing'),
   'how-sunshine-can-come-from-rain': () => import('../assets/articles/how-sunshine-can-come-from-rain'),
   'the-impact-of-the-current-iran-situation': () => import('../assets/articles/the-impact-of-the-current-iran-situation'),
 };

@@ -246,6 +246,16 @@ export const advisoryServices = [
 
 export const publications = [
   {
+    id: 'your-will-is-a-beautiful-thing',
+    imageUrl: 'images/articles/fireworksinglass.jpg',
+    title: 'Your Will is a Beautiful Thing',
+    excerpt: 'It is an act of profound care and forethought for the people you love.',
+    category: 'Publication',
+    date: 'September 2026',
+    author: 'ShawbellConsulting',
+    readTime: '8 min read',
+  },
+  {
     id: 'how-sunshine-can-come-from-rain',
     imageUrl: 'images/articles/how_sunshine_banner.jpg',
     title: 'How Sunshine Can Come From Rain',
