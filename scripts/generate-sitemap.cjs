@@ -24,35 +24,32 @@ function buildRoutes() {
       const slug = pascalToKebab(name)
       return slug === '' ? '/' : `/${slug}`
     })
-  const uniq = Array.from(new Set(['/', ...routes.filter(r => r !== '/')]))
-  // Try to include dynamic routes from src/lib/data.ts (publications, services)
+
+  const uniq = new Set(['/', ...routes.filter(r => r !== '/')])
+
   try {
     const dataFile = fs.readFileSync(path.join(__dirname, '../src/lib/data.ts'), 'utf8')
 
-    function extractIds(varName) {
+    const addIds = (varName, prefix) => {
       const re = new RegExp(`export const ${varName}\\s*=\\s*\\[([\\s\\S]*?)\\];`, 'm')
-      const m = dataFile.match(re)
-      if (!m) return []
-      const block = m[1]
-      const ids = []
+      const match = dataFile.match(re)
+      if (!match) return
+      const block = match[1]
       const idRe = /id:\s*'([^']+)'/g
-      let im
-      while ((im = idRe.exec(block)) !== null) ids.push(im[1])
-      return ids
+      let idMatch
+      while ((idMatch = idRe.exec(block)) !== null) {
+        uniq.add(`${prefix}/${idMatch[1]}`)
+      }
     }
 
-    const pubIds = extractIds('publications')
-    pubIds.forEach(id => uniq.push(`/publications/${id}`))
-
-    const legalIds = extractIds('legalServices')
-    legalIds.forEach(id => uniq.push(`/legal-services/${id}`))
-
-    const advIds = extractIds('advisoryServices')
-    advIds.forEach(id => uniq.push(`/business-advisory/${id}`))
-  } catch (e) {
-    // ignore parse errors
+    addIds('publications', '/publications')
+    addIds('legalServices', '/legal-services')
+    addIds('advisoryServices', '/business-advisory')
+  } catch (error) {
+    // Ignore parsing errors so the sitemap still generates for core routes.
   }
-  return uniq
+
+  return Array.from(uniq)
 }
 
 function generateSitemap() {

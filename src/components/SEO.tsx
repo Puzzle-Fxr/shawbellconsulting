@@ -5,6 +5,18 @@ interface SEOProps {
   description?: string
   keywords?: string
   canonical?: string
+  image?: string
+  type?: string
+  url?: string
+}
+
+function resolveAbsoluteUrl(value?: string) {
+  if (!value) return undefined
+  if (/^https?:\/\//i.test(value)) return value
+  if (typeof window !== 'undefined') {
+    return new URL(value, window.location.origin).toString()
+  }
+  return value.startsWith('/') ? `https://www.shawbellconsulting.com${value}` : value
 }
 
 function setMeta(name: string, content: string | undefined, attr = 'name') {
@@ -21,16 +33,28 @@ function setMeta(name: string, content: string | undefined, attr = 'name') {
   el.setAttribute('content', content)
 }
 
-export default function SEO({ title, description, keywords, canonical }: SEOProps) {
+export default function SEO({ title, description, keywords, canonical, image, type = 'website', url }: SEOProps) {
   React.useEffect(() => {
     const siteName = 'ShawbellConsulting'
-    document.title = title ? `${title} | ${siteName}` : siteName
+    const fullTitle = title ? `${title} | ${siteName}` : siteName
+    const pageDescription = description || 'ShawbellConsulting delivers strategic legal and business advisory services in Ghana and beyond.'
+    const resolvedImage = resolveAbsoluteUrl(image)
+    const resolvedUrl = resolveAbsoluteUrl(url || canonical)
 
-    setMeta('description', description)
+    document.title = fullTitle
+
+    setMeta('description', pageDescription)
     setMeta('keywords', keywords)
-    setMeta('og:title', title ? `${title} | ${siteName}` : siteName, 'property')
-    setMeta('og:description', description, 'property')
-    setMeta('og:type', 'website', 'property')
+    setMeta('og:site_name', siteName, 'property')
+    setMeta('og:title', fullTitle, 'property')
+    setMeta('og:description', pageDescription, 'property')
+    setMeta('og:type', type, 'property')
+    setMeta('og:image', resolvedImage, 'property')
+    setMeta('og:url', resolvedUrl, 'property')
+    setMeta('twitter:card', 'summary_large_image')
+    setMeta('twitter:title', fullTitle)
+    setMeta('twitter:description', pageDescription)
+    setMeta('twitter:image', resolvedImage)
 
     // canonical link
     if (canonical) {
@@ -42,7 +66,7 @@ export default function SEO({ title, description, keywords, canonical }: SEOProp
       }
       link.href = canonical
     }
-  }, [title, description, keywords, canonical])
+  }, [title, description, keywords, canonical, image, type, url])
 
   return null
 }

@@ -11,7 +11,11 @@ export default function Publications() {
       <SEO
         title="Publications & Insights"
         description="Explore ShawbellConsulting's analysis, commentary, and strategic perspectives on legal and business issues."
+        keywords="publications, legal insights, strategic perspectives, business advisory, thought leadership, Ghana"
         canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/publications'}
+        image={publications[0]?.imageUrl}
+        type="website"
+        url={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + '/publications'}
       />
       <PageHero
         title="Publications & Insights"

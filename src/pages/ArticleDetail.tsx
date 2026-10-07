@@ -86,7 +86,11 @@ export default function ArticleDetail() {
       <SEO
         title={articleContent?.title ?? publication.title}
         description={articleContent?.summary ?? publication.excerpt}
+        keywords={`${publication.title}, ${publication.category}, ShawbellConsulting, legal insights, business advisory, Ghana`}
         canonical={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + `/publications/${slug}`}
+        image={articleContent?.bannerUrl ?? publication.imageUrl}
+        type="article"
+        url={(typeof window !== 'undefined' ? window.location.origin : 'https://www.shawbellconsulting.com') + `/publications/${slug}`}
       />
       <PageHero
         title={articleContent?.title ?? publication.title}

@@ -25,9 +25,32 @@ function buildRoutes() {
       const slug = pascalToKebab(name)
       return slug === '' ? '/' : `/${slug}`
     })
-  // Deduplicate and ensure root exists
-  const uniq = Array.from(new Set(['/', ...routes.filter(r => r !== '/')]))
-  return uniq
+
+  const uniq = new Set(['/', ...routes.filter(r => r !== '/')])
+
+  try {
+    const dataFile = fs.readFileSync(path.join(__dirname, '../src/lib/data.ts'), 'utf8')
+
+    const addIds = (varName, prefix) => {
+      const re = new RegExp(`export const ${varName}\\s*=\\s*\\[([\\s\\S]*?)\\];`, 'm')
+      const match = dataFile.match(re)
+      if (!match) return
+      const block = match[1]
+      const idRe = /id:\s*'([^']+)'/g
+      let idMatch
+      while ((idMatch = idRe.exec(block)) !== null) {
+        uniq.add(`${prefix}/${idMatch[1]}`)
+      }
+    }
+
+    addIds('publications', '/publications')
+    addIds('legalServices', '/legal-services')
+    addIds('advisoryServices', '/business-advisory')
+  } catch (error) {
+    // Ignore parsing errors so the sitemap still generates for core routes.
+  }
+
+  return Array.from(uniq)
 }
 
 function generateSitemap() {
