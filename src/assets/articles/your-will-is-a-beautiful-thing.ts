@@ -123,14 +123,14 @@ const content: ArticleContent = {
       <li>✔︎ <b>Witnesses</b>: Choose at least two Witnesses who are not Beneficiaries to attest the Will</li>\
       <li>✔︎ <b>Legal Consultation</b>: Consult a qualified lawyer to help you navigate the legal nuances of preparing your Will, and the management and distribution of your lawful assets upon your demise</li></ul>",
       sources: [
-        "⭐ Note that in the formal legal process of <b>Probate</b> hereafter, a Probate Certificate will be issued by the Court to signify that your Will has been duly validated and that the Executor has the authority to administer your estate. ⭐",
+        "⭐ Note that in the formal legal process of Probate hereafter, a Probate Certificate will be issued by the Court to signify that your Will has been duly validated and that the Executor has the authority to administer your estate. ⭐",
       ],
     },
     {
       heading: '⚖︎ CONCLUSION',
-      body: "🏛️ <b>The Validity of a Will</b> depends not only on what it contains, but also on whether it has been <u>properly executed</u> in accordance with the law.<br />\
-      👩🏽‍⚖️ <b>Careful selection</b> of executors and witnesses, accurate identification of assets and beneficiaries, and compliance with the formal requirements, are essential.<br />\
-      ⚖️ Where there is any uncertainty, <b>obtaining appropriate legal advice</b> can help avoid mistakes that may affect the validity of the Will.<br />\
+      body: "🏛️ <b>The Validity of a Will</b> depends not only on what it contains, but also on whether it has been <u>properly executed</u> in accordance with the law.<br /><br />\
+      👩🏽‍⚖️ <b>Careful selection</b> of executors and witnesses, accurate identification of assets and beneficiaries, and compliance with the formal requirements, are essential.<br /><br />\
+      ⚖️ Where there is any uncertainty, <b>obtaining appropriate legal advice</b> can help avoid mistakes that may affect the validity of the Will.<br /><br />\
       🤷🏻‍♀️ Ultimately, a Will is not about anticipating death. It is about taking control of what happens to what you have worked hard to build and leaving your <b>loved ones</b> with clarity, protection, and peace of mind.",
     },
   ],
